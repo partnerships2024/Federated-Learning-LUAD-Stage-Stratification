@@ -1,0 +1,134 @@
+LUAD 301-BP MUTATION-LEVEL DATASET
+=================================
+
+File
+----
+CSV: luad_301bp_mutation_level_dataset.csv
+Created: 2026-07-24 03:51:15
+SHA-256: ad6ac84dbfaf58554f9f70b5ec8d1360aceba1e0ed256864327d52d2bc017b55
+File size: 28.51 MB
+
+Purpose
+-------
+This file contains one row per valid reconstructed mutation from
+the seven LUAD cohorts. Each mutation has a freshly constructed
+301-bp reference window, a corresponding mutated window, aligned
+binary affected-position masks, coding coordinates and consequence
+features.
+
+Dataset size
+------------
+Mutation rows: 17,987
+Unique cohort-patient combinations: 4,881
+Represented genes: 89
+Number of columns: 53
+
+Genes from the 96-gene panel without a valid 301-bp reconstruction
+-----------------------------------------------------------------
+CAPN5, CBLB, CRLF2, EPPK1, NOTCH1, ZFHX4, ZNF724
+
+Mutation operation counts
+-------------------------
+HGVS_OPERATION
+SUBSTITUTION    14856
+DELETION         1978
+DUPLICATION       538
+DELINS            518
+INSERTION          97
+
+Consequence severity counts
+---------------------------
+MUTATION_CONSEQUENCE_SEVERITY
+MODERATE    13241
+HIGH         3928
+LOW           781
+UNKNOWN        37
+
+Important sequence fields
+-------------------------
+REFERENCE_WINDOW_301:
+    Fresh 301-bp window extracted from the matched Ensembl CDS.
+
+MUTATED_WINDOW_301:
+    Fixed-length 301-bp window after applying the verified
+    transcript-oriented mutation.
+
+REFERENCE_AFFECTED_MASK_301:
+    A 301-position binary mask marking the affected reference
+    positions.
+
+MUTATED_AFFECTED_MASK_301:
+    A 301-position binary mask marking inserted, replaced or
+    deletion-junction positions in the mutated window.
+
+Padding
+-------
+N characters occur only where the requested window extends beyond
+a true CDS boundary. Mutation masks do not overlap padded positions.
+
+Consequence severity
+--------------------
+The severity category is a deterministic computational consequence
+feature. It is not a clinical prognosis, stage label or patient-risk
+score.
+
+Target leakage
+--------------
+Stage, TNM, tumour size, lymph-node, metastasis and clinical target
+labels are not included in this mutation-level file.
+
+Columns
+-------
+MUTATION_ROW_ID
+COHORT
+PATIENT_ID
+SAMPLE_ID
+GENE_SYMBOL
+TRANSCRIPT_ID_SELECTED
+HGVSC_RAW
+HGVS_C_EXPRESSION
+HGVS_OPERATION
+VARIANT_CLASSIFICATION_RAW
+VARIANT_CLASSIFICATION_NORMALISED
+CDS_START_1BASED
+CDS_END_1BASED
+REFERENCE_CDS_LENGTH
+REFERENCE_REMOVED_SEQUENCE
+ALTERNATE_INSERTED_SEQUENCE
+REFERENCE_REMOVAL_LENGTH
+ALTERNATE_INSERTION_LENGTH
+NET_CDS_LENGTH_CHANGE
+WINDOW_ANCHOR_CDS_POSITION_1BASED
+WINDOW_REQUESTED_CDS_START_1BASED
+WINDOW_REQUESTED_CDS_END_1BASED
+EVENT_WINDOW_START_INDEX_0BASED
+EVENT_WINDOW_END_INDEX_0BASED
+MUTATION_EDIT_WINDOW_INDEX_0BASED
+REFERENCE_WINDOW_301
+MUTATED_WINDOW_301
+REFERENCE_AFFECTED_MASK_301
+MUTATED_AFFECTED_MASK_301
+REFERENCE_AFFECTED_INDICES_0BASED
+MUTATED_AFFECTED_INDICES_0BASED
+REFERENCE_AFFECTED_POSITION_COUNT
+MUTATED_AFFECTED_POSITION_COUNT
+MUTATION_MASK_POLICY
+WINDOW_LEFT_PADDING_COUNT
+WINDOW_RIGHT_PADDING_COUNT
+MUTATED_WINDOW_LEFT_PADDING_COUNT
+MUTATED_WINDOW_RIGHT_PADDING_COUNT
+REFERENCE_WINDOW_N_COUNT
+MUTATED_WINDOW_N_COUNT
+MUTATION_OPERATION_GROUP
+MUTATION_LENGTH_CHANGE_ABS
+MUTATION_LENGTH_EFFECT
+FRAME_SHIFT_INFERRED_FLAG
+IN_FRAME_LENGTH_CHANGE_FLAG
+NO_LENGTH_CHANGE_FLAG
+SOURCE_CONSEQUENCE_SEVERITY
+MUTATION_CONSEQUENCE_SEVERITY
+MUTATION_SEVERITY_SCORE
+MUTATION_SEVERITY_RULE
+WINDOW_PAIR_TOTAL_AFFECTED_POSITIONS
+FINAL_301_RECONSTRUCTION_FLAG
+FINAL_301_RECONSTRUCTION_STATUS
