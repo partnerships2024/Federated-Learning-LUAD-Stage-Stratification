@@ -1,0 +1,310 @@
+#Patient identifier	Cohort	Overall survival status	Overall survival months	Age	Sex	Ethnicity Category	Smoking status	Stage	Histological grade	Person Cigarette Smoking History Pack Year Value	Adenocarcinoma subtype WHO2015	TKI Treatment	Chemotherapy	Exome Sequencing Status	RNA Sequencing Status	Sequencing Type
+#Identifier to uniquely specify a patient.	Cohort	Overall survival status	Overall survival months	Age	Sex	The text for reporting information about ethnicity.	Smoking status	Stage	Histological grade	Numeric computed value to represent lifetime tobacco exposure defined as number of cigarettes smoked per day x number of years smoked divided by 20.	Adenocarcinoma subtype WHO2015	TKI Treatment	Did the patient receive chemotherapy during the course of their treatment	Exome Sequencing Status	RNA Sequencing Status	Sequencing Type
+#STRING	STRING	STRING	NUMBER	NUMBER	STRING	STRING	STRING	STRING	STRING	NUMBER	STRING	STRING	STRING	STRING	STRING	STRING
+#1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+PATIENT_ID	COHORT	OS_STATUS	OS_MONTHS	AGE	SEX	ETHNICITY	SMOKING_STATUS	STAGE	HISTOLOGICAL_GRADE	SMOKING_PACK_YEARS	ADENOCARCINOMA_SUBTYPE_WHO2015	TKI_TREATMENT	CHEMOTHERAPY	EXOME_SEQ	RNA_SEQ_ANALYSIS	SEQUENCING_TYPE
+BGI-EX01	BGI	0:LIVING	20.0	59	Male	Chinese	Yes	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-EX02	BGI	0:LIVING	13.0	45	Male	Chinese	No	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-EX03	BGI	0:LIVING	12.0	60	Male	Chinese	Yes	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-EX04	BGI	0:LIVING	6.0	67	Female	Chinese	No	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-EX05	BGI	1:DECEASED	4.0	68	Male	Chinese	Yes	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-EX06	BGI	0:LIVING	17.0	82	Male	Chinese	Yes	I	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-EX07	BGI	0:LIVING	17.0	51	Male	Chinese	Yes	II	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-EX08	BGI	0:LIVING	16.0	47	Male	Chinese	Yes	IV	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-EX09	BGI	1:DECEASED	13.0	52	Male	Chinese	Yes	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS01	BGI	1:DECEASED	37.0	57	Male	Chinese	No	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS02	BGI	1:DECEASED	23.0	58	Female	Chinese	No	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS03	BGI	0:LIVING	67.0	50	Male	Chinese	Yes	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS04	BGI	1:DECEASED	50.0	54	Male	Chinese	Yes	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS05	BGI	1:DECEASED	26.0	71	Male	Chinese	Yes	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS06	BGI	0:LIVING	59.0	56	Male	Chinese	Yes	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS07	BGI	1:DECEASED	6.0	72	Male	Chinese	No	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS08	BGI	0:LIVING	65.0	66	Female	Chinese	No	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS09	BGI	1:DECEASED	12.0	57	Female	Chinese	No	IV	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS10	BGI	1:DECEASED	20.0	51	Male	Chinese	No	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS11	BGI	0:LIVING	61.0	60	Female	Chinese	No	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS12	BGI	0:LIVING	66.0	59	Female	Chinese	No	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS13	BGI	1:DECEASED	29.0	67	Male	Chinese	No	IV	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS14	BGI	1:DECEASED	60.0	55	Male	Chinese	Yes	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS15	BGI	1:DECEASED	41.0	64	Male	Chinese	No	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS16	BGI	0:LIVING	78.0	56	Female	Chinese	No	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS17	BGI	0:LIVING	47.0	53	Female	Chinese	No	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS18	BGI	1:DECEASED	NA	62	Male	Chinese	Yes	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS19	BGI	0:LIVING	67.0	53	Male	Chinese	Yes	I	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS20	BGI	1:DECEASED	12.0	42	Female	Chinese	No	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS21	BGI	0:LIVING	61.0	67	Female	Chinese	No	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS22	BGI	1:DECEASED	24.0	62	Male	Chinese	No	IV	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS23	BGI	0:LIVING	80.0	70	Male	Chinese	No	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS24	BGI	0:LIVING	55.0	53	Male	Chinese	NA	II	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS25	BGI	1:DECEASED	22.0	59	Female	Chinese	No	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS26	BGI	0:LIVING	59.0	68	Male	Chinese	Yes	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS27	BGI	1:DECEASED	20.0	70	Male	Chinese	No	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS28	BGI	1:DECEASED	32.0	62	Male	Chinese	No	I	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS29	BGI	0:LIVING	54.0	57	Female	Chinese	No	I	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS30	BGI	1:DECEASED	59.0	61	Male	Chinese	Yes	I	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS31	BGI	1:DECEASED	28.0	63	Male	Chinese	Yes	I	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS32	BGI	1:DECEASED	17.0	67	Female	Chinese	No	I	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS33	BGI	1:DECEASED	6.0	67	Male	Chinese	Yes	I	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS34	BGI	1:DECEASED	55.0	74	Male	Chinese	Yes	I	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS35	BGI	1:DECEASED	49.0	72	Male	Chinese	No	I	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS36	BGI	0:LIVING	61.0	63	Male	Chinese	Yes	II	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS37	BGI	0:LIVING	56.0	54	Female	Chinese	No	I	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS38	BGI	0:LIVING	62.0	58	Male	Chinese	Yes	II	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS39	BGI	1:DECEASED	45.0	55	Female	Chinese	No	II	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS40	BGI	0:LIVING	22.0	41	Male	Chinese	No	II	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS41	BGI	0:LIVING	70.0	49	Female	Chinese	No	I	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS42	BGI	0:LIVING	63.0	46	Male	Chinese	Yes	I	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS44	BGI	0:LIVING	58.0	67	Male	Chinese	Yes	I	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS45	BGI	1:DECEASED	28.0	77	Female	Chinese	No	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS46	BGI	1:DECEASED	58.0	68	Male	Chinese	No	II	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS47	BGI	0:LIVING	56.0	49	Female	Chinese	No	II	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS48	BGI	1:DECEASED	NA	36	Male	Chinese	No	II	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS49	BGI	0:LIVING	61.0	51	Male	Chinese	Yes	II	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS50	BGI	1:DECEASED	5.0	65	Male	Chinese	No	II	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS51	BGI	0:LIVING	35.0	49	Male	Chinese	Yes	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS52	BGI	0:LIVING	48.0	57	Female	Chinese	No	II	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS53	BGI	0:LIVING	74.0	72	Female	Chinese	No	I	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS54	BGI	0:LIVING	49.0	67	Male	Chinese	Yes	II	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS55	BGI	0:LIVING	57.0	63	Male	Chinese	No	II	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS56	BGI	0:LIVING	58.0	62	Male	Chinese	No	II	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS57	BGI	1:DECEASED	10.0	71	Male	Chinese	Yes	II	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS58	BGI	0:LIVING	60.0	78	Female	Chinese	Yes	I	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS59	BGI	NA	NA	74	Male	Chinese	No	II	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-RS60	BGI	0:LIVING	62.0	60	Male	Chinese	Yes	I	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-WG01	BGI	1:DECEASED	4.0	77	Male	Chinese	NA	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-WG02	BGI	1:DECEASED	6.0	78	Male	Chinese	Yes	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-WG03	BGI	0:LIVING	16.0	56	Male	Chinese	No	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-WG04	BGI	0:LIVING	17.0	25	Female	Chinese	No	IV	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-WG05	BGI	0:LIVING	14.0	58	Male	Chinese	NA	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-WG06	BGI	0:LIVING	13.0	48	Female	Chinese	No	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-WG07	BGI	0:LIVING	15.0	55	Female	Chinese	NA	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-WG08	BGI	0:LIVING	16.0	63	Male	Chinese	Yes	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-WG09	BGI	0:LIVING	16.0	66	Male	Chinese	Yes	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-WG10	BGI	0:LIVING	15.0	65	Male	Chinese	Yes	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-WG11	BGI	0:LIVING	16.0	68	Female	Chinese	No	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-WG12	BGI	0:LIVING	13.0	57	Female	Chinese	No	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-WG13	BGI	0:LIVING	13.0	70	Female	Chinese	No	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-WG14	BGI	0:LIVING	5.0	59	Male	Chinese	No	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-WG15	BGI	0:LIVING	7.0	56	Female	Chinese	Yes	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-WG16	BGI	0:LIVING	5.0	41	Female	Chinese	No	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-WG17	BGI	0:LIVING	8.0	51	Male	Chinese	No	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-WG18	BGI	0:LIVING	7.0	65	Female	Chinese	No	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-WG19	BGI	0:LIVING	8.0	61	Female	Chinese	No	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-WG20	BGI	0:LIVING	7.0	62	Male	Chinese	No	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-WG21	BGI	0:LIVING	6.0	41	Female	Chinese	No	II	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-WG22	BGI	0:LIVING	24.0	34	Female	Chinese	No	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-WG23	BGI	0:LIVING	16.0	73	Male	Chinese	No	III	NA	NA	NA	NA	No	Paired	NA	WES
+BGI-WG24	BGI	0:LIVING	17.0	67	Male	Chinese	Yes	IV	NA	NA	NA	NA	No	Paired	NA	WES
+A183	GSK	1:DECEASED	70.63333333	75	Male	Chinese	Yes	II	Moderately differentiated	60.0	Adenocarcinoma, NOS (81403)	No	No	Paired	Tumor	WES + RNA-Seq
+A184	GSK	1:DECEASED	9.133333333	67	Female	Chinese	No	III	Poorly differentiated	30.0	NSCLC, Adenocarcinoma	Yes	Yes	No	Tumor	RNA-Seq
+A185	GSK	1:DECEASED	1.8	59	Female	Chinese	No	III	NA	NA	Invasive mucinous ADCA	No	Yes	Paired	Tumor	WES + RNA-Seq
+A186	GSK	1:DECEASED	47.46666667	80	Female	Chinese	No	I	Moderately differentiated	NA	Adenocarcinoma, NOS (81403)	No	No	Paired	Tumor	WES + RNA-Seq
+A187	GSK	1:DECEASED	12.5	38	Female	Chinese	Yes	III	Moderately differentiated	4.2	Adenocarcinoma, NOS (81403)	No	No	Paired	Tumor	WES + RNA-Seq
+A188	GSK	1:DECEASED	5.166666667	57	Female	Chinese	No	I	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	Tumor	WES + RNA-Seq
+A190	GSK	1:DECEASED	35.33333333	65	Female	Chinese	No	II	Moderately differentiated	NA	Lepidic adenocarcinoma (82503)	Yes	Yes	Paired	Tumor	WES + RNA-Seq
+A191	GSK	1:DECEASED	36.06666667	62	Male	Chinese	No	I	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	Tumor	WES + RNA-Seq
+A192	GSK	1:DECEASED	38.76666667	84	Female	Chinese	No	III	Moderately differentiated	NA	Papillary adenocarcinoma (82603)	No	No	Paired	Tumor	WES + RNA-Seq
+A193	GSK	1:DECEASED	21.8	54	Male	Chinese	Yes	I	Poorly differentiated	42.0	Adenocarcinoma, NOS (81403)	No	Yes	Paired	Tumor	WES + RNA-Seq
+A194	GSK	1:DECEASED	34.4	54	Female	Chinese	No	IV	Well differentiated	NA	Adenocarcinoma, NOS (81403)	No	Yes	Paired	Tumor	WES + RNA-Seq
+A195	GSK	1:DECEASED	23.0	62	Male	Chinese	Yes	II	NA	42.0	Solid adenocarcinoma (82303)	No	No	Paired	Tumor	WES + RNA-Seq
+A196	GSK	1:DECEASED	9.966666667	82	Male	Chinese	Yes	II	Well to Moderately differentiated	33.0	Acinar adenocarcinoma (85513)	No	No	Paired	Tumor	WES + RNA-Seq
+A197	GSK	1:DECEASED	31.66666667	52	Male	Chinese	Yes	I	Moderately differentiated	43.0	Solid adenocarcinoma (82303)	No	No	Paired	Tumor	WES + RNA-Seq
+A198	GSK	1:DECEASED	14.86666667	67	Male	Chinese	Yes	III	NA	22.0	Papillary adenocarcinoma (82603)	No	Yes	Paired	Tumor	WES + RNA-Seq
+A199	GSK	1:DECEASED	30.33333333	69	Male	Chinese	Yes	I	Moderately differentiated	49.5	Acinar adenocarcinoma (85513)	No	No	Paired	Tumor	WES + RNA-Seq
+A200	GSK	0:LIVING	100.5666667	49	Male	Chinese	Yes	III	Moderately differentiated	49.5	Adenocarcinoma, NOS (81403)	No	Yes	Paired	Tumor	WES + RNA-Seq
+A201	GSK	0:LIVING	122.9	67	Female	Chinese	Yes	II	Moderately differentiated	0.03	Adenocarcinoma, NOS (81403)	No	No	Paired	Tumor	WES + RNA-Seq
+A202	GSK	0:LIVING	122.7	73	Female	Chinese	No	I	Well differentiated	NA	Papillary adenocarcinoma (82603)	No	Yes	Paired	Tumor	WES + RNA-Seq
+A203	GSK	0:LIVING	121.96666670000002	55	Male	Chinese	No	II	Well differentiated	NA	Adenocarcinoma, NOS (81403)	Yes	Yes	Paired	Tumor	WES + RNA-Seq
+A204	GSK	0:LIVING	116.43333329999999	70	Female	Chinese	No	III	Moderately differentiated	NA	Adenocarcinoma, NOS (81403)	No	No	Paired	Tumor	WES + RNA-Seq
+A205	GSK	1:DECEASED	91.03333333	79	Female	Chinese	No	I	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	Tumor	WES + RNA-Seq
+A206	GSK	0:LIVING	112.1	78	Male	Chinese	No	I	Moderately differentiated	NA	Adenocarcinoma, NOS (81403)	No	No	Paired	Tumor	WES + RNA-Seq
+A207	GSK	0:LIVING	111.36666670000001	59	Female	Chinese	No	I	Well differentiated	NA	ADCA (acinar) with mucin production	Yes	No	Paired	Tumor	WES + RNA-Seq
+A208	GSK	0:LIVING	110.56666670000001	77	Male	Chinese	Yes	I	Moderately differentiated	0.5	Adenocarcinoma, mixed subtypes	No	No	Paired	Tumor	WES + RNA-Seq
+A209	GSK	0:LIVING	57.73333333	62	Male	Chinese	No	I	Well differentiated	NA	Adenocarcinoma, mixed subtypes	No	Yes	Paired	Tumor	WES + RNA-Seq
+A210	GSK	0:LIVING	105.3	50	Male	Chinese	Yes	I	Poorly differentiated	35.0	Adenocarcinoma, NOS (81403)	No	No	Paired	Tumor	WES + RNA-Seq
+A211	GSK	0:LIVING	108.0	50	Female	Chinese	Yes	I	Moderately differentiated	38.0	Lepidic adenocarcinoma (82503)	Yes	No	Paired	Tumor	WES + RNA-Seq
+A212	GSK	0:LIVING	108.46666670000002	68	Female	Chinese	No	I	Moderately differentiated	NA	Adenocarcinoma, NOS (81403)	No	No	Paired	Tumor	WES + RNA-Seq
+A213	GSK	0:LIVING	102.2	76	Male	Chinese	Yes	I	Well differentiated	37.0	Acinar adenocarcinoma (85513)	Yes	Yes	Paired	Tumor	WES + RNA-Seq
+A214	GSK	0:LIVING	101.9	58	Male	Chinese	Yes	I	Poorly differentiated	43.2	Acinar adenocarcinoma (85513)	No	No	Paired	Tumor	WES + RNA-Seq
+A215	GSK	0:LIVING	103.5333333	54	Female	Chinese	No	I	Well differentiated	NA	Adenocarcinoma, mixed subtypes	Yes	No	Paired	Tumor	WES + RNA-Seq
+A216	GSK	0:LIVING	104.93333329999999	61	Male	Chinese	Yes	III	Moderately differentiated	53.75	Acinar adenocarcinoma (85513)	No	Yes	Paired	Tumor	WES + RNA-Seq
+A217	GSK	0:LIVING	104.2666667	71	Male	Chinese	No	III	Well differentiated	NA	Papillary adenocarcinoma (82603)	Yes	Yes	Paired	Tumor	WES + RNA-Seq
+A218	GSK	0:LIVING	75.73333333	67	Male	Chinese	Yes	III	Poorly differentiated	27.0	Solid adenocarcinoma (82303)	No	No	Paired	Tumor	WES + RNA-Seq
+A219	GSK	0:LIVING	97.03333333	52	Female	Chinese	No	II	Moderately differentiated	NA	Lepidic adenocarcinoma (82503)	No	No	Paired	Tumor	WES + RNA-Seq
+A220	GSK	0:LIVING	98.56666667	60	Female	Chinese	Yes	I	Moderately differentiated	0.35	Adenocarcinoma, NOS (81403)	No	No	Paired	Tumor	WES + RNA-Seq
+A221	GSK	0:LIVING	95.16666667	72	Female	Chinese	No	I	Moderately differentiated	NA	Adenocarcinoma, mixed subtypes	No	Yes	Paired	Tumor	WES + RNA-Seq
+A222	GSK	0:LIVING	94.76666667	61	Female	Chinese	No	I	Moderately differentiated	NA	Adenocarcinoma, NOS (81403)	No	No	Paired	Tumor	WES + RNA-Seq
+A224	GSK	1:DECEASED	26.6	68	Male	Chinese	No	III	NA	NA	Adenocarcinoma, NOS (81403)	Yes	Yes	Paired	No	WES
+A227	GSK	1:DECEASED	6.3666666670000005	75	Male	Chinese	Yes	III	NA	29.5	Adenocarcinoma, NOS (81403)	No	Yes	Paired	No	WES
+A228	GSK	1:DECEASED	1.6333333330000002	66	Male	Chinese	Yes	IV	NA	46.0	Adenocarcinoma, NOS (81403)	No	No	Paired	No	WES
+A229	GSK	1:DECEASED	0.833333333	75	Male	Chinese	Yes	IV	NA	55.0	NA	No	No	Paired	No	WES
+A230	GSK	1:DECEASED	0.7	68	Male	Chinese	Yes	IV	Moderately differentiated	12.0	Adenocarcinoma, NOS (81403)	No	No	Paired	No	WES
+A231	GSK	1:DECEASED	47.96666667	71	Male	Chinese	Yes	II	NA	102.0	Papillary adenocarcinoma (82603)	No	No	Paired	No	WES
+A232	GSK	1:DECEASED	30.8	76	Male	Chinese	Yes	III	Moderately differentiated	16.2	Papillary adenocarcinoma (82603)	No	No	Paired	Tumor	WES + RNA-Seq
+A247	GSK	0:LIVING	26.16666667	69	Male	Chinese	Yes	I	Poorly differentiated	49.0	Solid adenocarcinoma (82303)	No	No	Paired	Tumor	WES + RNA-Seq
+A241	GSK	0:LIVING	34.16666667	70	Female	Chinese	No	I	Moderately to Poorly differentiated	NA	Solid adenocarcinoma (82303)	No	No	Paired	Tumor	WES + RNA-Seq
+A234	GSK	0:LIVING	36.26666667	77	Male	Chinese	Yes	I	Moderately differentiated	6.75	Acinar adenocarcinoma (85513)	No	Yes	Paired	Paired	WES + RNA-Seq
+A233	GSK	0:LIVING	32.9	81	Male	Chinese	No	I	Well to Moderately differentiated	NA	Lepidic adenocarcinoma (82503)	No	Yes	Paired	Tumor	WES + RNA-Seq
+A177	GSK	0:LIVING	34.5	77	Male	Chinese	Yes	I	Poorly differentiated	99.0	Solid adenocarcinoma (82303)	No	No	Paired	Paired	WES + RNA-Seq
+A167	GSK	0:LIVING	35.36666667	74	Male	Chinese	Yes	I	Moderately differentiated	55.0	Acinar adenocarcinoma (85513)	No	No	Paired	No	WES
+A159	GSK	0:LIVING	37.3	49	Male	Chinese	Yes	I	Moderately differentiated	30.0	Invasive mucinous adenocarcinoma (82533)	No	No	Paired	Paired	WES + RNA-Seq
+A158	GSK	0:LIVING	38.93333333	63	Male	Chinese	Yes	II	Moderately differentiated	40.0	Papillary adenocarcinoma (82603)	No	Yes	Paired	Tumor	WES + RNA-Seq
+A155	GSK	0:LIVING	37.66666667	66	Male	Chinese	Yes	II	Moderately differentiated	2.0	Invasive mucinous adenocarcinoma (82533)	No	Yes	Paired	No	WES
+A153	GSK	0:LIVING	39.03333333	78	Male	Chinese	No	I	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	Tumor	WES + RNA-Seq
+A144	GSK	1:DECEASED	25.76666667	74	Male	Chinese	No	II	Poorly differentiated	NA	Solid adenocarcinoma (82303)	No	Yes	Paired	Paired	WES + RNA-Seq
+A143	GSK	1:DECEASED	5.533333333	68	Male	Chinese	Yes	IV	Poorly differentiated	40.0	Solid adenocarcinoma (82303)	No	No	Paired	Tumor	WES + RNA-Seq
+A139	GSK	1:DECEASED	5.066666667	76	Female	Chinese	No	I	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	Normal	WES + RNA-Seq
+A138	GSK	1:DECEASED	54.0	53	Female	Chinese	No	III	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	Yes	Yes	Paired	Paired	WES + RNA-Seq
+A131	GSK	1:DECEASED	35.8	69	Male	Chinese	Yes	III	NA	89.25	Adenocarcinoma, NOS (81403)	No	No	Paired	Tumor	WES + RNA-Seq
+A120	GSK	0:LIVING	46.63333333	82	Male	Chinese	No	I	NA	NA	Lepidic adenocarcinoma (82503)	No	No	Paired	Tumor	WES + RNA-Seq
+A006	GSK	0:LIVING	61.6	56	Female	Chinese	No	I	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	Paired	WES + RNA-Seq
+A073	GSK	0:LIVING	50.2	51	Male	Chinese	No	I	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	No	WES
+A025	GSK	1:DECEASED	53.1	76	Male	Chinese	Yes	II	NA	5.0	Invasive mucinous adenocarcinoma (82533)	No	No	Paired	No	WES
+A016	GSK	0:LIVING	52.46666667	78	Male	Chinese	Yes	I	Poorly differentiated	NA	Solid adenocarcinoma (82303)	No	No	Paired	No	WES
+A012	GSK	0:LIVING	58.26666667	69	Male	Chinese	Yes	I	Moderately to Poorly differentiated	32.0	Acinar adenocarcinoma (85513)	No	No	Paired	No	WES
+A008	GSK	1:DECEASED	23.1	56	Female	Chinese	No	III	Moderately differentiated	NA	Papillary adenocarcinoma (82603)	No	Yes	Paired	Normal	WES + RNA-Seq
+A258	GSK	1:DECEASED	24.53333333	65	Male	Chinese	Yes	II	Moderately differentiated	234.0	Acinar adenocarcinoma (85513)	No	No	Paired	Paired	WES + RNA-Seq
+A259	GSK	0:LIVING	87.46666667	37	Female	Chinese	No	III	Moderately differentiated	NA	Adenocarcinoma, NOS (81403)	No	No	Paired	Paired	WES + RNA-Seq
+A260	GSK	1:DECEASED	42.0	61	Female	Chinese	No	I	NA	NA	NA	No	No	Paired	Paired	WES + RNA-Seq
+A261	GSK	1:DECEASED	46.26666667	45	Male	Chinese	Yes	I	NA	18.75	Acinar adenocarcinoma (85513)	No	No	Paired	Paired	WES + RNA-Seq
+A262	GSK	0:LIVING	61.5	64	Female	Chinese	No	II	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	Yes	Paired	Paired	WES + RNA-Seq
+A263	GSK	0:LIVING	89.8	64	Male	Chinese	Yes	I	Moderately differentiated	9.0	Papillary adenocarcinoma (82603)	No	No	Paired	Paired	WES + RNA-Seq
+A264	GSK	0:LIVING	68.93333333	58	Male	Chinese	Yes	II	Poorly differentiated	28.5	Adenocarcinoma, NOS (81403)	No	Yes	Paired	Paired	WES + RNA-Seq
+A265	GSK	0:LIVING	1.5	65	Female	Chinese	Yes	I	NA	47.0	Acinar adenocarcinoma (85513)	No	No	Paired	Paired	WES + RNA-Seq
+A266	GSK	0:LIVING	36.9	63	Female	Chinese	No	II	Poorly differentiated	NA	Solid adenocarcinoma (82303)	No	Yes	Paired	Paired	WES + RNA-Seq
+A267	GSK	0:LIVING	70.03333333	72	Female	Chinese	Yes	I	NA	40.0	Acinar adenocarcinoma (85513)	No	No	Paired	Paired	WES + RNA-Seq
+A268	GSK	0:LIVING	65.86666667	70	Female	Chinese	No	I	Well to Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	Paired	WES + RNA-Seq
+A269	GSK	0:LIVING	64.1	66	Female	Chinese	No	I	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	Paired	WES + RNA-Seq
+A270	GSK	0:LIVING	61.46666667	62	Female	Chinese	No	I	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	Paired	WES + RNA-Seq
+A271	GSK	0:LIVING	58.53333333	70	Male	Chinese	Yes	I	Moderately differentiated	36.0	Acinar adenocarcinoma (85513)	No	No	Paired	Paired	WES + RNA-Seq
+A272	GSK	0:LIVING	53.63333333	43	Female	Chinese	No	I	Moderately differentiated	NA	Papillary adenocarcinoma (82603)	No	No	Paired	Tumor	WES + RNA-Seq
+A273	GSK	0:LIVING	86.13333333	64	Female	Chinese	No	I	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	Paired	WES + RNA-Seq
+A274	GSK	0:LIVING	86.26666667	44	Female	Chinese	No	I	Well differentiated	NA	Acinar adenocarcinoma (85513)	Yes	Yes	Paired	Paired	WES + RNA-Seq
+A275	GSK	0:LIVING	84.43333333	55	Female	Chinese	No	II	Moderately differentiated	NA	Adenocarcinoma, NOS (81403)	No	Yes	Paired	Paired	WES + RNA-Seq
+A276	GSK	1:DECEASED	80.0	71	Male	Chinese	No	III	Moderately differentiated	NA	Papillary adenocarcinoma (82603)	Yes	Yes	Paired	Paired	WES + RNA-Seq
+A277	GSK	0:LIVING	83.76666667	70	Female	Chinese	No	II	NA	NA	Papillary adenocarcinoma (82603)	No	No	Paired	Paired	WES + RNA-Seq
+A278	GSK	0:LIVING	82.83333333	73	Female	Chinese	No	I	NA	NA	Papillary adenocarcinoma (82603)	No	No	Paired	Paired	WES + RNA-Seq
+A279	GSK	0:LIVING	78.83333333	59	Male	Chinese	Yes	I	NA	3.0	Papillary adenocarcinoma (82603)	No	No	Paired	Paired	WES + RNA-Seq
+A280	GSK	0:LIVING	74.86666667	49	Male	Chinese	Yes	I	NA	20.25	Acinar adenocarcinoma (85513)	No	No	Paired	Paired	WES + RNA-Seq
+A281	GSK	0:LIVING	69.1	66	Male	Chinese	No	I	NA	NA	Acinar adenocarcinoma (85513)	No	No	Paired	Paired	WES + RNA-Seq
+A282	GSK	0:LIVING	69.2	72	Female	Chinese	No	II	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	Paired	WES + RNA-Seq
+A283	GSK	0:LIVING	67.26666667	67	Female	Chinese	No	I	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	Paired	WES + RNA-Seq
+A284	GSK	0:LIVING	68.8	58	Female	Chinese	No	II	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	Yes	No	Paired	Paired	WES + RNA-Seq
+A285	GSK	0:LIVING	66.8	64	Female	Chinese	No	I	NA	NA	Acinar adenocarcinoma (85513)	Yes	No	Paired	Paired	WES + RNA-Seq
+A344	GSK	1:DECEASED	5.233333333	60	Male	Chinese	Yes	IV	NA	64.0	Adenocarcinoma, NOS (81403)	No	Yes	Paired	No	WES
+A349	GSK	1:DECEASED	17.2	74	Male	Chinese	Yes	IV	NA	32.0	Adenocarcinoma, NOS (81403)	No	Yes	Paired	No	WES
+A364	GSK	1:DECEASED	27.76666667	79	Female	Chinese	No	IV	Moderately differentiated	NA	Papillary adenocarcinoma (82603)	No	No	Paired	No	WES
+A368	GSK	1:DECEASED	29.6	60	Female	Chinese	No	IV	NA	NA	Adenocarcinoma, NOS (81403)	No	Yes	Paired	No	WES
+A017	GSK	0:LIVING	53.46666667	52	Female	Chinese	No	II	NA	NA	Acinar adenocarcinoma (85513)	No	No	Paired	No	WES
+A028	GSK	0:LIVING	56.7	75	Male	Chinese	No	I	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	Yes	No	Paired	Paired	WES + RNA-Seq
+A021	GSK	0:LIVING	54.73333333	57	Female	Chinese	No	I	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	Paired	WES + RNA-Seq
+A033	GSK	0:LIVING	50.9	44	Female	Chinese	No	II	Poorly differentiated	NA	Solid adenocarcinoma (82303)	No	Yes	Paired	Paired	WES + RNA-Seq
+A027	GSK	0:LIVING	50.93333333	58	Female	Chinese	No	I	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	Tumor	WES + RNA-Seq
+A068	GSK	0:LIVING	51.0	79	Female	Chinese	No	I	Poorly differentiated	NA	Solid adenocarcinoma (82303)	No	No	Paired	Tumor	WES + RNA-Seq
+A101	GSK	0:LIVING	51.26666667	58	Female	Chinese	No	I	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	Paired	WES + RNA-Seq
+A071	GSK	0:LIVING	52.36666667	76	Female	Chinese	No	I	NA	NA	Acinar adenocarcinoma (85513)	No	No	Paired	No	WES
+A072	GSK	0:LIVING	49.93333333	60	Female	Chinese	No	I	Moderately differentiated	NA	Lepidic adenocarcinoma (82503)	No	No	Paired	Paired	WES + RNA-Seq
+A074	GSK	1:DECEASED	20.06666667	78	Female	Chinese	No	IV	Poorly differentiated	NA	Solid adenocarcinoma (82303)	Yes	No	Paired	Tumor	WES + RNA-Seq
+A100	GSK	0:LIVING	47.23333333	73	Female	Chinese	No	I	Well differentiated	NA	Lepidic adenocarcinoma (82503)	No	No	Paired	Tumor	WES + RNA-Seq
+A102	GSK	0:LIVING	51.3	73	Male	Chinese	No	I	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	Tumor	WES + RNA-Seq
+A103	GSK	0:LIVING	50.3	63	Female	Chinese	Yes	I	Moderately differentiated	1.0	Acinar adenocarcinoma (85513)	No	No	Paired	Tumor	WES + RNA-Seq
+A104	GSK	0:LIVING	46.3	70	Male	Chinese	No	I	Moderately differentiated	NA	Papillary adenocarcinoma (82603)	No	No	Paired	Tumor	WES + RNA-Seq
+A109	GSK	1:DECEASED	33.7	79	Male	Chinese	Yes	I	Moderately to Poorly differentiated	48.0	Acinar adenocarcinoma (85513)	No	No	Paired	No	WES
+A117	GSK	0:LIVING	49.96666667	64	Female	Chinese	No	I	Moderately differentiated	NA	Papillary adenocarcinoma (82603)	Yes	No	Paired	Paired	WES + RNA-Seq
+A122	GSK	0:LIVING	46.86666667	63	Male	Chinese	No	II	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	Yes	Paired	Normal	WES + RNA-Seq
+A134	GSK	0:LIVING	44.6	52	Female	Chinese	No	I	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	Tumor	WES + RNA-Seq
+A136	GSK	0:LIVING	41.96666667	72	Female	Chinese	No	I	NA	NA	Acinar adenocarcinoma (85513)	No	No	Paired	Normal	WES + RNA-Seq
+A147	GSK	0:LIVING	43.0	57	Male	Chinese	Yes	III	Moderately differentiated	21.0	Lepidic adenocarcinoma (82503)	Yes	Yes	Paired	Normal	WES + RNA-Seq
+A146	GSK	1:DECEASED	35.06666667	73	Male	Chinese	No	II	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	No	WES
+A148	GSK	0:LIVING	40.36666667	57	Male	Chinese	Yes	III	Moderately differentiated	129.0	Acinar adenocarcinoma (85513)	Yes	Yes	Paired	Tumor	WES + RNA-Seq
+A149	GSK	0:LIVING	39.46666667	76	Male	Chinese	No	I	Well differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	No	WES
+A150	GSK	0:LIVING	34.73333333	48	Male	Chinese	Yes	I	Moderately differentiated	0.5	Acinar adenocarcinoma (85513)	No	No	Paired	Paired	WES + RNA-Seq
+A156	GSK	0:LIVING	37.7	61	Female	Chinese	No	I	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	Paired	WES + RNA-Seq
+A165	GSK	0:LIVING	36.4	44	Female	Chinese	No	I	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	Paired	WES + RNA-Seq
+A157	GSK	0:LIVING	34.93333333	74	Male	Chinese	Yes	I	Moderately to Poorly differentiated	55.0	Acinar adenocarcinoma (85513)	No	No	Paired	Paired	WES + RNA-Seq
+A162	GSK	0:LIVING	31.43333333	67	Male	Chinese	No	III	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	Yes	Yes	Paired	Paired	WES + RNA-Seq
+A163	GSK	0:LIVING	9.433333333	57	Female	Chinese	No	III	Moderately differentiated	NA	Solid adenocarcinoma (82303)	No	No	Paired	Tumor	WES + RNA-Seq
+A243	GSK	0:LIVING	33.8	62	Female	Chinese	No	III	Poorly differentiated	NA	Solid adenocarcinoma (82303)	Yes	Yes	Paired	Paired	WES + RNA-Seq
+A182	GSK	0:LIVING	34.2	72	Female	Chinese	No	I	Poorly differentiated	NA	Micropapillary adenocarcinoma (82653)	Yes	No	Paired	Paired	WES + RNA-Seq
+A255	GSK	1:DECEASED	25.3	63	Male	Chinese	No	I	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	Paired	WES + RNA-Seq
+A169	GSK	0:LIVING	34.66666667	76	Female	Chinese	Yes	NA	Moderately differentiated	15.3	Acinar adenocarcinoma (85513)	Yes	No	Paired	Tumor	WES + RNA-Seq
+A252	GSK	0:LIVING	33.16666667	65	Female	Chinese	No	I	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	Paired	WES + RNA-Seq
+A239	GSK	0:LIVING	6.333333333	53	Male	Chinese	No	I	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	Yes	Yes	Paired	Paired	WES + RNA-Seq
+A250	GSK	0:LIVING	33.4	55	Male	Chinese	Yes	I	Moderately differentiated	37.0	Acinar adenocarcinoma (85513)	No	Yes	Paired	Paired	WES + RNA-Seq
+A240	GSK	0:LIVING	31.5	50	Male	Chinese	Yes	I	Poorly differentiated	40.0	Solid adenocarcinoma (82303)	No	No	Paired	Paired	WES + RNA-Seq
+A249	GSK	0:LIVING	31.5	53	Female	Chinese	No	II	NA	NA	Micropapillary adenocarcinoma (82653)	Yes	Yes	Paired	Tumor	WES + RNA-Seq
+A322	GSK	1:DECEASED	23.13333333	70	Female	Chinese	No	I	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	Paired	WES + RNA-Seq
+A306	GSK	0:LIVING	30.83333333	55	Male	Chinese	Yes	I	Moderately differentiated	38.0	Acinar adenocarcinoma (85513)	No	No	Paired	Paired	WES + RNA-Seq
+A302	GSK	0:LIVING	29.8	68	Female	Chinese	No	I	Moderately differentiated	NA	Lepidic adenocarcinoma (82503)	No	No	Paired	Normal	WES + RNA-Seq
+A323	GSK	0:LIVING	29.13333333	63	Male	Chinese	No	II	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	Yes	Paired	Paired	WES + RNA-Seq
+A307	GSK	1:DECEASED	26.16666667	56	Male	Chinese	No	III	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	Yes	Paired	Paired	WES + RNA-Seq
+A380	GSK	0:LIVING	33.03333333	61	Female	Chinese	No	I	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	Yes	No	Paired	Tumor	WES + RNA-Seq
+A315	GSK	0:LIVING	30.0	64	Female	Chinese	No	III	Well to Moderately differentiated	NA	Acinar adenocarcinoma (85513)	Yes	Yes	Paired	Paired	WES + RNA-Seq
+A377	GSK	0:LIVING	26.4	71	Female	Chinese	No	I	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	Paired	WES + RNA-Seq
+A375	GSK	0:LIVING	28.63333333	60	Female	Chinese	No	I	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	Paired	WES + RNA-Seq
+A425	GSK	0:LIVING	28.73333333	56	Female	Chinese	Yes	NA	Moderately differentiated	5.4	Acinar adenocarcinoma (85513)	Yes	No	Paired	Paired	WES + RNA-Seq
+A316	GSK	0:LIVING	30.73333333	77	Female	Chinese	No	I	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	Paired	WES + RNA-Seq
+A379	GSK	0:LIVING	28.23333333	62	Male	Chinese	Yes	III	Moderately differentiated	34.0	Acinar adenocarcinoma (85513)	Yes	Yes	Paired	Paired	WES + RNA-Seq
+A483	GSK	0:LIVING	129.2666667	58	Female	Chinese	No	III	Well differentiated	NA	Acinar adenocarcinoma (85513)	Yes	Yes	Paired	Tumor	WES + RNA-Seq
+A484	GSK	0:LIVING	118.9	57	Female	Chinese	No	III	Moderately differentiated	NA	Adenocarcinoma, NOS (81403)	Yes	Yes	No	Tumor	RNA-Seq
+A485	GSK	0:LIVING	118.13333329999999	72	Female	Chinese	No	I	Well differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	No	WES
+A486	GSK	1:DECEASED	85.26666667	45	Female	Chinese	No	I	Well differentiated	NA	Adenocarcinoma, NOS (81403)	Yes	Yes	Paired	Tumor	WES + RNA-Seq
+A488	GSK	1:DECEASED	50.9	60	Female	Chinese	No	III	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	Yes	Yes	Paired	Tumor	WES + RNA-Seq
+A489	GSK	1:DECEASED	16.16666667	72	Male	Chinese	Yes	III	Moderately differentiated	0.2	Micropapillary adenocarcinoma (82653)	No	No	No	Tumor	RNA-Seq
+A490	GSK	0:LIVING	99.36666667	59	Male	Chinese	No	II	Moderately differentiated	NA	Adenocarcinoma, NOS (81403)	Yes	Yes	Paired	Tumor	WES + RNA-Seq
+A492	GSK	1:DECEASED	55.66666667	47	Male	Chinese	Yes	I	Moderately differentiated	2.4	Acinar adenocarcinoma (85513)	Yes	Yes	Paired	Tumor	WES + RNA-Seq
+A493	GSK	1:DECEASED	48.36666667	58	Female	Chinese	No	I	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	Yes	Yes	Paired	Tumor	WES + RNA-Seq
+A494	GSK	0:LIVING	88.86666667	67	Female	Chinese	No	I	Well differentiated	NA	Papillary adenocarcinoma (82603)	No	No	Paired	No	WES
+A495	GSK	0:LIVING	92.46666667	53	Male	Chinese	No	III	Moderately differentiated	NA	Papillary adenocarcinoma (82603)	Yes	Yes	Paired	No	WES
+A496	GSK	0:LIVING	92.9	53	Female	Chinese	No	III	Moderately differentiated	NA	Adenocarcinoma, mixed subtypes	No	Yes	Paired	Tumor	WES + RNA-Seq
+A497	GSK	1:DECEASED	43.43333333	45	Female	Chinese	No	III	Moderately differentiated	NA	Solid adenocarcinoma (82303)	Yes	Yes	Paired	No	WES
+A499	GSK	0:LIVING	84.2	70	Male	Chinese	Yes	I	Moderately differentiated	29.0	Acinar adenocarcinoma (85513)	No	No	Paired	Tumor	WES + RNA-Seq
+A500	GSK	1:DECEASED	114.9	70	Female	Chinese	No	I	Moderately differentiated	NA	Adenocarcinoma, NOS (81403)	No	No	Paired	Tumor	WES + RNA-Seq
+A501	GSK	1:DECEASED	15.23333333	68	Female	Chinese	No	I	Poorly differentiated	NA	Solid adenocarcinoma (82303)	No	No	Paired	No	WES
+A502	GSK	0:LIVING	74.23333333	54	Female	Chinese	No	I	NA	NA	Acinar adenocarcinoma (85513)	Yes	No	Paired	No	WES
+A503	GSK	1:DECEASED	34.83333333	60	Female	Chinese	No	I	Moderately to Poorly differentiated	NA	Acinar adenocarcinoma (85513)	Yes	Yes	Paired	Tumor	WES + RNA-Seq
+A504	GSK	0:LIVING	29.53333333	72	Female	Chinese	No	I	Well differentiated	NA	Papillary adenocarcinoma (82603)	No	No	Paired	Tumor	WES + RNA-Seq
+A505	GSK	1:DECEASED	35.16666667	41	Female	Chinese	No	II	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	Yes	Yes	Paired	No	WES
+A295	GSK	0:LIVING	52.96666667	74	Female	Chinese	No	I	Moderately differentiated	NA	Papillary adenocarcinoma (82603)	No	No	Paired	No	WES
+A152	GSK	0:LIVING	80.5	59	Female	Chinese	No	IV	Poorly differentiated	NA	Adenocarcinoma, NOS (81403)	Yes	Yes	Paired	No	WES
+A015	GSK	1:DECEASED	28.73333333	69	Female	Chinese	No	II	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	Tumor	WES + RNA-Seq
+A062	GSK	0:LIVING	53.46666667	74	Male	Chinese	No	IV	Moderately to Poorly differentiated	NA	Acinar adenocarcinoma (85513)	Yes	Yes	Paired	Tumor	WES + RNA-Seq
+A037	GSK	0:LIVING	50.33333333	66	Female	Chinese	No	II	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	Tumor	WES + RNA-Seq
+A066	GSK	0:LIVING	51.33333333	72	Female	Chinese	No	I	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	Tumor	WES + RNA-Seq
+A310	GSK	0:LIVING	28.36666667	67	Male	Chinese	No	I	Well differentiated	NA	Minimally invasive adenocarcinoma, non-mucinous (82502)	No	No	Paired	Tumor	WES + RNA-Seq
+A320	GSK	0:LIVING	28.03333333	75	Female	Chinese	Yes	I	Moderately differentiated	2.25	Acinar adenocarcinoma (85513)	No	No	Paired	Tumor	WES + RNA-Seq
+A426	GSK	0:LIVING	26.96666667	65	Female	Chinese	No	I	Moderately differentiated	NA	Lepidic adenocarcinoma (82503)	No	No	Paired	Tumor	WES + RNA-Seq
+A381	GSK	0:LIVING	27.43333333	66	Male	Chinese	Yes	I	Moderately differentiated	15.75	Acinar adenocarcinoma (85513)	No	Yes	Paired	Tumor	WES + RNA-Seq
+A428	GSK	0:LIVING	21.86666667	66	Male	Chinese	No	II	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	Yes	Paired	Tumor	WES + RNA-Seq
+A430	GSK	1:DECEASED	13.13333333	70	Female	Chinese	No	III	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	Yes	Paired	Tumor	WES + RNA-Seq
+A432	GSK	0:LIVING	27.9	64	Female	Chinese	No	I	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	Yes	No	Paired	Tumor	WES + RNA-Seq
+A434	GSK	0:LIVING	26.83333333	67	Female	Chinese	No	II	Moderately differentiated	NA	Micropapillary adenocarcinoma (82653)	No	No	Paired	Tumor	WES + RNA-Seq
+A435	GSK	0:LIVING	26.53333333	68	Female	Chinese	No	II	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	Yes	No	Paired	Normal	WES + RNA-Seq
+A507	GSK	1:DECEASED	40.5	72	Female	Chinese	No	I	Well to Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	Normal	WES + RNA-Seq
+A508	GSK	1:DECEASED	22.96666667	71	Male	Chinese	Yes	III	Poorly differentiated	110.0	Adenocarcinoma, NOS (81403)	No	Yes	Paired	Tumor	WES + RNA-Seq
+A509	GSK	0:LIVING	59.46666667	75	Male	Chinese	Yes	II	Moderately differentiated	17.5	Acinar adenocarcinoma (85513)	No	No	Paired	Paired	WES + RNA-Seq
+A063	GSK	0:LIVING	51.13333333	70	Female	Chinese	No	I	Moderately differentiated	NA	Papillary adenocarcinoma (82603)	No	No	Paired	Tumor	WES + RNA-Seq
+A130	GSK	0:LIVING	47.36666667	66	Female	Chinese	No	I	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	No	WES
+A168	GSK	0:LIVING	21.73333333	64	Male	Chinese	No	III	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	Yes	Yes	Paired	Tumor	WES + RNA-Seq
+A433	GSK	0:LIVING	27.76666667	64	Female	Chinese	Yes	II	Poorly differentiated	4.41	Solid adenocarcinoma (82303)	No	Yes	Paired	Tumor	WES + RNA-Seq
+A513	GSK	1:DECEASED	7.6	65	Male	Chinese	Yes	IV	NA	21.0	Adenocarcinoma, NOS (81403)	No	Yes	Paired	No	WES
+A112	GSK	0:LIVING	49.06666667	61	Female	Chinese	No	I	Moderately differentiated	NA	Papillary adenocarcinoma (82603)	No	No	Paired	Paired	WES + RNA-Seq
+A114	GSK	0:LIVING	46.56666667	61	Female	Chinese	No	II	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	Yes	Yes	Paired	Normal	WES + RNA-Seq
+A111	GSK	0:LIVING	48.76666667	62	Female	Chinese	No	I	Moderately differentiated	NA	Papillary adenocarcinoma (82603)	No	No	Paired	Paired	WES + RNA-Seq
+A110	GSK	1:DECEASED	17.2	72	Male	Chinese	Yes	II	Moderately differentiated	24.0	Acinar adenocarcinoma (85513)	No	No	Paired	Tumor	WES + RNA-Seq
+A124	GSK	0:LIVING	46.46666667	68	Male	Chinese	Yes	I	Moderately differentiated	51.0	Acinar adenocarcinoma (85513)	No	No	Paired	Paired	WES + RNA-Seq
+A126	GSK	1:DECEASED	27.6	68	Male	Chinese	Yes	II	Moderately differentiated	41.25	Acinar adenocarcinoma (85513)	No	Yes	Paired	Paired	WES + RNA-Seq
+A511	GSK	0:LIVING	29.66666667	63	Male	Chinese	No	II	Poorly differentiated	NA	Solid adenocarcinoma (82303)	Yes	No	Paired	Paired	WES + RNA-Seq
+A512	GSK	0:LIVING	21.66666667	55	Male	Chinese	No	I	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	Paired	WES + RNA-Seq
+A514	GSK	0:LIVING	25.06666667	56	Female	Chinese	No	I	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	Yes	No	Paired	Tumor	WES + RNA-Seq
+A517	GSK	0:LIVING	24.76666667	68	Female	Chinese	No	III	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	Paired	WES + RNA-Seq
+A510	GSK	0:LIVING	23.5	73	Male	Chinese	No	III	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	Paired	WES + RNA-Seq
+A524	GSK	1:DECEASED	5.6333333329999995	73	Male	Chinese	Yes	I	Moderately differentiated	0.6	Acinar adenocarcinoma (85513)	Yes	Yes	Paired	Paired	WES + RNA-Seq
+A522	GSK	0:LIVING	21.3	63	Male	Chinese	Yes	I	NA	34.0	Invasive mucinous adenocarcinoma (82533)	No	No	Paired	Paired	WES + RNA-Seq
+A521	GSK	0:LIVING	22.43333333	55	Female	Chinese	No	I	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	Yes	No	Paired	Paired	WES + RNA-Seq
+A519	GSK	0:LIVING	24.06666667	69	Female	Chinese	Yes	III	Moderately differentiated	3.0	Acinar adenocarcinoma (85513)	Yes	No	Paired	Paired	WES + RNA-Seq
+A534	GSK	0:LIVING	21.2	77	Female	Chinese	No	I	Moderately differentiated	NA	Papillary adenocarcinoma (82603)	No	No	Paired	Paired	WES + RNA-Seq
+A530	GSK	0:LIVING	20.3	72	Female	Chinese	Yes	I	NA	36.0	Invasive mucinous adenocarcinoma (82533)	No	No	Paired	Paired	WES + RNA-Seq
+A532	GSK	0:LIVING	17.8	62	Male	Chinese	Yes	I	Moderately differentiated	61.5	Acinar adenocarcinoma (85513)	No	No	Paired	Paired	WES + RNA-Seq
+A538	GSK	0:LIVING	22.3	59	Female	Chinese	No	I	Moderately differentiated	NA	Acinar adenocarcinoma (85513)	No	No	Paired	Paired	WES + RNA-Seq
+A537	GSK	1:DECEASED	18.1	79	Male	Chinese	Yes	III	Poorly differentiated	54.0	Solid adenocarcinoma (82303)	No	Yes	Paired	Paired	WES + RNA-Seq

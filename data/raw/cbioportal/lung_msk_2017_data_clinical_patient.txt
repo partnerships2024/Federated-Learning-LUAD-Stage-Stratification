@@ -1,0 +1,865 @@
+#Patient Identifier	Diagnosis Age	Patient's Vital Status	Target Therapy	Immunotherapy	Chemotherapy	Clinical Trial	Overall Patient Histology	Smoking History	Sex	Durable Clinical Benefit
+#Identifier to uniquely specify a patient.	Age at which a condition or disease was first diagnosed.	The survival state of the person.	Did the patient recieve target therapy	Immunotherapy	Chemotherapy.	Clinical Trial	Overall Patient Histology	Indicates if person has a history of smoking.	Sex	Durable Clinical Benefit
+#STRING	NUMBER	STRING	STRING	STRING	STRING	STRING	STRING	STRING	STRING	STRING
+#1	1	1	1	1	1	1	1	1	1	1
+PATIENT_ID	AGE	VITAL_STATUS	TARGET_THERAPY	IMMUNE_TREATMENT	TREATMENT_CHEMOTHERAPY	CLINICAL_TRIAL	OVERALL_PATIENT_HISTOLOGY	SMOKING_HISTORY	SEX	DURABLE_CLINICAL_BENEFIT
+P-0000036	57	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0000082	56	AWD	YES	YES	YES	YES	Adenocarcinoma	Former heavy	Male	NO
+P-0000110	66	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0000133	79	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Female	NA
+P-0000149	50	DOD	YES	NO	YES	YES	Adenocarcinoma	Former light	Female	YES
+P-0000163	37	DOD	YES	NO	YES	YES	Adenocarcinoma	Former light	Female	NO
+P-0000165	62	DOD	YES	YES	YES	NO	Adenocarcinoma	Never	Female	NO
+P-0000205	54	DOD	YES	YES	YES	YES	Adenocarcinoma	Never	Female	NO
+P-0000208	68	DOD	YES	YES	NO	YES	Adenocarcinoma	Former light	Female	YES
+P-0000219	52	AWD	NO	NO	NO	NO	Adenocarcinoma	Former light	Female	NA
+P-0000231	27	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0000233	64	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0000239	80	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0000252	52	DOD	YES	NO	YES	YES	Adenocarcinoma	Former light	Female	NO
+P-0000260	74	DOD	NO	NO	YES	NO	Adenocarcinoma	Never	Female	NA
+P-0000263	62	DOD	NO	YES	YES	YES	Adenocarcinoma	Never	Female	NA
+P-0000280	54	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Female	YES
+P-0000289	84	AWD	YES	NO	YES	YES	Adenocarcinoma	Never	Male	NE
+P-0000301	29	DOD	YES	NO	YES	YES	Adenocarcinoma	Former light	Male	YES
+P-0000316	60	DOD	NO	YES	YES	YES	Adenocarcinoma	Never	Female	NA
+P-0000344	53	AWD	NO	NA	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0000347	63	AWD	YES	NO	NO	NO	Adenocarcinoma	Former light	Female	YES
+P-0000348	64	DOD	YES	NO	YES	NO	Adenocarcinoma	Never	Male	NO
+P-0000349	69	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0000352	46	DOD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0000370	64	DOD	YES	NO	YES	YES	Adenocarcinoma	Former light	Female	YES
+P-0000388	56	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0000390	50	DOD	YES	NO	NO	NO	Adenocarcinoma	Former light	Male	YES
+P-0000395	47	AWD	YES	NO	YES	YES	Adenocarcinoma	Former heavy	Male	NO
+P-0000405	42	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0000427	64	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0000458	63	DOD	YES	YES	YES	NO	Adenocarcinoma	Former heavy	Male	YES
+P-0000459	77	AWD	YES	YES	YES	YES	Adenocarcinoma	Former heavy	Male	NO
+P-0000474	31	AWD	YES	NO	NO	NO	Adenocarcinoma	Former light	Female	YES
+P-0000491	59	DOD	YES	NO	YES	YES	Adenocarcinoma	Former heavy	Male	NO
+P-0000531	57	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0000554	67	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0000557	76	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Male	YES
+P-0000563	41	DOD	NO	YES	YES	YES	Adenocarcinoma	Former light	Male	NA
+P-0000569	53	AWD	NO	NA	NA	NA	Adenocarcinoma	Never	Female	NA
+P-0000571	70	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0000580	68	AWD	YES	NO	YES	YES	Adenocarcinoma	Former heavy	Female	YES
+P-0000583	60	DOD	YES	NO	YES	YES	Adenocarcinoma	Former light	Female	YES
+P-0000594	55	DOD	YES	NO	YES	YES	Adenocarcinoma	Never	Male	YES
+P-0000602	67	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0000604	57	AWD	NO	YES	YES	YES	Adenocarcinoma	Never	Male	NA
+P-0000622	67	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0000626	65	DOD	YES	NO	NO	YES	Adenocarcinoma	Former heavy	Female	NO
+P-0000627	60	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0000628	51	DOD	YES	YES	YES	YES	Adenocarcinoma	Former light	Male	YES
+P-0000630	66	DOD	YES	NO	YES	YES	Adenocarcinoma	Never	Female	YES
+P-0000632	39	DOD	NO	NO	NO	NO	Adenocarcinoma	Former light	Male	NA
+P-0000636	53	AWD	YES	NO	YES	YES	Adenocarcinoma	Former light	Female	YES
+P-0000641	66	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0000642	65	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Male	NA
+P-0000670	49	AWD	NO	YES	YES	YES	Adenocarcinoma	Former light	Female	NA
+P-0000671	63	AWD	NO	NO	NO	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0000676	42	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0000681	66	AWD	YES	YES	YES	NO	Adenocarcinoma	Former heavy	Female	NO
+P-0000689	56	AWD	NO	YES	YES	YES	Adenocarcinoma	Former light	Male	NA
+P-0000702	73	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0000706	77	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0000726	73	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0000731	72	AWD	YES	YES	NO	YES	Adenocarcinoma	Former light	Female	YES
+P-0000732	75	AWD	YES	NO	NO	NO	Adenocarcinoma	Former heavy	Male	YES
+P-0000756	65	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0000765	59	DOD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0000774	74	DOD	YES	NO	YES	YES	Adenocarcinoma	Former heavy	Male	YES
+P-0000785	65	AWD	YES	NO	YES	NO	Adenocarcinoma	Former light	Female	NO
+P-0000789	70	DOD	NO	YES	YES	YES	Adenocarcinoma	Former heavy	Female	NA
+P-0000807	61	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0000808	58	DOD	NO	YES	YES	YES	Adenocarcinoma	Former light	Female	NA
+P-0000809	64	DOD	NO	NO	YES	NO	Adenocarcinoma	Never	Female	NA
+P-0000819	58	DOD	YES	NO	YES	NO	Adenocarcinoma	Former heavy	Male	YES
+P-0000825	49	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Female	NA
+P-0000831	56	DOD	NO	NO	YES	NO	Adenocarcinoma	Former light	Male	NA
+P-0000840	45	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0000867	64	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Male	NA
+P-0000873	63	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0000894	77	AWD	YES	YES	YES	NO	Adenocarcinoma	Never	Male	YES
+P-0000900	64	AWD	YES	NO	YES	YES	Adenocarcinoma	Former light	Male	YES
+P-0000903	68	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0000913	54	AWD	YES	YES	YES	YES	Adenocarcinoma	Never	Female	YES
+P-0000924	71	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0000929	56	DOD	YES	NO	YES	NO	Adenocarcinoma	Former light	Male	YES
+P-0000978	57	AWD	YES	YES	YES	YES	Adenocarcinoma	Never	Female	NO
+P-0000987	61	AWD	YES	NO	YES	YES	Adenocarcinoma	Never	Male	YES
+P-0000989	54	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0001010	64	AWD	YES	NO	YES	YES	Adenocarcinoma	Never	Female	YES
+P-0001037	74	AWD	YES	NO	YES	YES	Adenocarcinoma	Never	Female	YES
+P-0001089	64	DOD	YES	NO	YES	YES	Adenocarcinoma	Former heavy	Male	YES
+P-0001093	65	AWD	NO	YES	NO	YES	Adenocarcinoma	Former light	Male	NA
+P-0001097	59	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0001117	80	AWD	YES	NO	NO	NO	Adenocarcinoma	Former heavy	Male	YES
+P-0001123	71	AWD	YES	NO	YES	YES	Adenocarcinoma	Former light	Female	YES
+P-0001130	65	DOD	NO	NO	NO	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0001131	59	AWD	YES	NO	NO	NO	Adenocarcinoma	Former heavy	Female	YES
+P-0001154	56	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Male	NA
+P-0001155	39	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Male	NA
+P-0001163	82	DOD	NO	YES	YES	YES	Adenocarcinoma	Former heavy	Female	NA
+P-0001165	33	DOD	NO	NO	YES	NO	Adenocarcinoma	Never	Female	NA
+P-0001171	51	AWD	NO	YES	YES	YES	Adenocarcinoma	Former heavy	Male	NA
+P-0001189	61	DOD	YES	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NO
+P-0001199	76	DOD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0001208	62	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0001224	63	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NO
+P-0001241	83	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0001243	61	AWD	YES	NO	YES	YES	Adenocarcinoma	Never	Female	YES
+P-0001257	57	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0001269	67	DOD	YES	NO	YES	YES	Adenocarcinoma	Never	Female	YES
+P-0001296	68	AWD	YES	NO	YES	NO	Adenocarcinoma	Former light	Female	YES
+P-0001300	51	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0001303	64	AWD	YES	NO	YES	YES	Adenocarcinoma	Never	Female	YES
+P-0001309	43	AWD	YES	NO	YES	YES	Adenocarcinoma	Former heavy	Female	NO
+P-0001314	41	DOD	NO	YES	YES	NO	Adenocarcinoma	Never	Female	NA
+P-0001328	78	AWD	YES	NO	YES	YES	Adenocarcinoma	Never	Female	YES
+P-0001340	61	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0001357	69	AWD	YES	NO	YES	NO	Adenocarcinoma	Former heavy	Male	YES
+P-0001365	70	DOD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0001368	58	DOD	YES	NO	YES	NO	Adenocarcinoma	Never	Male	YES
+P-0001375	55	AWD	NO	NO	NO	NO	Adenocarcinoma	Current heavy	Female	NA
+P-0001380	66	DOD	NO	NO	YES	NO	Adenocarcinoma	Never	Female	NA
+P-0001381	66	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Male	NO
+P-0001385	50	AWD	NO	YES	NO	YES	Adenocarcinoma	Former heavy	Female	NA
+P-0001387	71	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0001389	45	AWD	YES	NO	YES	YES	Adenocarcinoma	Never	Female	YES
+P-0001390	53	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Male	NA
+P-0001397	73	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0001437	64	AWD	YES	NO	YES	YES	Adenocarcinoma	Former light	Female	YES
+P-0001442	56	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Male	YES
+P-0001443	60	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Male	NA
+P-0001532	51	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Female	YES
+P-0001546	86	AWD	YES	NO	YES	YES	Adenocarcinoma	Never	Female	N_stoppedSE
+P-0001550	57	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0001553	75	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0001571	65	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0001576	51	DOD	NO	NO	YES	NO	Adenocarcinoma	Never	Female	NA
+P-0001599	65	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0001613	60	DOD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0001625	62	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Male	YES
+P-0001633	53	DOD	NO	YES	YES	NO	Adenocarcinoma	Never	Female	NA
+P-0001665	47	AWD	NO	YES	YES	NO	Adenocarcinoma	Never	Female	NA
+P-0001683	69	AWD	NO	NO	NO	NO	Adenocarcinoma	Never	Female	NA
+P-0001707	53	DOD	YES	NO	YES	YES	Adenocarcinoma	Never	Male	YES
+P-0001722	75	AWD	YES	YES	YES	YES	Adenocarcinoma	Former heavy	Male	NO
+P-0001724	50	DOD	NO	NO	YES	YES	Adenocarcinoma	Former heavy	Male	NA
+P-0001745	56	AWD	YES	NO	NO	YES	Adenocarcinoma	Never	Female	await
+P-0001750	59	DOD	YES	NO	NO	NO	Adenocarcinoma	Never	Female	YES
+P-0001758	69	AWD	NO	YES	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0001766	54	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Female	YES
+P-0001782	41	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0001787	59	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0001811	49	DOD	YES	NO	YES	YES	Adenocarcinoma	Former light	Female	YES
+P-0001813	78	DOD	YES	NO	YES	YES	Adenocarcinoma	Former heavy	Male	NO
+P-0001817	40	DOD	YES	NO	NO	YES	Adenocarcinoma	Former light	Female	YES
+P-0001826	53	AWD	YES	NO	YES	YES	Adenocarcinoma	Never	Female	YES
+P-0001830	73	AWD	NO	YES	YES	YES	Adenocarcinoma	Former heavy	Female	NA
+P-0001832	64	AWD	YES	NO	YES	NO	Adenocarcinoma	Former light	Female	YES
+P-0001833	63	DOD	YES	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NO
+P-0001836	59	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0001837	42	DOD	NO	NO	YES	NO	Adenocarcinoma	Never	Female	NA
+P-0001840	37	DOD	YES	NO	YES	YES	Adenocarcinoma	Never	Female	NO
+P-0001891	56	DOD	NO	NO	NO	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0001894	71	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Female	YES
+P-0001898	52	DUK	NO	NO	NO	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0001916	58	DOD	NO	NO	YES	NO	Adenocarcinoma	Current heavy	Female	NA
+P-0001927	76	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NO
+P-0001945	53	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0001955	29	AWD	YES	YES	YES	YES	Adenocarcinoma	Never	Female	NO
+P-0001972	77	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0001977	78	DOD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0001986	58	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0001987	50	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0002000	64	AWD	YES	NO	YES	YES	Adenocarcinoma	Former light	Female	YES
+P-0002001	58	DOD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0002016	71	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0002024	62	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Male	YES
+P-0002026	83	AWD	YES	NO	YES	NO	Adenocarcinoma	Former light	Male	YES
+P-0002033	59	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0002038	70	DOD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0002046	70	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Male	NO
+P-0002060	74	DUK	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0002069	59	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0002079	75	DOD	YES	NO	YES	NO	Adenocarcinoma	Never	Male	NO
+P-0002081	55	DOD	NO	NO	NO	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0002085	62	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0002091	38	AWD	YES	NO	NO	YES	Adenocarcinoma	Former light	Female	YES
+P-0002105	62	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0002117	29	AWD	YES	NO	YES	YES	Adenocarcinoma	Never	Female	YES
+P-0002126	60	DOD	NO	YES	YES	YES	Adenocarcinoma	Never	Male	NA
+P-0002151	70	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0002153	67	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0002156	79	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0002160	65	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0002163	63	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0002187	72	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0002207	75	DUK	YES	NO	NO	NO	Adenocarcinoma	Former light	Male	NO
+P-0002217	46	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Male	YES
+P-0002218	65	AWD	YES	NO	NO	YES	Adenocarcinoma	Never	Female	YES
+P-0002247	61	AWD	NO	YES	YES	YES	Adenocarcinoma	Former heavy	Female	NA
+P-0002266	67	DOD	YES	NO	YES	NO	Adenocarcinoma	Never	Male	YES
+P-0002275	83	DOD	YES	NO	YES	YES	Adenocarcinoma	Never	Female	YES
+P-0002278	54	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0002295	68	DOD	NO	YES	YES	YES	Adenocarcinoma	Never	Female	NA
+P-0002309	46	DOD	YES	NO	NO	YES	Adenocarcinoma	Former heavy	Male	YES
+P-0002320	56	AWD	YES	YES	YES	NO	Adenocarcinoma	Never	Male	NO
+P-0002329	58	AWD	YES	NO	YES	NO	Adenocarcinoma	Former heavy	Male	YES
+P-0002340	65	DOD	NO	NO	NO	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0002359	70	DOD	NO	YES	YES	YES	Adenocarcinoma	Former heavy	Female	NA
+P-0002403	53	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0002408	76	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Male	YES
+P-0002412	77	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0002420	63	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0002423	59	DOD	NO	NO	YES	NO	Adenocarcinoma	Never	Male	NO
+P-0002425	23	AWD	YES	NO	YES	NO	Adenocarcinoma	Former light	Male	NO
+P-0002426	55	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Female	YES
+P-0002434	66	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0002446	58	DOD	YES	NO	YES	NO	Adenocarcinoma	Never	Male	NO
+P-0002451	57	AWD	NO	NO	NO	NO	Adenocarcinoma	Former light	Female	NA
+P-0002459	62	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0002489	78	DOD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NO
+P-0002491	42	AWD	YES	NO	YES	YES	Adenocarcinoma	Never	Female	YES
+P-0002506	58	AWD	YES	NO	YES	YES	Adenocarcinoma	Never	Female	YES
+P-0002523	70	DOD	YES	NO	YES	NO	Adenocarcinoma	Former light	Female	YES
+P-0002524	72	AWD	YES	NO	NO	YES	Adenocarcinoma	Former light	Female	YES
+P-0002534	72	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0002548	82	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0002551	66	AWD	NO	YES	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0002557	35	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Female	YES
+P-0002559	36	AWD	NO	YES	YES	YES	Adenocarcinoma	Never	Female	NA
+P-0002571	81	DOD	NO	NO	NO	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0002580	47	DOD	YES	NO	NO	YES	Adenocarcinoma	Never	Male	YES
+P-0002605	77	DOD	NO	NO	NO	NO	Adenocarcinoma	Former heavy	Female	NO
+P-0002611	50	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0002613	59	AWD	YES	NO	YES	NO	Adenocarcinoma	Former heavy	Female	YES
+P-0002616	84	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0002631	67	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0002635	65	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0002639	65	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0002646	41	DOD	NO	YES	YES	YES	Adenocarcinoma	Never	Male	NA
+P-0002650	66	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Male	NA
+P-0002663	84	DOD	NO	NO	YES	NO	Adenocarcinoma	Never	Male	NA
+P-0002677	74	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0002683	73	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0002694	41	AWD	YES	NO	YES	YES	Adenocarcinoma	Never	Female	YES
+P-0002707	50	AWD	YES	NO	YES	YES	Adenocarcinoma	Never	Female	YES
+P-0002718	68	DOD	NO	NO	YES	YES	Adenocarcinoma	Former heavy	Male	NA
+P-0002725	63	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0002731	63	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0002751	68	AWD	NO	YES	YES	YES	Adenocarcinoma	Former heavy	Female	NA
+P-0002766	55	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0002768	37	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0002780	58	DUK	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0002783	64	DOD	YES	NO	NO	YES	Adenocarcinoma	Never	Male	YES
+P-0002794	60	AWD	NO	YES	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0002806	80	AWD	NO	YES	YES	YES	Adenocarcinoma	Former heavy	Male	NA
+P-0002823	66	AWD	NO	NO	NO	NO	Adenocarcinoma	Never	Female	NA
+P-0002826	59	DOD	NO	YES	YES	YES	Adenocarcinoma	Former heavy	Female	NA
+P-0002837	61	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0002842	67	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0002846	71	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Male	NA
+P-0002850	55	DOD	NO	NO	YES	YES	Adenocarcinoma	Former heavy	Male	NA
+P-0002861	44	DOD	YES	NO	YES	NO	Adenocarcinoma	Former light	Female	YES
+P-0002872	57	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0002873	55	DOD	YES	NO	YES	YES	Adenocarcinoma	Former heavy	Male	YES
+P-0002874	54	DOD	NO	YES	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0002876	53	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	NO
+P-0002877	63	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0002886	77	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0002890	37	DOD	YES	NO	YES	YES	Adenocarcinoma	Never	Female	YES
+P-0002893	70	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0002904	57	AWD	NO	NO	NO	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0002905	69	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0002912	18	AWD	NO	YES	YES	YES	Adenocarcinoma	Never	Male	NA
+P-0002916	34	AWD	YES	YES	YES	YES	Adenocarcinoma	Never	Female	NO
+P-0002917	48	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0002921	70	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Female	NA
+P-0002954	64	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0002955	70	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0002956	55	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0002957	58	AWD	NO	YES	YES	YES	Adenocarcinoma	Former heavy	Female	NA
+P-0002969	53	DOD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0002989	67	DOD	NO	NO	YES	NO	Adenocarcinoma	Former light	Male	NA
+P-0002996	61	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0003013	76	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0003017	78	AWD	NO	YES	YES	YES	Adenocarcinoma	Never	Female	NA
+P-0003030	56	DOD	YES	NO	YES	YES	Adenocarcinoma	Former light	Female	YES
+P-0003034	78	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0003055	57	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Male	NO
+P-0003070	46	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Female	YES
+P-0003107	67	AWD	YES	NO	YES	NO	Adenocarcinoma	Former light	Male	N
+P-0003116	84	AWD	YES	NO	YES	NO	Adenocarcinoma	Former heavy	Female	YES
+P-0003119	51	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0003125	42	AWD	YES	NO	YES	YES	Adenocarcinoma	Never	Male	YES
+P-0003129	74	AWD	NO	YES	YES	YES	Adenocarcinoma	Former heavy	Female	NA
+P-0003156	77	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Male	YES
+P-0003165	42	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0003169	83	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Male	YES
+P-0003196	55	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0003201	40	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Male	NA
+P-0003202	55	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0003206	75	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Female	YES
+P-0003207	53	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Male	NA
+P-0003213	77	DOD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	NO
+P-0003222	67	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0003229	54	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0003240	76	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0003243	64	DUK	YES	NO	YES	NO	Adenocarcinoma	Former heavy	Female	YES
+P-0003247	71	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0003250	51	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0003274	62	AWD	YES	NO	NO	YES	Adenocarcinoma	Former light	Female	YES
+P-0003275	67	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0003276	64	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0003278	54	DOD	YES	YES	YES	YES	Adenocarcinoma	Current heavy	Female	NO
+P-0003282	74	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Female	NA
+P-0003297	75	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Female	YES
+P-0003302	70	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0003303	69	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0003314	66	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0003316	71	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0003322	71	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Female	NO
+P-0003324	63	AWD	NO	NO	NO	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0003357	48	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	YES
+P-0003368	55	AWD	NO	YES	YES	YES	Adenocarcinoma	Former heavy	Female	NA
+P-0003383	65	AWD	YES	NO	NO	NO	Adenocarcinoma	Former light	Male	NO
+P-0003425	64	DOD	YES	NO	YES	YES	Adenocarcinoma	Never	Female	YES
+P-0003444	83	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0003446	34	AWD	YES	NO	NO	NO	Adenocarcinoma	Former light	Male	YES
+P-0003460	63	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0003465	78	DOD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0003479	65	AWD	YES	NO	YES	NO	Adenocarcinoma	Former heavy	Male	YES
+P-0003480	80	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Female	YES
+P-0003495	87	AWD	YES	YES	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0003502	74	DOD	YES	NO	YES	YES	Adenocarcinoma	Former light	Male	YES
+P-0003505	55	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0003523	50	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0003527	55	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Male	NA
+P-0003531	79	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Female	NA
+P-0003537	77	DOD	NO	YES	YES	YES	Adenocarcinoma	Former heavy	Male	NA
+P-0003553	69	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0003562	60	AWD	NO	YES	NO	YES	Adenocarcinoma	Former heavy	Male	NA
+P-0003573	70	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0003584	59	AWD	NO	YES	YES	YES	Adenocarcinoma	Former heavy	Female	NA
+P-0003586	70	DOD	NO	NO	NO	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0003595	58	AWD	YES	NO	YES	NO	Adenocarcinoma	Former light	Female	YES
+P-0003628	60	AWD	YES	YES	YES	NO	Adenocarcinoma	Former light	Male	YES
+P-0003632	73	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0003635	57	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0003648	75	AWD	NO	NO	NO	NO	Adenocarcinoma	Former light	Female	NA
+P-0003654	70	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Female	YES
+P-0003666	75	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NO
+P-0003670	64	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0003709	70	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0003714	86	DOD	YES	NO	NO	NO	Adenocarcinoma	Never	Female	YES
+P-0003715	58	AWD	NO	NO	YES	YES	Adenocarcinoma	Former heavy	Female	NA
+P-0003718	67	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Male	NA
+P-0003722	73	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0003732	76	DOD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0003735	66	AWD	YES	NO	YES	YES	Adenocarcinoma	Former light	Female	YES
+P-0003738	56	AWD	NO	YES	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0003750	64	AWD	YES	NO	YES	YES	Adenocarcinoma	Former heavy	Female	YES
+P-0003752	67	AWD	YES	NO	NO	YES	Adenocarcinoma	Never	Female	YES
+P-0003773	58	AWD	YES	YES	NO	YES	Adenocarcinoma	Never	Female	YES
+P-0003782	56	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0003854	49	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0003861	68	DOD	NO	NO	YES	NA	Adenocarcinoma	Former light	Male	NO
+P-0003863	65	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0003879	83	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0003913	42	DOD	YES	YES	YES	YES	Adenocarcinoma	Never	Female	YES
+P-0003923	67	AWD	YES	NO	YES	YES	Adenocarcinoma	Former heavy	Female	YES
+P-0003937	73	DUK	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0003964	72	DOD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0003967	69	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	NO
+P-0003970	44	AWD	YES	NO	YES	YES	Adenocarcinoma	Never	Female	YES
+P-0003995	71	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0004020	57	AWD	NO	YES	YES	YES	Adenocarcinoma	Former heavy	Female	NA
+P-0004030	82	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0004045	72	DOD	NO	NO	YES	NO	Adenocarcinoma	Never	Female	NA
+P-0004054	60	AWD	NO	YES	YES	NO	Adenocarcinoma	Former light	Male	NA
+P-0004066	52	AWD	YES	NO	YES	NO	Adenocarcinoma	Former light	Male	YES
+P-0004067	80	DOD	NO	NO	NO	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0004087	58	DOD	NO	NO	NO	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0004099	57	DOD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Male	NO
+P-0004103	38	AWD	YES	YES	YES	YES	Adenocarcinoma	Former heavy	Female	NO
+P-0004108	69	DOD	NO	NO	YES	NO	Adenocarcinoma	Never	Male	NO
+P-0004110	49	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0004113	77	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0004114	47	DOD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0004117	55	AWD	YES	NO	YES	YES	Adenocarcinoma	Former heavy	Male	YES
+P-0004120	56	AWD	NO	YES	YES	YES	Adenocarcinoma	Never	Female	NA
+P-0004123	68	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Male	YES
+P-0004124	48	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0004129	60	AWD	YES	NO	NO	NO	Adenocarcinoma	Former heavy	Male	YES
+P-0004131	83	DOD	NO	NO	NO	NO	Adenocarcinoma	Current heavy	Female	NA
+P-0004146	86	DOD	YES	NO	YES	NO	Adenocarcinoma	Never	Male	YES
+P-0004169	76	DOD	NO	NO	NO	NO	Adenocarcinoma	Never	Female	NA
+P-0004189	70	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0004207	58	AWD	NO	NO	YES	YES	Adenocarcinoma	Never	Female	NA
+P-0004218	57	AWD	YES	NO	YES	YES	Adenocarcinoma	Never	Female	YES
+P-0004232	66	AWD	YES	YES	YES	NO	Adenocarcinoma	Former heavy	Male	YES
+P-0004238	64	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Female	YES
+P-0004250	68	AWD	NO	NO	YES	NO	Adenocarcinoma	Current heavy	Female	NA
+P-0004279	58	AWD	NO	YES	YES	NO	Adenocarcinoma	Never	Female	NO
+P-0004303	58	AWD	YES	NO	YES	YES	Adenocarcinoma	Never	Female	YES
+P-0004315	85	DOD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0004318	73	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0004324	63	AWD	NO	NO	NO	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0004327	55	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0004328	61	AWD	YES	NO	NO	YES	Adenocarcinoma	Former light	Male	YES
+P-0004336	53	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Female	NA
+P-0004339	51	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Female	NA
+P-0004342	74	AWD	YES	YES	NO	YES	Adenocarcinoma	Never	Female	YES
+P-0004344	60	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Female	YES
+P-0004361	66	NED	NO	NO	NO	NO	Adenocarcinoma	Former light	Female	NA
+P-0004378	60	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0004382	77	DOD	NO	NO	NO	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0004395	64	AWD	YES	NO	YES	NO	Adenocarcinoma	Former heavy	Female	YES
+P-0004410	57	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0004414	65	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Male	NA
+P-0004421	73	AWD	YES	NO	YES	YES	Adenocarcinoma	Former heavy	Female	YES
+P-0004432	53	DOD	YES	NO	YES	YES	Adenocarcinoma	Former heavy	Male	YES
+P-0004436	74	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0004442	61	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0004463	82	AWD	NO	YES	YES	NO	Adenocarcinoma	Never	Male	NA
+P-0004472	61	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0004476	67	AWD	NO	YES	YES	YES	Adenocarcinoma	Former heavy	Female	NA
+P-0004488	77	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0004496	46	AWD	YES	NO	NO	YES	Adenocarcinoma	Never	Female	YES
+P-0004516	61	AWD	YES	NO	YES	YES	Adenocarcinoma	Never	Male	YES
+P-0004588	72	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0004591	69	DOD	NO	YES	YES	YES	Adenocarcinoma	Former heavy	Male	NA
+P-0004607	63	DOD	YES	NO	NO	NO	Adenocarcinoma	Never	Male	NO
+P-0004612	73	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0004613	60	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0004615	63	DUK	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0004643	68	AWD	NO	YES	YES	YES	Adenocarcinoma	Former heavy	Male	NA
+P-0004658	79	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0004659	66	DOD	NO	YES	YES	YES	Adenocarcinoma	Former heavy	Male	NA
+P-0004687	82	DOD	NO	NO	NO	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0004693	73	DOD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0004695	58	DOD	YES	NO	YES	NO	Adenocarcinoma	Never	Male	YES
+P-0004699	75	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0004707	50	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0004709	64	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0004710	50	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0004718	66	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Female	NA
+P-0004725	69	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0004729	78	AWD	YES	NO	NO	YES	Adenocarcinoma	Former heavy	Female	YES
+P-0004739	41	AWD	YES	NO	NO	YES	Adenocarcinoma	Former heavy	Female	YES
+P-0004743	73	AWD	YES	NO	YES	NO	Adenocarcinoma	Former light	Female	YES
+P-0004747	50	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0004752	82	AWD	YES	YES	YES	YES	Adenocarcinoma	Never	Male	YES
+P-0004759	62	DOD	NO	YES	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0004790	47	DOD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0004802	68	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0004847	47	AWD	YES	NO	YES	NO	Adenocarcinoma	Former light	Female	YES
+P-0004861	68	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0004875	75	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0004890	68	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0004891	51	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0004927	61	AWD	YES	YES	YES	YES	Adenocarcinoma	Never	Female	YES
+P-0004934	76	AWD	NO	NO	NO	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0004961	67	AWD	YES	NO	YES	NO	Adenocarcinoma	Former light	Female	YES
+P-0004988	55	DOD	NO	YES	YES	YES	Adenocarcinoma	Former heavy	Female	NA
+P-0004993	58	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0004995	63	DOD	NO	NO	YES	NO	Adenocarcinoma	Never	Male	NA
+P-0005002	74	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0005017	78	AWD	YES	NO	NO	NO	Adenocarcinoma	Former light	Female	YES
+P-0005020	76	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0005024	80	DOD	NO	NO	NO	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0005034	60	DOD	YES	NO	YES	YES	Adenocarcinoma	Former light	Male	YES
+P-0005048	67	AWD	NO	YES	YES	YES	Adenocarcinoma	Never	Female	NA
+P-0005059	29	AWD	YES	NO	NO	NO	Adenocarcinoma	Former light	Male	YES
+P-0005063	56	AWD	YES	NO	NO	NO	Adenocarcinoma	Former light	Female	YES
+P-0005069	87	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Male	YES
+P-0005080	75	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0005114	39	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Female	YES
+P-0005123	56	AWD	YES	NO	YES	NO	Adenocarcinoma	Former light	Female	NO
+P-0005148	59	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Male	YES
+P-0005170	73	NED	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0005173	56	DOD	NO	YES	YES	YES	Adenocarcinoma	Former heavy	Female	NA
+P-0005178	50	AWD	YES	YES	YES	YES	Adenocarcinoma	Never	Female	YES
+P-0005179	70	AWD	YES	YES	YES	YES	Adenocarcinoma	Former heavy	Female	YES
+P-0005194	50	NED	NO	NO	NO	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0005223	64	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0005252	79	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0005259	63	AWD	YES	YES	NO	YES	Adenocarcinoma	Former light	Male	YES
+P-0005261	69	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0005264	74	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Male	YES
+P-0005277	37	AWD	YES	NO	YES	YES	Adenocarcinoma	Never	Female	NO
+P-0005282	60	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0005286	74	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	NO
+P-0005289	65	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0005295	72	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0005316	64	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0005320	46	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0005321	41	AWD	NO	NO	YES	YES	Adenocarcinoma	Never	Female	NA
+P-0005337	67	AWD	YES	NO	NO	NO	Adenocarcinoma	Former light	Male	YES
+P-0005380	66	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0005393	62	AWD	YES	NO	NO	NO	Adenocarcinoma	Former heavy	Female	YES
+P-0005464	65	AWD	YES	NO	YES	YES	Adenocarcinoma	Never	Female	YES
+P-0005467	53	AWD-M	YES	NO	NO	NO	Adenocarcinoma	Never	Male	YES
+P-0005476	61	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0005483	57	AWD	YES	YES	YES	YES	Adenocarcinoma	Former light	Female	NO
+P-0005504	48	AWD	NO	YES	YES	YES	Adenocarcinoma	Never	Female	NA
+P-0005510	66	AWD	NO	YES	YES	YES	Adenocarcinoma	Former heavy	Female	NA
+P-0005527	64	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0005533	54	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Male	NA
+P-0005537	83	AWD	NO	NO	NO	NO	Adenocarcinoma	Former light	Male	NA
+P-0005553	48	AWD	YES	NO	YES	NO	Adenocarcinoma	Former light	Male	YES
+P-0005562	66	AWD	NO	YES	YES	NO	Adenocarcinoma	Never	Male	NA
+P-0005573	36	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0005629	80	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0005633	63	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Male	NA
+P-0005645	67	AWD	NO	YES	YES	YES	Adenocarcinoma	Former heavy	Female	NA
+P-0005721	78	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0005734	71	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0005738	9	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Female	NA
+P-0005743	44	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Male	YES
+P-0005752	64	DOD	YES	NO	YES	YES	Adenocarcinoma	Former light	Male	NO
+P-0005763	60	AWD	YES	YES	YES	YES	Adenocarcinoma	Former heavy	Male	YES
+P-0005845	74	AWD	NO	NO	NO	NO	Adenocarcinoma	Former light	Female	NA
+P-0005848	75	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0005849	55	DOD	NO	NO	YES	NO	Adenocarcinoma	Current heavy	Female	NA
+P-0005851	80	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0005863	77	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0005868	68	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0005871	46	AWD	YES	YES	YES	YES	Adenocarcinoma	Never	Male	NO
+P-0005872	73	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0005895	69	AWD	YES	NO	YES	NO	Adenocarcinoma	Former light	Female	NO
+P-0005897	43	DOD	YES	YES	YES	NO	Adenocarcinoma	Never	Male	NO
+P-0005903	73	DOD	NO	NO	NO	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0005914	63	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0005921	59	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0005925	56	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0005962	60	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Male	NA
+P-0005974	52	DOD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0005981	58	AWD	NO	YES	YES	YES	Adenocarcinoma	Former heavy	Male	NA
+P-0005985	50	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Female	YES
+P-0005990	78	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0006021	76	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0006046	58	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0006047	60	AWD	NO	YES	YES	NO	Adenocarcinoma	Never	Female	NA
+P-0006065	77	AWD	YES	NO	NO	NO	Adenocarcinoma	Former light	Female	YES
+P-0006071	52	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0006084	61	AWD	NO	YES	YES	NO	Adenocarcinoma	Never	Male	NA
+P-0006088	78	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0006094	63	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0006105	53	NED-M	YES	NO	YES	NO	Adenocarcinoma	Never	Male	YES
+P-0006114	53	AWD	YES	NO	YES	YES	Adenocarcinoma	Never	Female	YES
+P-0006116	76	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0006123	54	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0006133	75	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0006134	56	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0006149	73	AWD	NO	NO	NO	NO	Adenocarcinoma	Never	Male	NA
+P-0006151	53	NED-M	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0006171	48	DOD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0006175	81	DOD	NO	NO	NO	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0006198	81	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Female	YES
+P-0006199	78	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0006206	59	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0006221	46	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0006268	70	AWD	YES	YES	YES	YES	Adenocarcinoma	Former light	Male	YES
+P-0006289	63	DOD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0006290	65	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0006292	75	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0006294	62	AWD	NO	NO	YES	YES	Adenocarcinoma	Former heavy	Female	NA
+P-0006311	58	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0006312	50	AWD	NO	YES	YES	YES	Adenocarcinoma	Never	Female	NA
+P-0006314	69	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0006321	63	DOD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0006341	61	AWD	NO	NO	NO	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0006343	60	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0006364	63	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0006397	93	AWD	YES	NO	NO	NO	Adenocarcinoma	Former heavy	Female	YES
+P-0006402	63	AWD	YES	NO	YES	NO	Adenocarcinoma	Former light	Female	YES
+P-0006415	85	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Male	NA
+P-0006457	84	AWD	NO	NO	NO	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0006474	64	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0006516	72	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0006561	49	AWD	YES	YES	NO	YES	Adenocarcinoma	Never	Female	YES
+P-0006569	56	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Female	YES
+P-0006572	72	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0006582	72	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0006588	68	NED-M	NO	NO	NO	NO	Adenocarcinoma	Never	Female	NA
+P-0006596	69	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0006606	77	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0006607	58	AWD	NO	NO	NO	NO	Adenocarcinoma	Never	Male	NA
+P-0006637	58	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0006642	67	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0006663	62	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0006671	61	AWD	YES	NO	YES	YES	Adenocarcinoma	Former light	Female	YES
+P-0006713	48	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0006718	63	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0006720	64	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	NO
+P-0006724	47	AWD	NO	NO	YES	NO	Adenocarcinoma	Current heavy	Female	NA
+P-0006728	75	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0006779	90	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0006783	74	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0006789	61	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	NO
+P-0006810	65	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Female	YES
+P-0006814	73	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0006844	59	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	NO
+P-0006855	58	AWD	NO	YES	YES	YES	Adenocarcinoma	Former light	Female	NA
+P-0006878	76	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0006883	58	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Female	YES
+P-0006886	77	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Male	YES
+P-0006895	64	AWD	NO	NO	YES	YES	Adenocarcinoma	Former heavy	Male	NA
+P-0006896	67	DOD	NO	YES	YES	YES	Adenocarcinoma	Former heavy	Male	NA
+P-0006913	72	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Male	NA
+P-0006915	67	AWD	YES	NO	YES	NO	Adenocarcinoma	Former heavy	Female	YES
+P-0006921	35	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Male	NA
+P-0006924	47	AWD	YES	NO	YES	YES	Adenocarcinoma	Never	Female	YES
+P-0006942	75	DOD	NO	NO	NO	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0006950	61	AWD	YES	NO	YES	YES	Adenocarcinoma	Former light	Female	YES
+P-0006954	65	DOD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0006964	29	NED-M	NO	NO	YES	NO	Adenocarcinoma	Former light	Male	NA
+P-0006979	54	DOD	NO	NO	NO	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0006993	65	DOD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0006995	52	AWD	YES	NO	YES	YES	Adenocarcinoma	Never	Female	YES
+P-0007026	78	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0007031	64	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0007044	78	AWD	NO	YES	YES	YES	Adenocarcinoma	Former heavy	Female	NA
+P-0007051	70	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0007054	66	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Female	NA
+P-0007057	71	AWD	YES	NO	YES	NO	Adenocarcinoma	Former heavy	Female	YES
+P-0007082	72	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Female	YES
+P-0007084	82	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Male	NA
+P-0007088	41	AWD	YES	YES	YES	YES	Adenocarcinoma	Former light	Female	YES
+P-0007099	76	DOD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0007101	75	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0007108	52	DOD	NO	NO	YES	NO	Adenocarcinoma	Never	Male	NA
+P-0007114	75	DOD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0007119	60	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Male	NA
+P-0007123	65	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0007125	54	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0007131	50	DOD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0007167	62	NED-M	YES	NO	NO	NO	Adenocarcinoma	Never	Male	YES
+P-0007170	68	DOD	NO	NO	YES	NO	Adenocarcinoma	Current heavy	Female	NA
+P-0007174	77	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0007211	67	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Male	NA
+P-0007234	44	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0007236	63	AWD	NO	NO	YES	NO	Adenocarcinoma	Current heavy	Male	NA
+P-0007239	81	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NO
+P-0007240	75	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0007266	53	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0007278	53	AWD	NO	YES	YES	YES	Adenocarcinoma	Former heavy	Female	NA
+P-0007304	72	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0007309	51	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0007320	66	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0007322	60	AWD	YES	NO	NO	YES	Adenocarcinoma	Former heavy	Female	YES
+P-0007341	62	AWD	NO	YES	YES	NO	Adenocarcinoma	Never	Male	NA
+P-0007413	56	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0007418	56	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0007420	82	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0007422	74	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0007487	84	AWD	NO	NO	NO	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0007491	70	DOD	NO	NO	YES	NO	Adenocarcinoma	Never	Male	NA
+P-0007500	69	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0007507	49	AWD	YES	NO	NO	NO	Adenocarcinoma	Former light	Female	YES
+P-0007508	69	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Male	YES
+P-0007509	55	AWD	NO	YES	NO	YES	Adenocarcinoma	Former heavy	Female	NA
+P-0007525	64	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Female	NA
+P-0007534	72	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Male	NA
+P-0007549	61	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0007580	60	AWD	YES	NO	YES	YES	Adenocarcinoma	Former light	Female	NO
+P-0007582	81	DOD	YES	YES	YES	NO	Adenocarcinoma	Never	Male	NO
+P-0007583	68	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0007587	73	AWD	YES	NO	NO	NO	Adenocarcinoma	Former heavy	Female	YES
+P-0007597	72	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0007619	76	DOD	NO	YES	YES	NO	Adenocarcinoma	Never	Male	NA
+P-0007633	76	AWD	NO	YES	YES	YES	Adenocarcinoma	Never	Male	NA
+P-0007643	68	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0007663	72	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0007665	55	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0007681	71	AWD	YES	NO	NO	YES	Adenocarcinoma	Never	Male	YES
+P-0007745	42	AWD	YES	NO	NO	NO	Adenocarcinoma	Former light	Female	YES
+P-0007753	70	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0007754	75	AWD	YES	NO	NO	NO	Adenocarcinoma	Former light	Male	YES
+P-0007775	73	AWD	YES	NO	NO	YES	Adenocarcinoma	Former heavy	Female	YES
+P-0007788	63	AWD	YES	NO	NO	YES	Adenocarcinoma	Former heavy	Female	YES
+P-0007813	72	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0007841	44	AWD	YES	NO	NO	YES	Adenocarcinoma	Never	Female	YES
+P-0007861	73	AWD	NO	YES	YES	NO	Adenocarcinoma	Never	Female	NA
+P-0007864	40	AWD	YES	NO	YES	YES	Adenocarcinoma	Never	Female	YES
+P-0007870	37	AWD	YES	NO	YES	YES	Adenocarcinoma	Never	Male	YES
+P-0007879	66	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0007904	85	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Female	YES
+P-0007911	89	AWD	NO	NO	NO	NO	Adenocarcinoma	Never	Female	NA
+P-0007916	67	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0007977	68	DOD	YES	YES	YES	NO	Adenocarcinoma	Former heavy	Female	NO
+P-0007978	49	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0008078	74	AWD	YES	NO	NO	NO	Adenocarcinoma	Former light	Female	YES
+P-0008101	66	AWD	YES	NO	YES	YES	Adenocarcinoma	Never	Male	NO
+P-0008126	67	AWD	NO	YES	NO	YES	Adenocarcinoma	Former heavy	Male	NA
+P-0008131	65	AWD	YES	NO	NO	YES	Adenocarcinoma	Former heavy	Female	await
+P-0008132	40	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0008134	48	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0008152	68	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0008158	62	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0008160	63	AWD	YES	YES	NO	YES	Adenocarcinoma	Former light	Male	NO
+P-0008161	81	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0008176	69	AWD	NO	YES	YES	NO	Adenocarcinoma	Never	Female	NA
+P-0008261	58	AWD	NO	NO	NO	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0008282	61	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NO
+P-0008285	66	AWD	YES	NO	NO	YES	Adenocarcinoma	Never	Female	await
+P-0008291	82	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0008295	57	AWD	NO	YES	YES	NO	Adenocarcinoma	Former light	Male	NA
+P-0008297	54	AWD	NO	NO	NO	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0008307	76	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0008310	63	DOD	YES	NO	NO	YES	Adenocarcinoma	Never	Female	YES
+P-0008322	62	AWD	YES	YES	YES	NO	Adenocarcinoma	Former heavy	Male	YES
+P-0008324	76	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Female	NA
+P-0008332	51	AWD	YES	YES	YES	YES	Adenocarcinoma	Never	Female	YES
+P-0008359	57	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0008404	63	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0008406	66	AWD	NO	YES	YES	YES	Adenocarcinoma	Former light	Female	NA
+P-0008419	74	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0008426	68	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Female	NO
+P-0008427	54	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Female	await
+P-0008428	83	AWD	NO	NO	NO	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0008438	61	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0008442	64	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	NO
+P-0008465	65	AWD	NO	NO	YES	NO	Adenocarcinoma	Current heavy	Male	NA
+P-0008472	57	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Male	NA
+P-0008476	64	AWD	YES	NO	YES	YES	Adenocarcinoma	Former light	Female	YES
+P-0008485	67	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0008487	45	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0008539	62	AWD	NO	NO	NO	NO	Adenocarcinoma	Former light	Female	NA
+P-0008549	61	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Female	YES
+P-0008589	51	AWD	YES	YES	YES	YES	Adenocarcinoma	Never	Female	YES
+P-0008599	75	AWD	YES	NO	NO	?	Adenocarcinoma	Former light	Male	YES
+P-0008602	54	AWD	YES	NO	NO	NO	Adenocarcinoma	Former light	Female	YES
+P-0008657	66	AWD	NO	NA	NA	NA	Adenocarcinoma	Former heavy	Male	NA
+P-0008665	55	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Male	YES
+P-0008678	71	AWD	YES	NO	YES	YES	Adenocarcinoma	Former light	Female	YES
+P-0008705	75	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Male	NA
+P-0008715	71	AWD	NO	YES	NO	YES	Adenocarcinoma	Former heavy	Male	NA
+P-0008723	76	AWD	NO	YES	YES	YES	Adenocarcinoma	Former heavy	Male	NA
+P-0008744	65	AWD	YES	NO	YES	YES	Adenocarcinoma	Never	Male	YES
+P-0008756	66	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Female	YES
+P-0008757	77	AWD	YES	YES	NO	NO	Adenocarcinoma	Never	Male	YES
+P-0008764	66	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Male	YES
+P-0008765	59	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Male	NO
+P-0008786	62	AWD	YES	YES	YES	NO	Adenocarcinoma	Never	Male	await
+P-0008837	63	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0008840	66	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0008849	50	AWD	YES	NO	YES	YES	Adenocarcinoma	Never	Female	YES
+P-0008851	62	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0008855	34	AWD	YES	NO	NO	NO	Adenocarcinoma	Former light	Female	YES
+P-0008871	69	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0008874	55	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0008876	47	AWD	NO	YES	YES	YES	Adenocarcinoma	Former heavy	Female	NA
+P-0008878	72	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0008902	74	DOD	NO	NO	NO	NO	Adenocarcinoma	Former light	Female	NA
+P-0008908	67	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0008917	67	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Female	YES
+P-0008922	66	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0008929	62	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0008934	49	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Female	YES
+P-0008935	68	DOD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0008944	45	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0008947	53	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0008976	81	DOD	NO	YES	YES	YES	Adenocarcinoma	Former heavy	Male	NA
+P-0009004	62	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0009017	75	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0009020	70	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0009083	79	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0009102	75	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0009110	53	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0009161	52	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0009164	48	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Male	NA
+P-0009168	74	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0009171	79	DOD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0009172	59	AWD	YES	NO	YES	YES	Adenocarcinoma	Former light	Female	YES
+P-0009178	70	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0009196	81	AWD	NO	NO	NO	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0009198	79	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Female	NA
+P-0009223	68	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0009227	73	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0009243	74	DOD	NO	NO	NO	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0009253	53	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0009256	68	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0009259	58	DOD	NO	NO	NO	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0009261	71	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0009265	75	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0009272	55	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0009274	76	AWD	NO	NO	YES	YES	Adenocarcinoma	Former light	Female	NA
+P-0009275	57	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0009277	84	AWD	NO	YES	NO	YES	Adenocarcinoma	Former heavy	Female	NA
+P-0009293	69	AWD	NO	YES	YES	YES	Adenocarcinoma	Former heavy	Female	NA
+P-0009301	69	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Male	YES
+P-0009319	56	AWD	YES	YES	YES	YES	Adenocarcinoma	Former light	Male	await
+P-0009339	16	AWD	YES	NO	YES	YES	Adenocarcinoma	Never	Female	YES
+P-0009343	50	AWD	YES	NO	NO	YES	Adenocarcinoma	Never	Male	NO
+P-0009346	59	AWD	YES	NO	NO	YES	Adenocarcinoma	Never	Male	YES
+P-0009350	58	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0009353	37	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Male	YES
+P-0009370	66	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0009376	60	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0009379	68	DOD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0009419	60	AWD	NO	YES	YES	NO	Adenocarcinoma	Former light	Male	NA
+P-0009423	58	AWD	YES	NO	YES	YES	Adenocarcinoma	Never	Female	await
+P-0009426	59	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0009428	80	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Male	NA
+P-0009431	73	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0009434	54	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0009437	59	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0009442	82	AWD	NO	NO	NO	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0009466	69	AWD	NO	YES	YES	YES	Adenocarcinoma	Former heavy	Male	NA
+P-0009467	62	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0009469	31	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Female	NA
+P-0009481	59	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0009483	81	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0009505	61	DOD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0009508	79	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0009514	57	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Male	NO
+P-0009528	81	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Female	NA
+P-0009532	57	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0009535	58	AWD	YES	NO	NO	YES	Adenocarcinoma	Never	Female	YES
+P-0009539	68	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0009542	75	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0009555	68	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0009559	78	DOD	NO	NO	NO	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0009586	51	AWD	NO	YES	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0009591	60	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0009604	73	AWD	NO	NO	NO	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0009608	72	AWD	YES	NO	NO	YES	Adenocarcinoma	Former light	Male	YES
+P-0009614	44	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0009623	50	AWD	YES	NO	YES	NO	Adenocarcinoma	Former heavy	Male	await
+P-0009638	80	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0009655	68	AWD	YES	YES	NO	YES	Adenocarcinoma	Never	Female	YES
+P-0009660	60	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0009661	54	AWD	YES	NO	YES	NO	Adenocarcinoma	Never	Female	YES
+P-0009680	56	AWD	YES	YES	YES	YES	Adenocarcinoma	Former heavy	Female	NO
+P-0009704	63	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Male	YES
+P-0009708	59	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Female	NO
+P-0009710	71	AWD	NO	YES	YES	YES	Adenocarcinoma	Former heavy	Female	NA
+P-0009714	58	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0009715	62	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0009748	33	AWD	NO	YES	YES	NO	Adenocarcinoma	Never	Female	NA
+P-0009762	70	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0009763	47	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0009764	50	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0009789	71	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0009824	57	AWD	YES	NO	NO	YES	Adenocarcinoma	Never	Female	YES
+P-0009833	53	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0009837	71	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0009856	59	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0009861	86	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Female	YES
+P-0009862	56	AWD	NO	NO	YES	NO	Adenocarcinoma	Former light	Female	NA
+P-0009869	60	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Female	NA
+P-0009924	78	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0009928	70	AWD	YES	NO	NO	YES	Adenocarcinoma	Never	Female	NO
+P-0009955	68	AWD	NO	NO	YES	NO	Adenocarcinoma	Never	Male	NA
+P-0009959	65	AWD	NO	NO	YES	NO	Adenocarcinoma	Former heavy	Male	NA
+P-0010041	46	AWD	YES	NO	NO	NO	Adenocarcinoma	Never	Male	YES
+P-0010257	54	DOD	YES	YES	YES	NO	Adenocarcinoma	Former heavy	Female	NO
+P-0010466	60	AWD	NO	NO	NO	NO	Adenocarcinoma	Former light	Female	NO
+P-0011030	69	DOD	NO	NO	NO	NO	Adenocarcinoma	Never	Male	NA

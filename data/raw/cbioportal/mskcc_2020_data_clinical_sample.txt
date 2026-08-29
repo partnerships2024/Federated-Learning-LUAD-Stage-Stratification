@@ -1,0 +1,609 @@
+#Sample Identifier	Patient Identifier	Pathologic Nodal Status	Pathologic Stage	Subtype Group	Predominant Histologic Subtype	FGA Facets	Tumor Mutation Burden	Oncotree Code	Cancer Type	Cancer Type Detailed	TMB (nonsynonymous)
+#A unique sample identifier.	Identifier to uniquely specify a patient.	Pathologic Nodal Status	Pathologic Stage	Subtype Group	Predominant Histologic Subtype	FGA Facets	Total number of mutations divided by the length of the total genomic target region captured (mutations/Mbs)	Oncotree Code	Cancer Type	Cancer Type Detailed	TMB (nonsynonymous)
+#STRING	STRING	STRING	STRING	STRING	STRING	NUMBER	NUMBER	STRING	STRING	STRING	NUMBER
+#1	1	1	1	1	1	1	1	1	1	1	1
+SAMPLE_ID	PATIENT_ID	PN_STATUS	PATHOLOGIC_STAGE	SUBTYPE_GROUP	PREDOMINANT_HISTOLOGIC_SUBTYPE	FGA_FACETS	TMB	ONCOTREE_CODE	CANCER_TYPE	CANCER_TYPE_DETAILED	TMB_NONSYNONYMOUS
+P-0000219-T01-IM3	P-0000219	Positive	3	Micropapillary/ Solid	Solid	0.190381903	4.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.43662120239
+P-0000280-T01-IM3	P-0000280	Negative	1	Acinar/ Papillary	Acinar	0.571482099	3.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.2183106012
+P-0000627-T02-IM5	P-0000627	Negative	1	Acinar/ Papillary	Acinar	0.181612611	9.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	8.80847727853
+P-0000867-T01-IM3	P-0000867	Positive	2	Acinar/ Papillary	Acinar	0.556202947	6.7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.65493180359
+P-0001944-T01-IM3	P-0001944	Negative	1	Acinar/ Papillary	Acinar	0.426663234	5.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.54577650299
+P-0002534-T01-IM3	P-0002534	Positive	3	Acinar/ Papillary	Acinar	0.34265301	2.2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.2183106012
+P-0002544-T01-IM3	P-0002544	Negative	1	Acinar/ Papillary	Acinar	0.178737453	4.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.43662120239
+P-0002557-T01-IM3	P-0002557	NA	1	Acinar/ Papillary	Acinar	0.213703049	3.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.32746590179
+P-0002768-T02-IM6	P-0002768	Negative	1	Acinar/ Papillary	Papillary	0.115892837	5.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.1881885699
+P-0002880-T02-IM6	P-0002880	Negative	1	Acinar/ Papillary	Acinar	0.370460236	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0002949-T01-IM3	P-0002949	Negative	1	Micropapillary/ Solid	Micropapillary	0.051671281	2.2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.2183106012
+P-0003096-T01-IM5	P-0003096	Negative	1	Acinar/ Papillary	Acinar	0.223464428	6.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.8510378833
+P-0003323-T01-IM5	P-0003323	Positive	3	Acinar/ Papillary	Acinar	0.680477508	1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.978719697615
+P-0003489-T01-IM5	P-0003489	Negative	1	Acinar/ Papillary	Acinar	0.259734367	8.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	8.80847727853
+P-0003573-T01-IM5	P-0003573	Negative	1	Acinar/ Papillary	Acinar	0.34190044	3.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.91487879046
+P-0003734-T01-IM5	P-0003734	Negative	1	Acinar/ Papillary	Papillary	0.094597149	19.7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	19.5743939523
+P-0003785-T01-IM5	P-0003785	Negative	2	Lepidic	Lepidic	0.056423933	9.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	9.78719697615
+P-0004105-T01-IM5	P-0004105	Negative	1	Acinar/ Papillary	Acinar	0.496179583	4.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.89359848807
+P-0004271-T01-IM5	P-0004271	Negative	2	Acinar/ Papillary	Acinar	0.167661749	3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.93615909284
+P-0004335-T01-IM5	P-0004335	Negative	1	Acinar/ Papillary	Acinar	0.103334029	3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.93615909284
+P-0004361-T01-IM5	P-0004361	Negative	1	Acinar/ Papillary	Acinar	0.016107427	6.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.8510378833
+P-0004530-T02-IM6	P-0004530	Negative	1	Acinar/ Papillary	Acinar	0.004188864	4.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.32349047492
+P-0004678-T01-IM5	P-0004678	Negative	1	Acinar/ Papillary	Acinar	0.471454926	2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.95743939523
+P-0004714-T01-IM5	P-0004714	Negative	1	Micropapillary/ Solid	Solid	0.2680723	11.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	11.7446363714
+P-0004730-T01-IM5	P-0004730	Negative	1	Acinar/ Papillary	Papillary	0.578851887	2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.95743939523
+P-0004858-T01-IM5	P-0004858	Negative	1	Micropapillary/ Solid	Solid	0.322057189	6.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.8510378833
+P-0004860-T01-IM5	P-0004860	Positive	3	Acinar/ Papillary	Acinar	0.472722296	11.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	11.7446363714
+P-0004878-T01-IM5	P-0004878	Negative	1	Acinar/ Papillary	Acinar	0.652051203	1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.978719697615
+P-0004882-T01-IM5	P-0004882	Negative	1	Acinar/ Papillary	Acinar	0.117147149	3.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.91487879046
+P-0005094-T01-IM5	P-0005094	Negative	1	Acinar/ Papillary	Acinar	0.144452205	3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.93615909284
+P-0005170-T01-IM5	P-0005170	Negative	2	Lepidic	Lepidic	0.34836405	3.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.91487879046
+P-0005190-T01-IM5	P-0005190	Negative	1	Acinar/ Papillary	Papillary	0.241974671	3.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.91487879046
+P-0005194-T01-IM5	P-0005194	Negative	1	Acinar/ Papillary	Papillary	0.081989708	15.7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	15.6595151618
+P-0005198-T01-IM5	P-0005198	Negative	2	Acinar/ Papillary	Papillary	0.209492055	3.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.91487879046
+P-0005544-T02-IM5	P-0005544	Positive	3	Lepidic	Lepidic	0	5.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.87231818569
+P-0005567-T01-IM5	P-0005567	Negative	1	Micropapillary/ Solid	Solid	0.568150879	10.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	10.7659166738
+P-0005580-T01-IM5	P-0005580	Negative	1	Acinar/ Papillary	Acinar	0.508275032	2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.95743939523
+P-0005694-T01-IM5	P-0005694	Negative	1	Acinar/ Papillary	Acinar	0.288786772	6.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.87231818569
+P-0005845-T01-IM5	P-0005845	Negative	1	Acinar/ Papillary	Acinar	0.368595499	3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.93615909284
+P-0005873-T01-IM5	P-0005873	Positive	3	Lepidic	Lepidic	0.184344741	5.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.87231818569
+P-0005881-T02-IM5	P-0005881	Negative	1	Micropapillary/ Solid	Solid	0	5.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.87231818569
+P-0005927-T01-IM5	P-0005927	Negative	1	Acinar/ Papillary	Papillary	0.054407486	4.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.89359848807
+P-0005942-T01-IM5	P-0005942	Negative	1	Acinar/ Papillary	Acinar	0.515392477	4.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.89359848807
+P-0005975-T01-IM5	P-0005975	Positive	3	Acinar/ Papillary	Acinar	0.218246544	10.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	10.7659166738
+P-0006002-T01-IM5	P-0006002	Negative	1	Acinar/ Papillary	Acinar	0.349963371	2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.95743939523
+P-0006028-T01-IM5	P-0006028	Negative	1	Acinar/ Papillary	Acinar	0.185372477	4.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.89359848807
+P-0006060-T01-IM5	P-0006060	Negative	2	Micropapillary/ Solid	Solid	0.608281054	25.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	25.446712138
+P-0006085-T01-IM5	P-0006085	Negative	1	Lepidic	Lepidic	0.002369757	1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.978719697615
+P-0006115-T01-IM5	P-0006115	Positive	3	Acinar/ Papillary	Acinar	0.527930451	31.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	31.3190303237
+P-0006127-T01-IM5	P-0006127	Negative	1	Micropapillary/ Solid	Solid	0.613619019	7.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	7.82975758092
+P-0006139-T01-IM5	P-0006139	Negative	1	Acinar/ Papillary	Acinar	0.513506638	5.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.87231818569
+P-0006140-T01-IM5	P-0006140	Negative	1	Acinar/ Papillary	Acinar	0.022309233	7.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	7.82975758092
+P-0006210-T01-IM5	P-0006210	Negative	1	Acinar/ Papillary	Acinar	0.054564282	3.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.91487879046
+P-0006343-T01-IM5	P-0006343	Negative	1	Micropapillary/ Solid	Solid	0.115105585	5.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.87231818569
+P-0006421-T01-IM5	P-0006421	Negative	1	Lepidic	Lepidic	0.402390215	11.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	11.7446363714
+P-0006485-T01-IM5	P-0006485	Positive	3	Acinar/ Papillary	Acinar	0.18468715	11.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	11.7446363714
+P-0006640-T01-IM5	P-0006640	Negative	1	Acinar/ Papillary	Acinar	0.493264056	3.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.91487879046
+P-0006747-T01-IM5	P-0006747	Negative	1	Acinar/ Papillary	Acinar	0.058190374	6.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.8510378833
+P-0006768-T01-IM5	P-0006768	Positive	3	Acinar/ Papillary	Acinar	0.536457484	7.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	7.82975758092
+P-0006793-T01-IM5	P-0006793	Negative	2	Acinar/ Papillary	Acinar	0.56629485	28.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	29.3615909284
+P-0006912-T01-IM5	P-0006912	Positive	2	Acinar/ Papillary	Acinar	0.539468966	3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.93615909284
+P-0006920-T01-IM5	P-0006920	Negative	1	Acinar/ Papillary	Acinar	0.572710723	7.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	7.82975758092
+P-0006969-T01-IM5	P-0006969	Negative	1	Acinar/ Papillary	Acinar	0.514987859	4.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.89359848807
+P-0007004-T01-IM5	P-0007004	Negative	1	Lepidic	Lepidic	0.300813767	6.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.8510378833
+P-0007050-T01-IM5	P-0007050	Negative	3	Micropapillary/ Solid	Micropapillary	0.160172008	0	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.0
+P-0007074-T01-IM5	P-0007074	Negative	1	Acinar/ Papillary	Acinar	0.287941224	5.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.87231818569
+P-0007080-T03-IM6	P-0007080	Negative	1	Acinar/ Papillary	Acinar	0.105122171	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0007121-T01-IM5	P-0007121	Positive	3	Micropapillary/ Solid	Solid	0	7.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	7.82975758092
+P-0007328-T01-IM5	P-0007328	Negative	2	Micropapillary/ Solid	Solid	0.107746856	12.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	13.7020757666
+P-0007542-T01-IM5	P-0007542	Negative	1	Micropapillary/ Solid	Solid	0.394152249	11.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	11.7446363714
+P-0007545-T01-IM5	P-0007545	Negative	2	Acinar/ Papillary	Acinar	0.372700243	2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.95743939523
+P-0007638-T01-IM5	P-0007638	Positive	3	Micropapillary/ Solid	Micropapillary	0.393877438	10.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	10.7659166738
+P-0007776-T01-IM5	P-0007776	Positive	3	Micropapillary/ Solid	Micropapillary	0.102297397	5.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.87231818569
+P-0007779-T01-IM5	P-0007779	Negative	1	Lepidic	Lepidic	0.008106495	8.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	8.80847727853
+P-0007816-T01-IM5	P-0007816	Negative	1	Acinar/ Papillary	Acinar	0.299521415	5.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.87231818569
+P-0007846-T01-IM5	P-0007846	Negative	1	Lepidic	Lepidic	0.040230379	2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.95743939523
+P-0007896-T01-IM5	P-0007896	Negative	1	Acinar/ Papillary	Acinar	0.418863594	3.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.91487879046
+P-0007916-T01-IM5	P-0007916	Positive	3	Lepidic	Lepidic	0.6552581	14.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	14.6807954642
+P-0008002-T01-IM5	P-0008002	Positive	3	Micropapillary/ Solid	Solid	0.475201124	18.7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	19.5743939523
+P-0008029-T01-IM5	P-0008029	Positive	2	Micropapillary/ Solid	Micropapillary	0.111766804	3.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.91487879046
+P-0008176-T01-IM5	P-0008176	Negative	3	Micropapillary/ Solid	Micropapillary	0.30417194	3.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.91487879046
+P-0008292-T01-IM5	P-0008292	Negative	1	Lepidic	Lepidic	0.086304659	2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.95743939523
+P-0008440-T01-IM5	P-0008440	Negative	1	Acinar/ Papillary	Acinar	0.12245571	6.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.8510378833
+P-0008553-T01-IM5	P-0008553	Negative	1	Micropapillary/ Solid	Solid	0	8.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	8.80847727853
+P-0008576-T01-IM5	P-0008576	Positive	2	Acinar/ Papillary	Acinar	0	4.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.89359848807
+P-0008577-T02-IM5	P-0008577	Negative	1	Acinar/ Papillary	Papillary	0.32610084	6.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.8510378833
+P-0008601-T01-IM5	P-0008601	Negative	1	Acinar/ Papillary	Acinar	0.346641058	3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.93615909284
+P-0008664-T01-IM5	P-0008664	Negative	1	Lepidic	Lepidic	0.115114031	4.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.89359848807
+P-0008957-T01-IM5	P-0008957	Negative	1	Acinar/ Papillary	Acinar	0.369561933	9.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	9.78719697615
+P-0009042-T01-IM5	P-0009042	Negative	1	Acinar/ Papillary	Acinar	0.238958805	6.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.8510378833
+P-0009092-T01-IM5	P-0009092	Negative	1	Acinar/ Papillary	Acinar	0.051611424	30.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	30.3403106261
+P-0009194-T01-IM5	P-0009194	Negative	1	Acinar/ Papillary	Papillary	0.166812335	5.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.87231818569
+P-0009260-T01-IM5	P-0009260	Negative	1	Lepidic	Lepidic	0.388234081	2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.95743939523
+P-0009289-T01-IM5	P-0009289	Negative	1	Acinar/ Papillary	Acinar	0.559149307	10.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	10.7659166738
+P-0009312-T01-IM5	P-0009312	Positive	2	Acinar/ Papillary	Acinar	0.343672837	5.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.8510378833
+P-0009313-T01-IM5	P-0009313	Negative	1	Acinar/ Papillary	Acinar	0.440764828	19.7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	19.5743939523
+P-0009358-T01-IM5	P-0009358	Negative	2	Acinar/ Papillary	Papillary	0.49831903	6.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.8510378833
+P-0009422-T01-IM5	P-0009422	Negative	1	Lepidic	Lepidic	0.114135631	1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.978719697615
+P-0009462-T01-IM5	P-0009462	Positive	2	Lepidic	Lepidic	0.417726106	4.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.89359848807
+P-0009590-T01-IM5	P-0009590	Negative	1	Acinar/ Papillary	Acinar	0.141475001	8.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	8.80847727853
+P-0009633-T01-IM5	P-0009633	Negative	1	Acinar/ Papillary	Acinar	0.163990243	5.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.87231818569
+P-0009643-T01-IM5	P-0009643	Negative	1	Lepidic	Lepidic	0.070547094	6.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.8510378833
+P-0009702-T01-IM5	P-0009702	Negative	1	Micropapillary/ Solid	Solid	0.068757839	4.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.89359848807
+P-0009742-T01-IM5	P-0009742	Negative	1	Lepidic	Lepidic	0.19754659	1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.95743939523
+P-0009823-T01-IM5	P-0009823	Negative	1	Lepidic	Lepidic	0.220320135	3.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.91487879046
+P-0009894-T01-IM5	P-0009894	Negative	1	Acinar/ Papillary	Acinar	0.436470391	9.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	9.78719697615
+P-0009920-T01-IM5	P-0009920	Negative	1	Acinar/ Papillary	Acinar	0.016703459	4.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.89359848807
+P-0009937-T01-IM5	P-0009937	Negative	1	Lepidic	Lepidic	0.107206719	3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.93615909284
+P-0009957-T01-IM5	P-0009957	Negative	1	Acinar/ Papillary	Acinar	0.155187392	3.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.91487879046
+P-0009963-T01-IM5	P-0009963	Positive	3	Acinar/ Papillary	Acinar	0.000242785	3.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.91487879046
+P-0009975-T01-IM5	P-0009975	Negative	1	Acinar/ Papillary	Acinar	0.118658956	7.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	7.82975758092
+P-0010131-T01-IM5	P-0010131	Negative	1	Lepidic	Lepidic	0.348533844	2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.95743939523
+P-0010133-T01-IM5	P-0010133	Negative	1	Acinar/ Papillary	Acinar	0.55777551	3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.93615909284
+P-0010169-T01-IM5	P-0010169	Negative	1	Acinar/ Papillary	Acinar	0.051580928	3.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.91487879046
+P-0010210-T02-IM5	P-0010210	Negative	1	Lepidic	Lepidic	0.146787259	2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.95743939523
+P-0010253-T01-IM5	P-0010253	Negative	1	Acinar/ Papillary	Acinar	0.38012808	3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.93615909284
+P-0010300-T01-IM5	P-0010300	Positive	2	Acinar/ Papillary	Acinar	0.225857025	3.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.91487879046
+P-0010307-T01-IM5	P-0010307	Negative	1	Acinar/ Papillary	Acinar	0.380342058	6.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.8510378833
+P-0010328-T01-IM5	P-0010328	Negative	1	Lepidic	Lepidic	0.093700278	3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.93615909284
+P-0010345-T01-IM5	P-0010345	Negative	1	Acinar/ Papillary	Acinar	0.172200143	4.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.89359848807
+P-0010359-T01-IM5	P-0010359	Negative	1	Acinar/ Papillary	Acinar	0.478311909	3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.93615909284
+P-0010404-T01-IM5	P-0010404	Positive	3	Micropapillary/ Solid	Solid	0.262490685	2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.95743939523
+P-0010507-T01-IM5	P-0010507	Negative	3	Acinar/ Papillary	Acinar	0.107983308	2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.95743939523
+P-0010522-T01-IM5	P-0010522	Negative	1	Acinar/ Papillary	Acinar	0.065361987	3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.93615909284
+P-0010592-T01-IM5	P-0010592	Negative	1	Acinar/ Papillary	Acinar	0.335082584	5.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.87231818569
+P-0010611-T01-IM5	P-0010611	Negative	1	Lepidic	Lepidic	0	5.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.87231818569
+P-0010632-T01-IM5	P-0010632	Negative	1	Acinar/ Papillary	Acinar	0.077866071	7.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	7.82975758092
+P-0010675-T01-IM5	P-0010675	Negative	1	Acinar/ Papillary	Acinar	0.224893057	2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.95743939523
+P-0010741-T01-IM5	P-0010741	Negative	1	Acinar/ Papillary	Acinar	0.218629893	5.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.87231818569
+P-0010785-T01-IM5	P-0010785	Negative	1	Acinar/ Papillary	Acinar	0.064752636	6.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.8510378833
+P-0010841-T01-IM5	P-0010841	Negative	1	Micropapillary/ Solid	Solid	0.022448456	3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.95743939523
+P-0010927-T02-IM5	P-0010927	Positive	3	Micropapillary/ Solid	Solid	0.038246118	3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.93615909284
+P-0010976-T01-IM5	P-0010976	Negative	1	Lepidic	Lepidic	0	2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.95743939523
+P-0010980-T01-IM5	P-0010980	Positive	3	Acinar/ Papillary	Acinar	0.311000104	9.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	10.7659166738
+P-0011005-T01-IM5	P-0011005	Negative	1	Acinar/ Papillary	Papillary	0.114133925	9.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	9.78719697615
+P-0011041-T01-IM5	P-0011041	Negative	1	Acinar/ Papillary	Acinar	0.068736439	10.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	9.78719697615
+P-0011150-T01-IM5	P-0011150	Negative	1	Acinar/ Papillary	Acinar	0.453434196	29.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	29.3615909284
+P-0011157-T01-IM5	P-0011157	Positive	3	Acinar/ Papillary	Acinar	0.237191443	13.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	13.7020757666
+P-0011183-T01-IM5	P-0011183	Positive	2	Micropapillary/ Solid	Solid	0.170907745	15.7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	15.6595151618
+P-0011234-T02-IM5	P-0011234	Negative	2	Acinar/ Papillary	Acinar	0.537570437	2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.95743939523
+P-0011236-T01-IM5	P-0011236	Negative	2	Acinar/ Papillary	Acinar	0.308993228	14.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	14.6807954642
+P-0011327-T02-IM5	P-0011327	Negative	1	Acinar/ Papillary	Acinar	7.80E-07	2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.95743939523
+P-0011413-T01-IM5	P-0011413	Positive	2	Micropapillary/ Solid	Solid	0.299939838	2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.95743939523
+P-0011461-T01-IM5	P-0011461	Negative	1	Acinar/ Papillary	Acinar	0.328418842	10.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	11.7446363714
+P-0012056-T01-IM5	P-0012056	Positive	3	Micropapillary/ Solid	Solid	0.622208299	5.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.87231818569
+P-0012065-T01-IM5	P-0012065	Positive	2	Acinar/ Papillary	Acinar	0.094535802	4.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.89359848807
+P-0012079-T01-IM5	P-0012079	Negative	1	Acinar/ Papillary	Acinar	0.422951571	5.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.87231818569
+P-0012088-T01-IM5	P-0012088	Negative	1	Micropapillary/ Solid	Solid	0.474627514	20.7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	20.5531136499
+P-0012089-T01-IM5	P-0012089	Negative	1	Acinar/ Papillary	Acinar	0.628856842	2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.95743939523
+P-0012111-T01-IM5	P-0012111	Negative	1	Lepidic	Lepidic	0	2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.95743939523
+P-0012151-T01-IM5	P-0012151	Positive	2	Acinar/ Papillary	Acinar	0.051533282	2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.95743939523
+P-0012161-T01-IM5	P-0012161	Positive	2	Acinar/ Papillary	Acinar	0.051587153	4.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.89359848807
+P-0012308-T01-IM5	P-0012308	Negative	1	Acinar/ Papillary	Acinar	0.088054146	6.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.8510378833
+P-0012439-T01-IM5	P-0012439	Negative	1	Lepidic	Lepidic	0.312828616	4.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.89359848807
+P-0012456-T01-IM5	P-0012456	Negative	2	Lepidic	Lepidic	0.289023597	4.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.87231818569
+P-0012476-T02-IM6	P-0012476	Positive	2	Acinar/ Papillary	Acinar	0.169839671	10.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	10.3763771398
+P-0012540-T01-IM5	P-0012540	Negative	1	Micropapillary/ Solid	Solid	0.464562226	27.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	26.4254318356
+P-0012569-T01-IM5	P-0012569	Negative	1	Acinar/ Papillary	Acinar	0.013377105	5.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.89359848807
+P-0012592-T01-IM5	P-0012592	Positive	3	Micropapillary/ Solid	Micropapillary	0.510760847	2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.95743939523
+P-0012648-T01-IM5	P-0012648	Negative	1	Acinar/ Papillary	Acinar	0.257353183	1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.978719697615
+P-0012649-T01-IM5	P-0012649	Negative	1	Acinar/ Papillary	Acinar	0.116542997	10.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	10.7659166738
+P-0012664-T01-IM5	P-0012664	Negative	1	Acinar/ Papillary	Papillary	0.082107993	2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.95743939523
+P-0012739-T02-IM6	P-0012739	Negative	1	Acinar/ Papillary	Acinar	0.286080349	12.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	12.1057733298
+P-0012746-T01-IM5	P-0012746	Negative	1	Acinar/ Papillary	Acinar	0.051553974	8.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	8.80847727853
+P-0012757-T01-IM5	P-0012757	Negative	1	Lepidic	Lepidic	0.284370555	2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.95743939523
+P-0012788-T01-IM5	P-0012788	Positive	3	Acinar/ Papillary	Acinar	0.067963468	3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.93615909284
+P-0012894-T01-IM5	P-0012894	Positive	2	Acinar/ Papillary	Acinar	0.074158088	2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.95743939523
+P-0012913-T01-IM5	P-0012913	Negative	1	Micropapillary/ Solid	Micropapillary	0.53603075	11.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	10.7659166738
+P-0012922-T01-IM5	P-0012922	Negative	1	Acinar/ Papillary	Acinar	0.470958696	6.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.8510378833
+P-0013016-T01-IM5	P-0013016	Positive	3	Acinar/ Papillary	Papillary	0.616674298	3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.93615909284
+P-0013142-T01-IM5	P-0013142	Negative	1	Micropapillary/ Solid	Solid	0.073156527	15.7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	15.6595151618
+P-0013273-T02-IM5	P-0013273	Negative	2	Acinar/ Papillary	Acinar	0.399806374	3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.93615909284
+P-0013295-T01-IM5	P-0013295	Negative	1	Acinar/ Papillary	Acinar	0.06463386	3.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.91487879046
+P-0013338-T01-IM5	P-0013338	Negative	1	Micropapillary/ Solid	Solid	0.529370985	6.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.8510378833
+P-0013376-T01-IM5	P-0013376	Negative	1	Lepidic	Lepidic	0.065159342	11.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	11.7446363714
+P-0013460-T02-IM5	P-0013460	Negative	1	Acinar/ Papillary	Acinar	0.053119489	2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.95743939523
+P-0013509-T01-IM5	P-0013509	Negative	1	Lepidic	Lepidic	0.584904751	13.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	13.7020757666
+P-0013511-T01-IM5	P-0013511	Negative	1	Acinar/ Papillary	Acinar	0.167769164	11.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	11.7446363714
+P-0013531-T01-IM5	P-0013531	Negative	1	Micropapillary/ Solid	Solid	0.342790223	3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.93615909284
+P-0013534-T01-IM5	P-0013534	Negative	1	Lepidic	Lepidic	0.459578151	2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.95743939523
+P-0013696-T01-IM5	P-0013696	Negative	1	Acinar/ Papillary	Papillary	0.549587499	8.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	8.80847727853
+P-0013701-T01-IM5	P-0013701	Negative	1	Lepidic	Lepidic	0.252641451	9.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	9.78719697615
+P-0013702-T01-IM5	P-0013702	Negative	1	Acinar/ Papillary	Acinar	0.104169995	8.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	8.80847727853
+P-0013705-T01-IM5	P-0013705	Negative	1	Lepidic	Lepidic	0.270575279	3.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.93615909284
+P-0013708-T01-IM5	P-0013708	Negative	1	Acinar/ Papillary	Acinar	0.05441807	1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.978719697615
+P-0013710-T01-IM5	P-0013710	Negative	1	Lepidic	Lepidic	0.172702694	3.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.91487879046
+P-0013752-T01-IM5	P-0013752	Negative	1	Lepidic	Lepidic	0.176627959	4.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.89359848807
+P-0013759-T01-IM5	P-0013759	Negative	1	Lepidic	Lepidic	0.541809175	1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.978719697615
+P-0013794-T01-IM5	P-0013794	Negative	1	Acinar/ Papillary	Acinar	0.051552638	2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.95743939523
+P-0013813-T01-IM5	P-0013813	Negative	1	Acinar/ Papillary	Acinar	0.282134949	13.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	13.7020757666
+P-0013825-T01-IM5	P-0013825	Negative	1	Micropapillary/ Solid	Solid	0.529820336	1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.978719697615
+P-0013867-T01-IM5	P-0013867	Negative	1	Acinar/ Papillary	Acinar	0.191029809	8.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	8.80847727853
+P-0013872-T01-IM5	P-0013872	Negative	1	Lepidic	Lepidic	0.222301105	7.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	7.82975758092
+P-0013900-T01-IM5	P-0013900	Negative	1	Lepidic	Lepidic	0.248677713	9.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	9.78719697615
+P-0013919-T01-IM5	P-0013919	Negative	1	Lepidic	Lepidic	0.206737641	0	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.0
+P-0013966-T01-IM5	P-0013966	Negative	1	Acinar/ Papillary	Acinar	0.040387517	3.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.91487879046
+P-0013978-T02-IM6	P-0013978	Negative	1	Lepidic	Lepidic	0.481091271	7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.91758475987
+P-0013993-T01-IM5	P-0013993	Negative	1	Acinar/ Papillary	Acinar	0.497732891	8.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	8.80847727853
+P-0014011-T01-IM5	P-0014011	Negative	2	Acinar/ Papillary	Acinar	0.279753865	3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.93615909284
+P-0014089-T01-IM5	P-0014089	Negative	1	Acinar/ Papillary	Acinar	0.321475975	5.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.87231818569
+P-0014135-T02-IM5	P-0014135	Negative	1	Acinar/ Papillary	Acinar	0.051832747	18.7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	18.5956742547
+P-0014221-T01-IM6	P-0014221	Negative	1	Acinar/ Papillary	Acinar	0.441983125	3.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.45879237993
+P-0014222-T01-IM6	P-0014222	Negative	1	Acinar/ Papillary	Acinar	0.201003528	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0014223-T02-IM6	P-0014223	Negative	2	Acinar/ Papillary	Acinar	0.447906833	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0014232-T01-IM6	P-0014232	Negative	1	Acinar/ Papillary	Acinar	0.186791893	5.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.1881885699
+P-0014239-T01-IM6	P-0014239	Negative	2	Micropapillary/ Solid	Micropapillary	0.278172835	3.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.32349047492
+P-0014257-T01-IM6	P-0014257	Negative	1	Acinar/ Papillary	Papillary	0.641311951	10.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	10.3763771398
+P-0014266-T01-IM6	P-0014266	Negative	1	Lepidic	Lepidic	0.318625293	3.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.45879237993
+P-0014285-T03-IM6	P-0014285	Negative	1	Micropapillary/ Solid	Solid	0.459500702	10.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	10.3763771398
+P-0014297-T01-IM6	P-0014297	Negative	1	Lepidic	Lepidic	0	3.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.45879237993
+P-0014413-T01-IM6	P-0014413	Negative	1	Lepidic	Lepidic	0.146417291	4.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.32349047492
+P-0014430-T01-IM6	P-0014430	Negative	1	Micropapillary/ Solid	Solid	0.539242726	4.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.32349047492
+P-0014437-T01-IM6	P-0014437	Positive	2	Micropapillary/ Solid	Micropapillary	0.219970047	5.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.1881885699
+P-0014453-T02-IM6	P-0014453	Negative	1	Acinar/ Papillary	Papillary	0.13752961	5.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.1881885699
+P-0014496-T01-IM6	P-0014496	Negative	1	Micropapillary/ Solid	Micropapillary	0.378918733	6.1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.05288666489
+P-0014502-T01-IM6	P-0014502	Positive	2	Acinar/ Papillary	Acinar	0.502052908	8.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	8.64698094984
+P-0014525-T01-IM6	P-0014525	Negative	1	Acinar/ Papillary	Acinar	0.130214418	3.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.45879237993
+P-0014572-T01-IM6	P-0014572	Negative	1	Acinar/ Papillary	Acinar	0.026275791	5.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.1881885699
+P-0014612-T01-IM6	P-0014612	Negative	1	Acinar/ Papillary	Acinar	0.206816492	4.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.32349047492
+P-0014614-T01-IM6	P-0014614	Positive	3	Micropapillary/ Solid	Solid	0.107588191	7.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.91758475987
+P-0014688-T01-IM6	P-0014688	Negative	1	Acinar/ Papillary	Acinar	0.019915255	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0014805-T01-IM6	P-0014805	Negative	1	Lepidic	Lepidic	0.021812367	3.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.45879237993
+P-0014817-T02-IM6	P-0014817	Negative	1	Acinar/ Papillary	Acinar	0.217775589	6.1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.05288666489
+P-0014875-T01-IM6	P-0014875	Negative	2	Acinar/ Papillary	Acinar	0.428456046	7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.91758475987
+P-0014878-T01-IM6	P-0014878	Negative	1	Acinar/ Papillary	Acinar	0.520423405	4.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.32349047492
+P-0014906-T01-IM6	P-0014906	Negative	1	Acinar/ Papillary	Acinar	0.059106534	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0014990-T01-IM6	P-0014990	Negative	1	Micropapillary/ Solid	Solid	0.273288234	6.1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.05288666489
+P-0014996-T01-IM6	P-0014996	Negative	1	Acinar/ Papillary	Papillary	0.551610303	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0015018-T01-IM6	P-0015018	Negative	1	Acinar/ Papillary	Acinar	0.163058739	36.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	36.3173199893
+P-0015056-T01-IM6	P-0015056	Negative	1	Lepidic	Lepidic	0.371268096	7.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	7.78228285485
+P-0015073-T01-IM6	P-0015073	Positive	2	Acinar/ Papillary	Acinar	0.387509086	6.1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.05288666489
+P-0015112-T01-IM6	P-0015112	Negative	1	Acinar/ Papillary	Acinar	0	8.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	8.64698094984
+P-0015256-T01-IM6	P-0015256	Positive	2	Acinar/ Papillary	Acinar	0.049197989	8.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	8.64698094984
+P-0015332-T01-IM6	P-0015332	Positive	3	Acinar/ Papillary	Papillary	0.282471152	5.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.1881885699
+P-0015352-T01-IM6	P-0015352	Negative	1	Acinar/ Papillary	Acinar	0.25179362	3.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.45879237993
+P-0015358-T01-IM6	P-0015358	Negative	1	Micropapillary/ Solid	Micropapillary	0.13757964	11.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	11.2410752348
+P-0015360-T02-IM6	P-0015360	Positive	2	Acinar/ Papillary	Acinar	0.123297485	14	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	13.8351695197
+P-0015368-T01-IM6	P-0015368	Negative	1	Acinar/ Papillary	Acinar	0.455679101	21.1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	20.7527542796
+P-0015388-T01-IM6	P-0015388	Positive	2	Acinar/ Papillary	Acinar	0.331100114	4.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.32349047492
+P-0015431-T01-IM6	P-0015431	Negative	1	Acinar/ Papillary	Acinar	0.213490977	8.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	8.64698094984
+P-0015454-T01-IM6	P-0015454	Positive	3	Micropapillary/ Solid	Solid	0.379584213	15.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	14.6998676147
+P-0015470-T01-IM6	P-0015470	Negative	1	Lepidic	Lepidic	0.531793318	0.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.864698094984
+P-0015576-T02-IM6	P-0015576	Negative	3	Acinar/ Papillary	Acinar	0.152750288	4.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.32349047492
+P-0015578-T01-IM6	P-0015578	Positive	2	Micropapillary/ Solid	Micropapillary	0.370676315	9.7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	9.51167904482
+P-0015592-T01-IM6	P-0015592	Negative	1	Acinar/ Papillary	Acinar	0.299926879	3.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0015601-T01-IM6	P-0015601	Positive	2	Acinar/ Papillary	Acinar	0.124872138	0.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.864698094984
+P-0015677-T01-IM6	P-0015677	Negative	1	Acinar/ Papillary	Acinar	0.010100357	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0015815-T01-IM6	P-0015815	Negative	1	Acinar/ Papillary	Papillary	0.23453216	6.1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.05288666489
+P-0015862-T01-IM6	P-0015862	Negative	1	Micropapillary/ Solid	Solid	0.650788686	6.1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.05288666489
+P-0015934-T01-IM6	P-0015934	Negative	1	Micropapillary/ Solid	Solid	0.295338959	25.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	25.0762447545
+P-0015973-T01-IM6	P-0015973	Negative	1	Acinar/ Papillary	Acinar	0.57739283	43.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	43.2349047492
+P-0016021-T01-IM6	P-0016021	Negative	1	Acinar/ Papillary	Acinar	0.377468359	10.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	10.3763771398
+P-0016026-T01-IM6	P-0016026	Negative	1	Acinar/ Papillary	Papillary	0.551887395	6.1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.05288666489
+P-0016036-T01-IM6	P-0016036	Positive	3	Acinar/ Papillary	Acinar	0.210143149	11.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	11.2410752348
+P-0016043-T02-IM6	P-0016043	Positive	2	Micropapillary/ Solid	Solid	0.232998988	8.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	8.64698094984
+P-0016050-T01-IM6	P-0016050	Negative	1	Micropapillary/ Solid	Micropapillary	0.1609364	10.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	10.3763771398
+P-0016165-T01-IM6	P-0016165	Negative	1	Acinar/ Papillary	Papillary	0.137043308	3.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.45879237993
+P-0016172-T01-IM6	P-0016172	Negative	1	Acinar/ Papillary	Acinar	0.668341096	33.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	32.8585276094
+P-0016173-T01-IM6	P-0016173	Negative	1	Micropapillary/ Solid	Micropapillary	0.670623537	29	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	28.5350371345
+P-0016204-T01-IM6	P-0016204	Negative	1	Lepidic	Lepidic	0.304266497	4.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.32349047492
+P-0016250-T01-IM6	P-0016250	Negative	1	Acinar/ Papillary	Acinar	0.077749215	7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.91758475987
+P-0016309-T01-IM6	P-0016309	Negative	1	Acinar/ Papillary	Acinar	0.408045076	4.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.32349047492
+P-0016368-T01-IM6	P-0016368	Negative	1	Lepidic	Lepidic	0.069946285	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0016378-T01-IM6	P-0016378	Negative	1	Lepidic	Lepidic	0.006866007	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0016398-T01-IM6	P-0016398	Negative	1	Lepidic	Lepidic	0.11064072	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0016464-T01-IM6	P-0016464	Positive	2	Micropapillary/ Solid	Micropapillary	0.353831667	12.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	12.1057733298
+P-0016471-T01-IM6	P-0016471	Negative	1	Acinar/ Papillary	Papillary	0.144899758	7.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	7.78228285485
+P-0016504-T01-IM6	P-0016504	Negative	1	Acinar/ Papillary	Acinar	0.201835411	0	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.0
+P-0016527-T01-IM6	P-0016527	Negative	1	Acinar/ Papillary	Acinar	0.274729389	7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	7.78228285485
+P-0016539-T01-IM6	P-0016539	Negative	1	Acinar/ Papillary	Acinar	0.124320942	4.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.32349047492
+P-0016544-T01-IM6	P-0016544	Negative	1	Acinar/ Papillary	Acinar	0.061692154	12.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	12.9704714248
+P-0016613-T04-IM6	P-0016613	Negative	2	Micropapillary/ Solid	Solid	0.286328343	21.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	20.7527542796
+P-0016736-T01-IM6	P-0016736	Negative	1	Micropapillary/ Solid	Solid	0.089545905	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.864698094984
+P-0016781-T01-IM6	P-0016781	Positive	2	Acinar/ Papillary	Acinar	0.154806035	16.7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	16.4292638047
+P-0016867-T01-IM6	P-0016867	Negative	1	Micropapillary/ Solid	Solid	0.048003006	13.2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	12.9704714248
+P-0017038-T01-IM6	P-0017038	Negative	1	Lepidic	Lepidic	0.46977094	7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.91758475987
+P-0017049-T01-IM6	P-0017049	Negative	1	Acinar/ Papillary	Acinar	0.367791219	9.7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	9.51167904482
+P-0017231-T01-IM6	P-0017231	Negative	1	Acinar/ Papillary	Acinar	0.472994485	7.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	7.78228285485
+P-0017321-T01-IM6	P-0017321	Negative	1	Lepidic	Lepidic	0.062998035	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0017322-T03-IM6	P-0017322	Negative	1	Acinar/ Papillary	Acinar	0.001475388	5.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.1881885699
+P-0017324-T01-IM6	P-0017324	Negative	1	Acinar/ Papillary	Acinar	0.090440554	7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.91758475987
+P-0017328-T01-IM6	P-0017328	Negative	1	Acinar/ Papillary	Acinar	0.138598229	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0017369-T01-IM6	P-0017369	Negative	1	Lepidic	Lepidic	0.025391076	6.1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.1881885699
+P-0017389-T01-IM6	P-0017389	Negative	1	Acinar/ Papillary	Acinar	0.002581717	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0017437-T01-IM6	P-0017437	Negative	1	Acinar/ Papillary	Acinar	0.365095233	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0017448-T01-IM6	P-0017448	Negative	3	Acinar/ Papillary	Acinar	0.372491676	9.7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	9.51167904482
+P-0017500-T01-IM6	P-0017500	Negative	1	Acinar/ Papillary	Acinar	0.052420918	12.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	12.1057733298
+P-0017523-T02-IM6	P-0017523	Positive	2	Acinar/ Papillary	Acinar	0.079515819	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0017534-T01-IM5	P-0017534	Negative	1	Acinar/ Papillary	Acinar	0.237344023	9.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	10.7659166738
+P-0017546-T01-IM5	P-0017546	Negative	1	Acinar/ Papillary	Acinar	0.320053007	6.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.8510378833
+P-0017594-T01-IM5	P-0017594	Negative	2	Acinar/ Papillary	Acinar	0	2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.95743939523
+P-0017633-T01-IM5	P-0017633	Negative	1	Lepidic	Lepidic	0.020461616	2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.978719697615
+P-0017780-T01-IM6	P-0017780	Negative	1	Micropapillary/ Solid	Micropapillary	0.489177855	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0017803-T01-IM6	P-0017803	Negative	1	Acinar/ Papillary	Acinar	0.384480901	42.1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	40.6408104642
+P-0017904-T01-IM6	P-0017904	Negative	1	Acinar/ Papillary	Acinar	0.395102275	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0017915-T01-IM6	P-0017915	Negative	1	Acinar/ Papillary	Acinar	0.22019896	12.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	11.2410752348
+P-0017973-T01-IM6	P-0017973	Negative	1	Acinar/ Papillary	Acinar	0	4.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.32349047492
+P-0017976-T01-IM6	P-0017976	Negative	3	Micropapillary/ Solid	Micropapillary	0.09781266	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0017991-T01-IM6	P-0017991	Negative	1	Acinar/ Papillary	Acinar	0.110921474	4.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.32349047492
+P-0018007-T01-IM6	P-0018007	Negative	1	Acinar/ Papillary	Acinar	0.04159856	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.45879237993
+P-0018043-T01-IM6	P-0018043	Positive	3	Acinar/ Papillary	Acinar	0.499050819	7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.91758475987
+P-0018047-T01-IM6	P-0018047	Negative	1	Acinar/ Papillary	Acinar	0.434502822	8.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	8.64698094984
+P-0018069-T01-IM6	P-0018069	Negative	1	Micropapillary/ Solid	Solid	0.34373361	3.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.45879237993
+P-0018171-T01-IM6	P-0018171	Negative	1	Acinar/ Papillary	Acinar	0	4.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.32349047492
+P-0018196-T01-IM6	P-0018196	Negative	1	Acinar/ Papillary	Acinar	0.507609085	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0018201-T01-IM6	P-0018201	Negative	1	Lepidic	Lepidic	0.151167409	9.7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	9.51167904482
+P-0018327-T01-IM6	P-0018327	Negative	2	Micropapillary/ Solid	Solid	0.159377259	12.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	12.1057733298
+P-0018460-T01-IM6	P-0018460	Negative	1	Lepidic	Lepidic	0	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0018476-T02-IM6	P-0018476	Negative	1	Acinar/ Papillary	Acinar	0.214650896	0.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.864698094984
+P-0018654-T02-IM6	P-0018654	Negative	2	Micropapillary/ Solid	Solid	0.512517254	17.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	17.2939618997
+P-0018692-T01-IM6	P-0018692	Negative	1	Acinar/ Papillary	Acinar	0.370313386	7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.91758475987
+P-0018761-T01-IM6	P-0018761	Negative	1	Acinar/ Papillary	Acinar	0.21840759	7.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	7.78228285485
+P-0018881-T01-IM6	P-0018881	Positive	3	Acinar/ Papillary	Acinar	0.454108391	6.1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.05288666489
+P-0018967-T01-IM6	P-0018967	Negative	2	Lepidic	Lepidic	0.254124479	8.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	8.64698094984
+P-0018969-T01-IM6	P-0018969	Negative	1	Lepidic	Lepidic	0.222512184	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0018972-T01-IM6	P-0018972	Negative	1	Lepidic	Lepidic	0	4.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.1881885699
+P-0019023-T03-IM6	P-0019023	Negative	1	Acinar/ Papillary	Acinar	0.135088361	0.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.864698094984
+P-0019111-T01-IM6	P-0019111	Negative	2	Micropapillary/ Solid	Solid	0.250027766	14	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	13.8351695197
+P-0019131-T01-IM6	P-0019131	Negative	1	Acinar/ Papillary	Papillary	0.212814539	4.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.32349047492
+P-0019329-T01-IM6	P-0019329	Negative	1	Acinar/ Papillary	Acinar	0.104396453	0.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.864698094984
+P-0019418-T01-IM6	P-0019418	Negative	1	Acinar/ Papillary	Acinar	0.016440725	6.1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.05288666489
+P-0019426-T01-IM6	P-0019426	Negative	1	Micropapillary/ Solid	Micropapillary	0.656230907	28.1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	27.6703390395
+P-0019436-T01-IM6	P-0019436	Negative	1	Acinar/ Papillary	Acinar	0.58935966	7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.05288666489
+P-0019444-T01-IM6	P-0019444	Negative	2	Micropapillary/ Solid	Solid	0.467151118	36.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	36.3173199893
+P-0019469-T01-IM6	P-0019469	Negative	1	Acinar/ Papillary	Acinar	0.080314548	5.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.1881885699
+P-0019495-T01-IM6	P-0019495	Negative	1	Acinar/ Papillary	Acinar	0.00375779	13.2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	12.9704714248
+P-0019558-T01-IM6	P-0019558	Negative	1	Acinar/ Papillary	Acinar	0.288404071	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0019564-T01-IM6	P-0019564	Negative	1	Lepidic	Lepidic	0.112981141	0.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.864698094984
+P-0019597-T01-IM6	P-0019597	Negative	2	Acinar/ Papillary	Acinar	0.201596486	0.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.864698094984
+P-0019612-T02-IM6	P-0019612	Negative	2	Acinar/ Papillary	Papillary	0.213344875	3.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.45879237993
+P-0019676-T01-IM6	P-0019676	Negative	1	Acinar/ Papillary	Acinar	0.209757868	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0019802-T01-IM6	P-0019802	Negative	1	Acinar/ Papillary	Acinar	0.305621318	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0019857-T01-IM6	P-0019857	Positive	3	Acinar/ Papillary	Acinar	0.550494204	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0019897-T01-IM6	P-0019897	Negative	1	Lepidic	Lepidic	0.049975943	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0019904-T01-IM6	P-0019904	Negative	1	Micropapillary/ Solid	Solid	0.552701232	40.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	39.7761123692
+P-0019936-T01-IM6	P-0019936	Negative	1	Lepidic	Lepidic	0.00249861	8.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	8.64698094984
+P-0019950-T01-IM6	P-0019950	Negative	3	Lepidic	Lepidic	0.174759097	11.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	10.3763771398
+P-0019982-T01-IM6	P-0019982	Negative	1	Lepidic	Lepidic	0.114589234	11.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	11.2410752348
+P-0020014-T01-IM6	P-0020014	Negative	1	Acinar/ Papillary	Acinar	0.149344342	8.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	8.64698094984
+P-0020158-T01-IM6	P-0020158	Negative	1	Acinar/ Papillary	Acinar	0.444643645	6.1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.05288666489
+P-0020177-T01-IM6	P-0020177	Positive	3	Acinar/ Papillary	Acinar	0.454556554	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0020437-T02-IM6	P-0020437	Negative	1	Acinar/ Papillary	Acinar	0.268790092	21.1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	20.7527542796
+P-0020438-T01-IM6	P-0020438	Negative	1	Acinar/ Papillary	Papillary	0.248775347	5.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.1881885699
+P-0020503-T01-IM6	P-0020503	Negative	1	Acinar/ Papillary	Acinar	0.658767446	8.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	8.64698094984
+P-0020521-T01-IM6	P-0020521	Negative	1	Acinar/ Papillary	Acinar	0.000554149	3.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.45879237993
+P-0020570-T01-IM6	P-0020570	Negative	1	Acinar/ Papillary	Acinar	0.458719928	6.1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.05288666489
+P-0020717-T01-IM6	P-0020717	Negative	1	Acinar/ Papillary	Acinar	1.05E-05	5.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.1881885699
+P-0020776-T01-IM6	P-0020776	Negative	1	Acinar/ Papillary	Papillary	0.170837768	11.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	11.2410752348
+P-0020779-T01-IM6	P-0020779	Negative	1	Acinar/ Papillary	Acinar	0	10.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	10.3763771398
+P-0020780-T01-IM6	P-0020780	Negative	1	Acinar/ Papillary	Acinar	0.44477493	0.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.864698094984
+P-0020782-T01-IM6	P-0020782	Negative	1	Acinar/ Papillary	Acinar	0.267108562	4.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.32349047492
+P-0020828-T01-IM6	P-0020828	Negative	1	Acinar/ Papillary	Acinar	0.280423346	7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.91758475987
+P-0020883-T01-IM6	P-0020883	Negative	1	Acinar/ Papillary	Acinar	0.395012324	7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.91758475987
+P-0020966-T01-IM6	P-0020966	Negative	1	Acinar/ Papillary	Acinar	0.276312335	20.2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	19.8880561846
+P-0021062-T01-IM6	P-0021062	Negative	1	Acinar/ Papillary	Acinar	0.066469382	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0021105-T01-IM6	P-0021105	Negative	1	Lepidic	Lepidic	0.316170435	4.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.32349047492
+P-0021191-T01-IM6	P-0021191	Negative	1	Acinar/ Papillary	Acinar	0	3.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.45879237993
+P-0021227-T01-IM6	P-0021227	Negative	1	Acinar/ Papillary	Acinar	0.040206522	7.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	7.78228285485
+P-0021236-T01-IM6	P-0021236	Negative	1	Lepidic	Lepidic	0.102961382	4.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.32349047492
+P-0021329-T01-IM6	P-0021329	Negative	2	Micropapillary/ Solid	Solid	0.128255379	15.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	15.5645657097
+P-0021422-T01-IM6	P-0021422	Negative	1	Acinar/ Papillary	Acinar	0.472344765	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0021429-T01-IM6	P-0021429	Negative	1	Acinar/ Papillary	Acinar	0.187615613	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0021438-T01-IM6	P-0021438	Negative	1	Acinar/ Papillary	Acinar	0.208857158	3.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.45879237993
+P-0021539-T01-IM6	P-0021539	Negative	1	Acinar/ Papillary	Acinar	0.172633228	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0021628-T01-IM6	P-0021628	Negative	1	Acinar/ Papillary	Acinar	0.282426751	11.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	11.2410752348
+P-0021691-T01-IM6	P-0021691	Negative	1	Lepidic	Lepidic	0.361690088	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0021718-T01-IM6	P-0021718	Negative	1	Acinar/ Papillary	Acinar	0.243954114	4.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.32349047492
+P-0021778-T01-IM6	P-0021778	Negative	1	Acinar/ Papillary	Papillary	0.13634825	7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.91758475987
+P-0021849-T01-IM6	P-0021849	Negative	1	Acinar/ Papillary	Acinar	0.212258092	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0021861-T01-IM6	P-0021861	Negative	1	Micropapillary/ Solid	Solid	0.653430873	37.7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	37.1820180843
+P-0021987-T01-IM6	P-0021987	Negative	2	Micropapillary/ Solid	Micropapillary	0	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0022186-T01-IM6	P-0022186	Negative	2	Acinar/ Papillary	Acinar	0.364676874	12.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	12.9704714248
+P-0022247-T01-IM6	P-0022247	Negative	1	Acinar/ Papillary	Acinar	0.242023743	14	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	13.8351695197
+P-0022251-T01-IM6	P-0022251	Positive	2	Micropapillary/ Solid	Solid	0.316602759	14.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	14.6998676147
+P-0022303-T01-IM6	P-0022303	Negative	1	Acinar/ Papillary	Acinar	0.18680614	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0022353-T01-IM6	P-0022353	Negative	1	Acinar/ Papillary	Acinar	0.506135282	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0022424-T01-IM6	P-0022424	Negative	2	Micropapillary/ Solid	Micropapillary	0.630655639	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0022427-T01-IM6	P-0022427	Negative	1	Micropapillary/ Solid	Micropapillary	0.402502926	0	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.0
+P-0022450-T01-IM6	P-0022450	Negative	1	Micropapillary/ Solid	Solid	0	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0022453-T01-IM6	P-0022453	Negative	1	Acinar/ Papillary	Acinar	0.486074587	10.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	9.51167904482
+P-0022505-T01-IM6	P-0022505	Negative	1	Acinar/ Papillary	Acinar	0.088546189	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0022527-T01-IM6	P-0022527	Negative	1	Acinar/ Papillary	Acinar	0.140414172	0.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.864698094984
+P-0022578-T02-IM6	P-0022578	Negative	1	Lepidic	Lepidic	0.526765152	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0022579-T01-IM6	P-0022579	Negative	1	Acinar/ Papillary	Acinar	0.570507211	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0022830-T01-IM6	P-0022830	Positive	2	Micropapillary/ Solid	Micropapillary	0.35987051	6.1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.05288666489
+P-0022844-T02-IM6	P-0022844	Negative	1	Micropapillary/ Solid	Micropapillary	0.524863	11.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	11.2410752348
+P-0022848-T01-IM6	P-0022848	Negative	1	Acinar/ Papillary	Acinar	0.518263124	6.1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.05288666489
+P-0022881-T01-IM6	P-0022881	Positive	3	Acinar/ Papillary	Acinar	0.155299695	10.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	10.3763771398
+P-0023102-T01-IM6	P-0023102	Positive	3	Acinar/ Papillary	Acinar	0.458777997	3.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.45879237993
+P-0023153-T01-IM6	P-0023153	Negative	2	Micropapillary/ Solid	Micropapillary	0.112064886	5.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.1881885699
+P-0023161-T01-IM6	P-0023161	Negative	1	Micropapillary/ Solid	Solid	0.457895347	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0023206-T01-IM6	P-0023206	Positive	3	Acinar/ Papillary	Papillary	0.324508553	3.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.45879237993
+P-0023207-T01-IM6	P-0023207	Negative	1	Acinar/ Papillary	Acinar	0.052340732	0.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.864698094984
+P-0023219-T01-IM6	P-0023219	Positive	3	Acinar/ Papillary	Acinar	0.488189159	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0023248-T01-IM6	P-0023248	Negative	1	Acinar/ Papillary	Acinar	0.567997199	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0023319-T01-IM6	P-0023319	Negative	1	Acinar/ Papillary	Acinar	0.439143801	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0023366-T01-IM6	P-0023366	Negative	2	Micropapillary/ Solid	Solid	0.327497628	23.7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	23.3468485646
+P-0023406-T02-IM6	P-0023406	Negative	2	Micropapillary/ Solid	Solid	0.106297811	15.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	15.5645657097
+P-0023471-T01-IM6	P-0023471	Negative	1	Acinar/ Papillary	Acinar	0.484143277	13.2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	12.9704714248
+P-0023481-T01-IM6	P-0023481	Positive	2	Acinar/ Papillary	Acinar	0.089059781	32.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	31.9938295144
+P-0023552-T01-IM6	P-0023552	Negative	1	Acinar/ Papillary	Acinar	0.276769533	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0023574-T01-IM6	P-0023574	Positive	2	Micropapillary/ Solid	Solid	0.651514298	7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.91758475987
+P-0023602-T01-IM6	P-0023602	Positive	3	Micropapillary/ Solid	Micropapillary	0.145904235	7.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	7.78228285485
+P-0023704-T01-IM6	P-0023704	Negative	1	Acinar/ Papillary	Papillary	0.227403812	3.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.32349047492
+P-0023745-T01-IM6	P-0023745	Negative	1	Acinar/ Papillary	Acinar	0.050932714	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0023780-T01-IM6	P-0023780	Negative	2	Acinar/ Papillary	Acinar	0.480693886	5.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.1881885699
+P-0023859-T01-IM6	P-0023859	Positive	3	Acinar/ Papillary	Acinar	0.065688563	7.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	7.78228285485
+P-0024035-T01-IM6	P-0024035	Negative	1	Acinar/ Papillary	Acinar	0.322148825	7.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	7.78228285485
+P-0024045-T01-IM6	P-0024045	Negative	1	Acinar/ Papillary	Acinar	0.65060476	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0024066-T01-IM6	P-0024066	Negative	1	Acinar/ Papillary	Acinar	0.158428131	0.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.864698094984
+P-0024090-T01-IM6	P-0024090	Negative	1	Acinar/ Papillary	Acinar	0.052348209	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0024136-T01-IM6	P-0024136	Negative	1	Acinar/ Papillary	Acinar	0.061871836	0	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.0
+P-0024178-T01-IM6	P-0024178	Negative	1	Micropapillary/ Solid	Micropapillary	0.578382903	7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.91758475987
+P-0024200-T01-IM6	P-0024200	Negative	1	Acinar/ Papillary	Acinar	0	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0024225-T01-IM6	P-0024225	Negative	1	Micropapillary/ Solid	Micropapillary	0.118655027	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0024228-T01-IM6	P-0024228	Negative	1	Acinar/ Papillary	Acinar	0.23707791	10.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	10.3763771398
+P-0024401-T01-IM6	P-0024401	Negative	1	Lepidic	Lepidic	0.589914349	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.864698094984
+P-0024483-T01-IM6	P-0024483	Negative	1	Lepidic	Lepidic	0.318187463	3.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.45879237993
+P-0024567-T01-IM6	P-0024567	Positive	3	Acinar/ Papillary	Papillary	0.594611493	12.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	12.1057733298
+P-0024571-T01-IM6	P-0024571	Negative	1	Acinar/ Papillary	Acinar	0.456055721	18.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	18.1586599947
+P-0024737-T01-IM6	P-0024737	Negative	2	Acinar/ Papillary	Acinar	0.080175803	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.45879237993
+P-0024758-T01-IM6	P-0024758	Positive	3	Micropapillary/ Solid	Solid	0.11868608	8.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	7.78228285485
+P-0024834-T01-IM6	P-0024834	Negative	1	Acinar/ Papillary	Acinar	0.47996869	5.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.1881885699
+P-0024843-T01-IM6	P-0024843	Positive	3	Micropapillary/ Solid	Micropapillary	0.381745347	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0024949-T01-IM6	P-0024949	Negative	1	Acinar/ Papillary	Acinar	0.502140291	14.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	13.8351695197
+P-0025107-T01-IM6	P-0025107	Negative	1	Acinar/ Papillary	Papillary	0.028003133	7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.05288666489
+P-0025330-T06-IM6	P-0025330	Negative	1	Micropapillary/ Solid	Micropapillary	0.327505841	5.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.1881885699
+P-0025354-T01-IM6	P-0025354	Negative	3	Acinar/ Papillary	Acinar	0.230654842	10.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	10.3763771398
+P-0025409-T01-IM6	P-0025409	Negative	1	Acinar/ Papillary	Acinar	0	6.1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.05288666489
+P-0025411-T01-IM6	P-0025411	Negative	1	Micropapillary/ Solid	Solid	0.275824038	18.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	18.1586599947
+P-0025451-T01-IM6	P-0025451	Negative	1	Acinar/ Papillary	Acinar	0.55309744	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0025546-T01-IM6	P-0025546	Negative	1	Acinar/ Papillary	Acinar	0.328460892	9.7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	9.51167904482
+P-0025566-T01-IM6	P-0025566	Negative	2	Lepidic	Lepidic	0.61262337	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0025569-T01-IM6	P-0025569	Negative	1	Micropapillary/ Solid	Solid	0.233052319	6.1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.91758475987
+P-0025575-T01-IM6	P-0025575	Negative	1	Lepidic	Lepidic	0.500989318	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0025652-T01-IM6	P-0025652	Negative	1	Acinar/ Papillary	Acinar	0.464344446	5.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.1881885699
+P-0025722-T01-IM6	P-0025722	Negative	1	Acinar/ Papillary	Acinar	0.196684663	3.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.45879237993
+P-0025833-T01-IM6	P-0025833	Negative	1	Acinar/ Papillary	Papillary	0.217751937	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0025852-T01-IM6	P-0025852	Negative	1	Acinar/ Papillary	Acinar	0.347711391	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0025872-T01-IM6	P-0025872	Negative	1	Lepidic	Lepidic	0.147046287	10.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	10.3763771398
+P-0025918-T01-IM6	P-0025918	Negative	1	Acinar/ Papillary	Acinar	0.25430885	47.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	45.8289990341
+P-0025931-T01-IM6	P-0025931	Negative	1	Acinar/ Papillary	Acinar	0	11.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	12.1057733298
+P-0025936-T01-IM6	P-0025936	Positive	3	Acinar/ Papillary	Acinar	0.100048221	8.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	8.64698094984
+P-0025956-T01-IM6	P-0025956	Positive	3	Acinar/ Papillary	Acinar	0.152407009	5.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.1881885699
+P-0026029-T01-IM6	P-0026029	Positive	2	Acinar/ Papillary	Acinar	0.159733852	14	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	13.8351695197
+P-0026045-T01-IM6	P-0026045	Negative	2	Acinar/ Papillary	Acinar	0.683547316	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0026120-T01-IM6	P-0026120	Negative	2	Acinar/ Papillary	Acinar	0.514181731	8.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	8.64698094984
+P-0026187-T01-IM6	P-0026187	Positive	3	Micropapillary/ Solid	Solid	0.530682709	49.2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	48.4230933191
+P-0026206-T01-IM6	P-0026206	Negative	1	Acinar/ Papillary	Acinar	0.27602054	5.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.1881885699
+P-0026262-T02-IM6	P-0026262	Negative	1	Acinar/ Papillary	Acinar	0.285929796	8.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	8.64698094984
+P-0026292-T01-IM6	P-0026292	Negative	1	Acinar/ Papillary	Acinar	0.435802903	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0026426-T01-IM6	P-0026426	Negative	1	Acinar/ Papillary	Acinar	0.447388769	4.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.32349047492
+P-0026688-T01-IM6	P-0026688	Negative	1	Acinar/ Papillary	Papillary	0.241530804	11.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	10.3763771398
+P-0026697-T01-IM6	P-0026697	Positive	2	Acinar/ Papillary	Acinar	0.119347282	8.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	8.64698094984
+P-0026708-T01-IM6	P-0026708	Negative	1	Acinar/ Papillary	Papillary	0.589610493	8.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	8.64698094984
+P-0026777-T02-IM6	P-0026777	Negative	1	Acinar/ Papillary	Acinar	0.22251848	0.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.864698094984
+P-0026778-T01-IM6	P-0026778	Negative	1	Lepidic	Lepidic	0.056810607	14.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	14.6998676147
+P-0026786-T01-IM6	P-0026786	Negative	1	Acinar/ Papillary	Acinar	0.292667585	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0026830-T03-IM6	P-0026830	Negative	1	Acinar/ Papillary	Acinar	0.020904912	0.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.864698094984
+P-0026968-T01-IM6	P-0026968	Negative	1	Acinar/ Papillary	Acinar	0.365884423	6.1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.05288666489
+P-0026987-T01-IM6	P-0026987	Negative	1	Micropapillary/ Solid	Micropapillary	0.611617835	7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.05288666489
+P-0027018-T01-IM6	P-0027018	Negative	1	Acinar/ Papillary	Papillary	0.4164045	9.7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	9.51167904482
+P-0027071-T01-IM6	P-0027071	Negative	1	Acinar/ Papillary	Acinar	0	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0027093-T01-IM6	P-0027093	Negative	1	Lepidic	Lepidic	0.105955377	15.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	15.5645657097
+P-0027131-T01-IM6	P-0027131	Negative	1	Lepidic	Lepidic	0.266830801	5.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.1881885699
+P-0027187-T01-IM6	P-0027187	Negative	1	Acinar/ Papillary	Acinar	0.225334853	6.1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.05288666489
+P-0027196-T01-IM6	P-0027196	Negative	1	Micropapillary/ Solid	Micropapillary	0.277856269	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0027353-T01-IM6	P-0027353	Negative	1	Acinar/ Papillary	Acinar	0.316343401	3.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.45879237993
+P-0027523-T01-IM6	P-0027523	Negative	1	Acinar/ Papillary	Acinar	0.052370779	0.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.864698094984
+P-0027531-T01-IM6	P-0027531	Negative	1	Acinar/ Papillary	Acinar	0.469105702	3.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.45879237993
+P-0027615-T02-IM6	P-0027615	Negative	1	Acinar/ Papillary	Acinar	0.466706214	6.1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.05288666489
+P-0027709-T01-IM6	P-0027709	Negative	1	Acinar/ Papillary	Acinar	0.39507813	24.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	24.2115466595
+P-0027812-T01-IM6	P-0027812	Negative	2	Acinar/ Papillary	Acinar	0.398576778	8.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	8.64698094984
+P-0027817-T01-IM6	P-0027817	Negative	1	Acinar/ Papillary	Papillary	0.21585639	7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.91758475987
+P-0027826-T01-IM6	P-0027826	Positive	2	Acinar/ Papillary	Acinar	0.369482132	0.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.864698094984
+P-0027848-T01-IM6	P-0027848	Negative	1	Micropapillary/ Solid	Micropapillary	0.545995755	15.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	15.5645657097
+P-0027860-T01-IM6	P-0027860	Negative	1	Acinar/ Papillary	Acinar	0.293269776	7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	7.78228285485
+P-0028012-T01-IM6	P-0028012	Negative	3	Acinar/ Papillary	Acinar	0.103491017	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0028092-T01-IM6	P-0028092	Positive	3	Micropapillary/ Solid	Solid	0.150737083	7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.91758475987
+P-0028096-T01-IM6	P-0028096	Negative	1	Micropapillary/ Solid	Solid	0.277346006	9.7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	9.51167904482
+P-0028111-T01-IM6	P-0028111	Negative	1	Micropapillary/ Solid	Micropapillary	0.116303625	6.1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.05288666489
+P-0028162-T01-IM6	P-0028162	Negative	1	Acinar/ Papillary	Acinar	0.504208139	4.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.32349047492
+P-0028245-T01-IM6	P-0028245	Positive	2	Acinar/ Papillary	Acinar	0.498910485	5.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.1881885699
+P-0028377-T01-IM6	P-0028377	Positive	2	Acinar/ Papillary	Acinar	0.521526681	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0028486-T01-IM6	P-0028486	Negative	1	Acinar/ Papillary	Acinar	0.416432279	5.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.1881885699
+P-0028627-T01-IM6	P-0028627	Negative	1	Acinar/ Papillary	Acinar	0.09227546	7.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	7.78228285485
+P-0028694-T01-IM6	P-0028694	Negative	1	Acinar/ Papillary	Acinar	0.071177987	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0028746-T01-IM6	P-0028746	Negative	1	Lepidic	Lepidic	0.37856314	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0028809-T04-IM6	P-0028809	Positive	3	Acinar/ Papillary	Acinar	0.151078424	7.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	7.78228285485
+P-0028841-T01-IM6	P-0028841	Negative	1	Acinar/ Papillary	Acinar	0.14728909	7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.91758475987
+P-0028906-T01-IM6	P-0028906	Negative	1	Acinar/ Papillary	Acinar	0.285403623	6.1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.05288666489
+P-0028916-T02-IM6	P-0028916	Negative	1	Micropapillary/ Solid	Solid	0.344789398	17.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	17.2939618997
+P-0028936-T01-IM6	P-0028936	Negative	1	Acinar/ Papillary	Acinar	0.118034452	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0028947-T01-IM6	P-0028947	Negative	2	Acinar/ Papillary	Acinar	0.186974197	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0029016-T01-IM6	P-0029016	Negative	1	Lepidic	Lepidic	0.448955022	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0029115-T01-IM6	P-0029115	Negative	1	Acinar/ Papillary	Acinar	0	5.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.1881885699
+P-0029180-T02-IM6	P-0029180	Negative	1	Lepidic	Lepidic	0.068991441	7.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	7.78228285485
+P-0029224-T02-IM6	P-0029224	Negative	1	Acinar/ Papillary	Acinar	0.354381985	10.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	10.3763771398
+P-0029294-T01-IM6	P-0029294	Negative	1	Acinar/ Papillary	Acinar	0.322950382	17.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	17.2939618997
+P-0029324-T01-IM6	P-0029324	Negative	1	Acinar/ Papillary	Acinar	0.030751718	0.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.864698094984
+P-0029357-T02-IM6	P-0029357	Positive	2	Acinar/ Papillary	Acinar	0.206747204	7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.91758475987
+P-0029396-T01-IM6	P-0029396	Negative	2	Acinar/ Papillary	Papillary	0.071746054	7.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	7.78228285485
+P-0029402-T01-IM6	P-0029402	Negative	1	Acinar/ Papillary	Acinar	0.372233205	5.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.1881885699
+P-0029451-T01-IM6	P-0029451	Negative	1	Lepidic	Lepidic	0.160580039	0.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.864698094984
+P-0029545-T01-IM6	P-0029545	Positive	2	Acinar/ Papillary	Papillary	0.098695304	3.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.45879237993
+P-0029561-T01-IM6	P-0029561	Negative	1	Acinar/ Papillary	Acinar	0	0.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.864698094984
+P-0029583-T01-IM6	P-0029583	Positive	2	Acinar/ Papillary	Acinar	0.057290249	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0029585-T01-IM6	P-0029585	Negative	1	Acinar/ Papillary	Acinar	0.025943999	10.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	10.3763771398
+P-0029624-T01-IM6	P-0029624	Negative	2	Acinar/ Papillary	Acinar	0.514914972	12.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	12.9704714248
+P-0029663-T01-IM6	P-0029663	Negative	1	Acinar/ Papillary	Acinar	0.195144791	6.1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.91758475987
+P-0029977-T01-IM6	P-0029977	Positive	2	Acinar/ Papillary	Acinar	0.52426517	20.2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	19.8880561846
+P-0030094-T03-IM6	P-0030094	Negative	1	Acinar/ Papillary	Acinar	0.227264887	8.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	8.64698094984
+P-0030104-T01-IM6	P-0030104	Negative	1	Acinar/ Papillary	Acinar	0.28597542	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0030317-T01-IM6	P-0030317	Negative	1	Acinar/ Papillary	Acinar	0.002248825	9.7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.05288666489
+P-0030453-T01-IM6	P-0030453	Positive	3	Acinar/ Papillary	Acinar	0.061997887	0.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.864698094984
+P-0030626-T01-IM6	P-0030626	Negative	1	Micropapillary/ Solid	Micropapillary	0.209638496	20.2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	19.0233580896
+P-0030694-T01-IM6	P-0030694	Positive	3	Micropapillary/ Solid	Micropapillary	0.674465544	10.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	8.64698094984
+P-0030710-T01-IM6	P-0030710	Negative	1	Acinar/ Papillary	Acinar	0.413376548	5.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.45879237993
+P-0030869-T01-IM6	P-0030869	Negative	1	Acinar/ Papillary	Acinar	0	6.1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.05288666489
+P-0030893-T01-IM6	P-0030893	Negative	1	Micropapillary/ Solid	Micropapillary	0.343010871	10.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	9.51167904482
+P-0030990-T03-IM6	P-0030990	Positive	3	Acinar/ Papillary	Acinar	0.280239201	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0031010-T01-IM6	P-0031010	Negative	1	Acinar/ Papillary	Acinar	0.356411882	3.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.864698094984
+P-0031031-T01-IM6	P-0031031	Negative	1	Acinar/ Papillary	Acinar	0.230998489	4.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0031046-T01-IM6	P-0031046	Negative	1	Lepidic	Lepidic	0.087124592	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0031081-T01-IM6	P-0031081	Negative	1	Acinar/ Papillary	Acinar	0.271014895	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0031090-T01-IM6	P-0031090	Negative	1	Acinar/ Papillary	Acinar	0.195061301	4.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.32349047492
+P-0031096-T01-IM6	P-0031096	Positive	2	Acinar/ Papillary	Acinar	0.209780115	4.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.32349047492
+P-0031139-T01-IM6	P-0031139	Positive	2	Acinar/ Papillary	Acinar	0.05858667	6.1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.05288666489
+P-0031267-T01-IM6	P-0031267	Negative	1	Lepidic	Lepidic	0.153811387	3.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.45879237993
+P-0031283-T01-IM6	P-0031283	Negative	1	Acinar/ Papillary	Acinar	0.141839163	6.1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.45879237993
+P-0031442-T01-IM6	P-0031442	Negative	1	Micropapillary/ Solid	Solid	0.371385321	67.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	65.7170552188
+P-0031526-T01-IM6	P-0031526	Negative	1	Acinar/ Papillary	Acinar	0.233148632	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0031694-T01-IM6	P-0031694	Positive	3	Acinar/ Papillary	Acinar	0.454050242	3.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.45879237993
+P-0031707-T01-IM6	P-0031707	Negative	1	Acinar/ Papillary	Acinar	0.174585258	13.2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	12.9704714248
+P-0031737-T01-IM6	P-0031737	Negative	2	Acinar/ Papillary	Acinar	0.204669946	4.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.32349047492
+P-0031740-T01-IM6	P-0031740	Negative	1	Acinar/ Papillary	Acinar	0.704996228	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0032008-T01-IM6	P-0032008	Negative	2	Micropapillary/ Solid	Solid	0.532158319	6.1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.05288666489
+P-0032029-T01-IM6	P-0032029	Negative	1	Acinar/ Papillary	Acinar	0.081307161	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0032112-T01-IM6	P-0032112	Negative	1	Acinar/ Papillary	Acinar	0.431714095	21.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	21.6174523746
+P-0032170-T01-IM6	P-0032170	Negative	3	Acinar/ Papillary	Acinar	0.222094402	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0032177-T01-IM6	P-0032177	Negative	2	Acinar/ Papillary	Acinar	0.125296477	0.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.864698094984
+P-0032231-T01-IM6	P-0032231	Negative	1	Acinar/ Papillary	Papillary	0.550286829	4.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.32349047492
+P-0032444-T01-IM6	P-0032444	Negative	1	Acinar/ Papillary	Acinar	0.059816725	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0032476-T01-IM6	P-0032476	Negative	1	Acinar/ Papillary	Acinar	0.140723458	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0032479-T01-IM6	P-0032479	Negative	1	Acinar/ Papillary	Acinar	0	7.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	7.78228285485
+P-0032532-T01-IM6	P-0032532	Negative	1	Acinar/ Papillary	Acinar	0.052431644	6.1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.05288666489
+P-0032534-T01-IM6	P-0032534	Negative	1	Micropapillary/ Solid	Solid	0.110560457	5.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.1881885699
+P-0032635-T01-IM6	P-0032635	Negative	1	Micropapillary/ Solid	Solid	0.668901588	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0032644-T01-IM6	P-0032644	Negative	1	Acinar/ Papillary	Acinar	0.45308491	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0032645-T01-IM6	P-0032645	Negative	1	Lepidic	Lepidic	0.113975971	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0032676-T01-IM6	P-0032676	Negative	1	Acinar/ Papillary	Acinar	0.112371682	4.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.32349047492
+P-0032682-T01-IM6	P-0032682	Negative	1	Acinar/ Papillary	Acinar	0.084016058	5.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.1881885699
+P-0032689-T01-IM6	P-0032689	Negative	1	Acinar/ Papillary	Acinar	0.286207184	10.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	10.3763771398
+P-0032862-T01-IM6	P-0032862	Negative	1	Acinar/ Papillary	Acinar	0.383442083	0	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.0
+P-0033068-T01-IM6	P-0033068	Negative	1	Micropapillary/ Solid	Solid	0.09871679	3.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.45879237993
+P-0033072-T01-IM6	P-0033072	Negative	2	Acinar/ Papillary	Acinar	0.050842476	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0033325-T01-IM6	P-0033325	Negative	1	Acinar/ Papillary	Papillary	0.244350803	6.1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.05288666489
+P-0033379-T01-IM6	P-0033379	Negative	3	Acinar/ Papillary	Acinar	0.102418725	4.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.1881885699
+P-0033380-T01-IM6	P-0033380	Negative	1	Acinar/ Papillary	Acinar	0.03162305	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0033406-T01-IM6	P-0033406	Negative	2	Acinar/ Papillary	Acinar	0.077247139	3.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.45879237993
+P-0033508-T01-IM6	P-0033508	Positive	2	Acinar/ Papillary	Acinar	0.415619473	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0033579-T01-IM6	P-0033579	Negative	1	Lepidic	Lepidic	0.340113523	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0033581-T01-IM6	P-0033581	Negative	1	Acinar/ Papillary	Acinar	0.310575272	6.1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.05288666489
+P-0033615-T01-IM6	P-0033615	Negative	1	Acinar/ Papillary	Acinar	0.642337357	25.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	25.0762447545
+P-0033631-T01-IM6	P-0033631	Negative	1	Acinar/ Papillary	Acinar	0	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0033749-T01-IM6	P-0033749	Positive	2	Acinar/ Papillary	Papillary	0.597022457	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0033766-T01-IM6	P-0033766	Negative	1	Micropapillary/ Solid	Solid	0.583355592	60.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	59.6641685539
+P-0033823-T01-IM6	P-0033823	Negative	1	Acinar/ Papillary	Acinar	0.229136768	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0033841-T01-IM6	P-0033841	Negative	1	Acinar/ Papillary	Acinar	0.183475073	7.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	7.78228285485
+P-0033926-T01-IM6	P-0033926	Negative	1	Acinar/ Papillary	Acinar	0.05146708	8.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	8.64698094984
+P-0034215-T01-IM6	P-0034215	Negative	1	Acinar/ Papillary	Acinar	0.161036976	4.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.32349047492
+P-0034604-T01-IM6	P-0034604	Negative	1	Lepidic	Lepidic	0.332234177	4.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.32349047492
+P-0034643-T01-IM6	P-0034643	Negative	1	Acinar/ Papillary	Papillary	0.302221837	3.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.45879237993
+P-0034948-T01-IM6	P-0034948	Negative	1	Acinar/ Papillary	Acinar	0.445113276	13.2	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	12.9704714248
+P-0035026-T01-IM6	P-0035026	Negative	1	Acinar/ Papillary	Acinar	0.331554151	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0035135-T01-IM6	P-0035135	Negative	1	Acinar/ Papillary	Acinar	0.622402333	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0035139-T01-IM6	P-0035139	Negative	1	Acinar/ Papillary	Acinar	0.114571699	7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.91758475987
+P-0035140-T01-IM6	P-0035140	Negative	1	Acinar/ Papillary	Acinar	0.242101339	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0035240-T01-IM6	P-0035240	Negative	1	Acinar/ Papillary	Acinar	0.475952462	24.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	24.2115466595
+P-0035244-T01-IM6	P-0035244	Negative	1	Acinar/ Papillary	Acinar	0.119238108	4.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.32349047492
+P-0035278-T01-IM6	P-0035278	Negative	1	Acinar/ Papillary	Acinar	0.40636017	19.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	19.0233580896
+P-0035280-T01-IM6	P-0035280	Negative	1	Acinar/ Papillary	Acinar	0.207829632	4.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.32349047492
+P-0035293-T01-IM6	P-0035293	Negative	1	Acinar/ Papillary	Acinar	0.105327091	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0035431-T01-IM6	P-0035431	Positive	3	Micropapillary/ Solid	Solid	0.052467272	11.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	11.2410752348
+P-0035469-T01-IM6	P-0035469	Negative	1	Micropapillary/ Solid	Solid	0.27859881	12.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	12.9704714248
+P-0035488-T01-IM6	P-0035488	Negative	1	Acinar/ Papillary	Papillary	0.145188873	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0035494-T01-IM6	P-0035494	Negative	1	Acinar/ Papillary	Acinar	0.20286742	16.7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	16.4292638047
+P-0035731-T01-IM6	P-0035731	Negative	2	Acinar/ Papillary	Acinar	2.70E-05	0.9	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	0.864698094984
+P-0035869-T01-IM6	P-0035869	Negative	1	Lepidic	Lepidic	0.123165977	6.1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.05288666489
+P-0035922-T01-IM6	P-0035922	Negative	1	Lepidic	Lepidic	0.308271935	4.4	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.32349047492
+P-0036032-T01-IM6	P-0036032	Negative	1	Acinar/ Papillary	Acinar	0.064390988	3.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.45879237993
+P-0036225-T01-IM6	P-0036225	Positive	2	Micropapillary/ Solid	Solid	0.500256753	9.7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	9.51167904482
+P-0036267-T01-IM6	P-0036267	Negative	2	Acinar/ Papillary	Acinar	0.394961786	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0036310-T01-IM6	P-0036310	Positive	2	Acinar/ Papillary	Acinar	0.004162213	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0036387-T01-IM6	P-0036387	Negative	1	Acinar/ Papillary	Acinar	0.124192905	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0036513-T01-IM6	P-0036513	Negative	1	Acinar/ Papillary	Acinar	0.047900766	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0036637-T01-IM6	P-0036637	Negative	1	Acinar/ Papillary	Acinar	0.067737444	6.1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.05288666489
+P-0036639-T01-IM6	P-0036639	Negative	1	Acinar/ Papillary	Acinar	0.250439266	5.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	4.32349047492
+P-0036744-T01-IM6	P-0036744	Negative	1	Lepidic	Lepidic	0.033662447	5.3	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	5.1881885699
+P-0036810-T02-IM6	P-0036810	Negative	1	Acinar/ Papillary	Acinar	0.216920074	7	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.91758475987
+P-0036891-T01-IM6	P-0036891	Negative	1	Acinar/ Papillary	Acinar	0.031754342	2.6	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	2.59409428495
+P-0037833-T01-IM6	P-0037833	Negative	1	Acinar/ Papillary	Acinar	0	6.1	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	6.05288666489
+P-0038206-T01-IM6	P-0038206	Negative	1	Micropapillary/ Solid	Solid	0.052480444	1.8	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	1.72939618997
+P-0038834-T01-IM6	P-0038834	Positive	2	Acinar/ Papillary	Acinar	0.160481066	3.5	LUAD	Non-Small Cell Lung Cancer	Lung Adenocarcinoma	3.45879237993

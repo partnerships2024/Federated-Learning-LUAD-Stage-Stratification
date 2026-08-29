@@ -1,0 +1,237 @@
+#Patient Identifier	Sex	Diagnosis Age	Tumor Stage	Tumor Grade	Passive Smoking	Overall Survival Status	Overall Survival (Months)	Histology
+#Identifier to uniquely specify a patient.	Sex	Age at which a condition or disease was first diagnosed.	Tumor Stage.	Histologic grading criteria of Tumors	Patients Exposed to Secondar Smoking	Overall patient survival status.	Overall survival in months since date of sequencing. If patient died before sequencing overall survival in months is set to '0'. If patient is alive and last contact date is before date of sequencing, overall survival in months is set to 'NA'	Histology
+#STRING	STRING	NUMBER	STRING	STRING	STRING	STRING	NUMBER	STRING
+#1	1	1	1	1	1	1	1	1
+PATIENT_ID	SEX	AGE	TUMOR_STAGE	TUMOR_GRADE	PASSIVE_SMOKING	OS_STATUS	OS_MONTHS	HISTOLOGY
+NSLC-0001	Female	69	IA	2	No	1:DECEASED	179.6	Adenocarcinomas
+NSLC-0002	Female	70	II	3	No	1:DECEASED	19.4	Adenocarcinomas
+NSLC-0003	Female	48	IB	3	No	0:LIVING	200.4	Adenocarcinomas
+NSLC-0004	Female	69	IA	2	No	0:LIVING	197.9	Adenocarcinomas
+NSLC-0005	Female	66	III	2	No	1:DECEASED	26.6	Adenocarcinomas
+NSLC-0006	Male	36	IA		No	0:LIVING	194.4	Carcinoids
+NSLC-0007	Female	72	IB	3	No	1:DECEASED	114.3	Adenocarcinomas
+NSLC-0008	Female	77	IA	3	No	1:DECEASED	18.6	Adenocarcinomas
+NSLC-0009	Female	58	II	2	Yes	1:DECEASED	17.1	Adenocarcinomas
+NSLC-0010	Male	67	IB	1	No	0:LIVING	173.4	Adenocarcinomas
+NSLC-0011	Female	73	IA	2	Yes	1:DECEASED	167	Adenocarcinomas
+NSLC-0012	Female	63	IB	1	No	1:DECEASED	90.9	Adenocarcinomas
+NSLC-0013	Female	60	IA	1	No	0:LIVING	161.7	Adenocarcinomas
+NSLC-0014	Male	49	IA		No	0:LIVING	147.7	Carcinoids
+NSLC-0015	Female	62	IB	2	No	0:LIVING	141	Adenocarcinomas
+NSLC-0016	Female	42	IB		No	0:LIVING	137.9	Carcinoids
+NSLC-0017	Male	71	II	2	No	1:DECEASED	19.7	Adenocarcinomas
+NSLC-0018	Female	55	IA	1	Yes	0:LIVING	69.1	Adenocarcinomas
+NSLC-0019	Female	51	II	3	No	1:DECEASED	28.5	Adenocarcinomas
+NSLC-0020	Male		III	3	No	1:DECEASED		Others
+NSLC-0021	Female	74	IA	1	Yes	1:DECEASED	56.2	Adenocarcinomas
+NSLC-0022	Male	56	IA		No	0:LIVING	127.7	Carcinoids
+NSLC-0023	Female	56	IA		No	0:LIVING	141.8	Carcinoids
+NSLC-0024	Female	57	IA	3	No	0:LIVING	124.3	Adenocarcinomas
+NSLC-0025	Female	71	II		No	0:LIVING	119.4	Carcinoids
+NSLC-0026	Female	60	IA	2	No	0:LIVING	118.6	Adenocarcinomas
+NSLC-0027	Female	49	II	2	No	0:LIVING	119.1	Adenocarcinomas
+NSLC-0028	Female	72	IA	2	No	0:LIVING	116.3	Adenocarcinomas
+NSLC-0029	Male	74	IA	2	No	0:LIVING	115	Adenocarcinomas
+NSLC-0030	Female	71	III	3	No	0:LIVING	111.2	Adenocarcinomas
+NSLC-0031	Male	61	IA	1	No	0:LIVING	109.4	Adenocarcinomas
+NSLC-0032	Male	26	III	2	No	1:DECEASED	14.2	Adenocarcinomas
+NSLC-0033	Female	64	IA	1	No	0:LIVING	106.7	Adenocarcinomas
+NSLC-0034	Female	68	IB	1	No	0:LIVING	102.3	Carcinoids
+NSLC-0035	Female	72	IA	1	Yes	0:LIVING	101.5	Carcinoids
+NSLC-0036	Female	58	II	3	No	0:LIVING	97.1	Adenocarcinomas
+NSLC-0037	Female	62	IA	3	No	1:DECEASED	57.1	Adenocarcinomas
+NSLC-0038	Male	55	IA	1	Yes	0:LIVING	89.8	Carcinoids
+NSLC-0039	Male	58	III	2	No	0:LIVING	88.2	Adenocarcinomas
+NSLC-0041	Female	68	II		No	0:LIVING	85	Others
+NSLC-0042	Female	77	IA	2	Yes	0:LIVING	82.6	Adenocarcinomas
+NSLC-0043	Female	76	III	1	Yes	1:DECEASED	40.5	Adenocarcinomas
+NSLC-0044	Female	49	IA	1	No	0:LIVING	75.6	Adenocarcinomas
+NSLC-0045	Female	63	IA	2	No	0:LIVING	62.6	Adenocarcinomas
+NSLC-0046	Female	67	IA	2	No	0:LIVING	64.3	Adenocarcinomas
+NSLC-0047	Female	69	IB	2	Yes	0:LIVING	63.9	Adenocarcinomas
+NSLC-0048	Female	79	IA	1	No	0:LIVING	59	Adenocarcinomas
+NSLC-0049	Female	67	II	3	No	0:LIVING	58.4	Adenocarcinomas
+NSLC-0050	Female	73	IB	2	Yes	0:LIVING	51.7	Adenocarcinomas
+NSLC-0051	Male	49	IA	1	No	0:LIVING	49.5	Carcinoids
+NSLC-0053	Female	60	II	2	Yes	0:LIVING	46.4	Adenocarcinomas
+NSLC-0054	Male	68	II	2	No	1:DECEASED	31.3	Adenocarcinomas
+NSLC-0055	Female	53	III	3	No	0:LIVING	44.2	Adenocarcinomas
+NSLC-0057	Female	65	IA	3	No	0:LIVING	39.7	Adenocarcinomas
+NSLC-0058	Male	44	III	3	No	0:LIVING	35.5	Adenocarcinomas
+NSLC-0059	Female	53	IA	1	No	0:LIVING	34	Adenocarcinomas
+NSLC-0060	Female	76	II		No	0:LIVING	32.5	Carcinoids
+NSLC-0061	Female	72	III		Yes	0:LIVING	32.5	Others
+NSLC-0062	Female	63	III	2	Yes	1:DECEASED	29	Adenocarcinomas
+NSLC-0063	Female	63	IA	2	No	0:LIVING	26.5	Adenocarcinomas
+NSLC-0064	Female	72	IA	1	No	0:LIVING	26.5	Adenocarcinomas
+NSLC-0065	Female	69	II	2	Yes	0:LIVING	27	Adenocarcinomas
+NSLC-0066	Female	66	IA	1	No	0:LIVING	26.5	Adenocarcinomas
+NSLC-0067	Female	70	IA	3	No	0:LIVING	25	Adenocarcinomas
+NSLC-0068	Female	56	IA	2	No	0:LIVING	18.7	Adenocarcinomas
+NSLC-0069	Female	65	IA	2	No	0:LIVING	16.7	Adenocarcinomas
+NSLC-0071	Female	49	IB	2	No	0:LIVING	16.3	Adenocarcinomas
+NSLC-0072	Female	73	IA	1	Yes	0:LIVING	15.1	Carcinoids
+NSLC-0073	Female	66	IA	1	No	0:LIVING	16.3	Adenocarcinomas
+NSLC-0074	Female	68	III	3	Yes	0:LIVING	13.5	Adenocarcinomas
+NSLC-0076	Female	68	IA	2	No	0:LIVING	10.7	Adenocarcinomas
+NSLC-0077	Female	75	III		Yes	0:LIVING	9.4	Carcinoids
+NSLC-0078	Female	65	IB	2	No	0:LIVING	8.4	Adenocarcinomas
+NSLC-0079	Female	66	IB	2	No	0:LIVING	7.4	Adenocarcinomas
+NSLC-0080	Female	55	IB	2	No	0:LIVING	8.2	Adenocarcinomas
+NSLC-0081	Female	67	III	1	No	0:LIVING	7.5	Adenocarcinomas
+NSLC-0082	Male	55	IA	1	No	0:LIVING	7.4	Adenocarcinomas
+NSLC-0083	Female	61	IA	1	No	0:LIVING	7	Carcinoids
+NSLC-0084	Female	74	IA	1	No	0:LIVING	5.7	Adenocarcinomas
+NSLC-0085	Female	69	IB	2	Yes	0:LIVING	5.3	Adenocarcinomas
+NSLC-0086	Female	57	IA	1	No	0:LIVING	2.7	Adenocarcinomas
+NSLC-0087	Male	72	II		No	0:LIVING	3.2	Others
+NSLC-0088	Male	59	IB	2	No	0:LIVING	1.3	Adenocarcinomas
+NSLC-0090	Female	79.31006	III	3	Yes	0:LIVING	74.4	Adenocarcinomas
+NSLC-0092	Female	77.80698	IB	2	Yes	1:DECEASED	41.9	Adenocarcinomas
+NSLC-0093	Female	73.74949	IA	1	Yes	0:LIVING	77.1	Adenocarcinomas
+NSLC-0094	Female	66.9295	IB	1	Yes	0:LIVING	104.9	Adenocarcinomas
+NSLC-0095	Female	71.23888	II	2	Yes	1:DECEASED	85.8	Adenocarcinomas
+NSLC-0096	Female	61.46749	III	2	Yes	1:DECEASED	63.75	Adenocarcinomas
+NSLC-0097	Female	70.81999	IB	2	No	0:LIVING	72.36	Adenocarcinomas
+NSLC-0098	Female	78.4011	IA	1	Yes	0:LIVING	70.14	Carcinoids
+NSLC-0100	Female	44.06571	II	2	Yes	1:DECEASED	18.43	Adenocarcinomas
+NSLC-0101	Female	65.09514	III	3	Yes	0:LIVING	75.18	Adenocarcinomas
+NSLC-0102	Male	68.19713	II		Yes	0:LIVING	85.86	Adenocarcinomas
+NSLC-0103	Female	71.56468	IA	1	Yes	1:DECEASED	17	Adenocarcinomas
+NSLC-0104	Female	69.72211	III	3	Yes	0:LIVING	98.93	Adenocarcinomas
+NSLC-0105	Female	66.04517	IA		No	0:LIVING	78.61	Adenocarcinomas
+NSLC-0106	Female	46.33539						Carcinoids
+NSLC-0107	Female	70.99247	III	2		1:DECEASED	10.07	Adenocarcinomas
+NSLC-0108	Female	74.25873	IB	2	Yes	0:LIVING	74.18	Adenocarcinomas
+NSLC-0109	Female	69.99042	IB		No	0:LIVING	71.18	Adenocarcinomas
+NSLC-0110	Male	28.13689	II	1				Adenocarcinomas
+NSLC-0111	Female	68.14784	IB	2	Yes	1:DECEASED	33.36	Adenocarcinomas
+NSLC-0112	Female	49	IA	2				Adenocarcinomas
+NSLC-0113	Male	69						Adenocarcinomas
+NSLC-0114	Female	59	IB	1		0:LIVING	115	Adenocarcinomas
+NSLC-0115	Female	77	II	2		0:LIVING	68	Adenocarcinomas
+NSLC-0116	Female	69	IA	2		0:LIVING	124	Adenocarcinomas
+NSLC-0117	Male	65	III	1	No	0:LIVING	115	Adenocarcinomas
+NSLC-0118	Female	83	IB	2		0:LIVING	104	Adenocarcinomas
+NSLC-0119	Female	79		1		0:LIVING	104	Carcinoids
+NSLC-0120	Female	78	IA	1		0:LIVING	109	Adenocarcinomas
+NSLC-0121	Male	40	IA	2		0:LIVING	95	Adenocarcinomas
+NSLC-0122	Male	61	II			0:LIVING	78	Adenocarcinomas
+NSLC-0123	Female	55	IA	2		0:LIVING	91	Adenocarcinomas
+NSLC-0124	Female	68	II	2	No	1:DECEASED	36.1	Adenocarcinomas
+NSLC-0125	Female	29	IA	1	No	0:LIVING	41.2	Carcinoids
+NSLC-0126	Male	66	IA		No	1:DECEASED	81.6	Carcinoids
+NSLC-0127	Female	46	IB		No	0:LIVING	200	Carcinoids
+NSLC-0128	Female	71	IA		No	1:DECEASED	177.5	Carcinoids
+NSLC-0129	Female		II		No	0:LIVING		Others
+NSLC-0130	Female	70	II	3	No	1:DECEASED	54	Adenocarcinomas
+NSLC-0131	Male	55	IB	2	No	1:DECEASED	28	Adenocarcinomas
+NSLC-0132	Female		IA		No	0:LIVING	117.233333	Carcinoids
+NSLC-0133	Female	75	III	3	No	1:DECEASED	48.5	Adenocarcinomas
+NSLC-0134	Male	69	II		No	0:LIVING	113.1	Carcinoids
+NSLC-0135	Female	76	IB	2	Yes	0:LIVING	99.3	Adenocarcinomas
+NSLC-0136	Female	74	IA	2	No	0:LIVING	91.5	Adenocarcinomas
+NSLC-0137	Male	21	IA		No	0:LIVING	86.6	Carcinoids
+NSLC-0138	Female	72	IA	1	No	0:LIVING	84.6	Adenocarcinomas
+NSLC-0139	Male	71	III	3	No	1:DECEASED	33	Others
+NSLC-0140	Female	79	IA	2	No	0:LIVING	83.6	Adenocarcinomas
+NSLC-0142	Male	47	III	1	No	0:LIVING	68.2	Carcinoids
+NSLC-0143	Female	78	IA	1	No	1:DECEASED	29.8	Adenocarcinomas
+NSLC-0144	Female	75	IA	3	No	0:LIVING	66.3	Adenocarcinomas
+NSLC-0145	Male	65	II	3	No	1:DECEASED	13	Adenocarcinomas
+NSLC-0146	Female	82	IA	1	No	0:LIVING	61.8	Adenocarcinomas
+NSLC-0147	Female	69	IB	1	Yes	0:LIVING	61.1	Adenocarcinomas
+NSLC-0148	Female	73	IA	2	Yes	1:DECEASED	56	Adenocarcinomas
+NSLC-0149	Female	72	IA	1	No	0:LIVING	58	Carcinoids
+NSLC-0150	Female	71	IA	1	No	0:LIVING	52	Carcinoids
+NSLC-0151	Male	57	IA	2	No	0:LIVING	42.7	Adenocarcinomas
+NSLC-0152	Female	64	IA	2	No	0:LIVING	43.1	Adenocarcinomas
+NSLC-0153	Female	59	IA		No	0:LIVING	41.2	Carcinoids
+NSLC-0154	Female	74	IA		No	0:LIVING	37.1	Adenocarcinomas
+NSLC-0155	Female	77	IA	2	No	0:LIVING	30	Adenocarcinomas
+NSLC-0156	Female	77	IB	1	No	0:LIVING	26.5	Adenocarcinomas
+NSLC-0157	Male	47	III		No	1:DECEASED	13.1	Others
+NSLC-0158	Female	70	IA	1	No	0:LIVING	21	Carcinoids
+NSLC-0159	Female	77	IA		No	0:LIVING	15.6	Carcinoids
+NSLC-0160	Female	72	IA	1	No	0:LIVING	13.5	Adenocarcinomas
+NSLC-0161	Male	77	II	1	No	0:LIVING	10.7	Adenocarcinomas
+NSLC-0162	Male	49	IA	1	No	0:LIVING	7.5	Carcinoids
+NSLC-0163	Female	68	IA	2	No	0:LIVING	3.7	Carcinoids
+NSLC-0164	Female	56	II	1	No	0:LIVING	3.8	Carcinoids
+NSLC-0165	Female	64	IA	1	No	0:LIVING	1.6	Carcinoids
+NSLC-0166	Female	57	IA	2	Yes	0:LIVING	1.566667	Adenocarcinomas
+NSLC-0167	Female	74.22861	IB	1	Yes	0:LIVING	74.6	Adenocarcinomas
+NSLC-0168	Female	58.2423	III	2	Yes	1:DECEASED	40.4	Adenocarcinomas
+NSLC-0169	Male	69.51951						Carcinoids
+NSLC-0170	Female	62.19028	III	2	Yes	1:DECEASED	84.8	Adenocarcinomas
+NSLC-0171	Female	74.0616	IA	2	No	0:LIVING	82.4	Adenocarcinomas
+NSLC-0172	Male	60		1		0:LIVING	88	Carcinoids
+NSLC-0173	Female	57	III	2	No	1:DECEASED	24	Adenocarcinomas
+NSLC-0174	Female	66	III	2	Yes	0:LIVING	132	Adenocarcinomas
+NSLC-0175	Male	65	IB	1	No	1:DECEASED	1	Adenocarcinomas
+NSLC-0176	Female	76	II	1	No	0:LIVING	72	Adenocarcinomas
+NSLC-0177	Male	78	III	2	Yes	1:DECEASED	44	Adenocarcinomas
+NSLC-0178	Male	61	II	1	No	0:LIVING	114	Adenocarcinomas
+NSLC-0180	Female	73	III	1	No	1:DECEASED	37	Adenocarcinomas
+NSLC-0181	Female	61	II	1	No	1:DECEASED	36	Adenocarcinomas
+NSLC-0183	Female	62	IB	3	Yes	0:LIVING	119	Adenocarcinomas
+NSLC-0184	Female	62	IA	1	Yes	0:LIVING	119	Adenocarcinomas
+NSLC-0185	Male	72	III		No	1:DECEASED	92	Adenocarcinomas
+NSLC-0186	Female	73	IB	1	No	0:LIVING	96	Adenocarcinomas
+NSLC-0187	Female	77	III	1	No	1:DECEASED	27	Adenocarcinomas
+NSLC-0188	Male	66	III	1	Yes	0:LIVING	66	Adenocarcinomas
+NSLC-0190	Female	76	IA	1	No	0:LIVING	83	Adenocarcinomas
+NSLC-0191	Female	67	III	3	Yes	1:DECEASED	14	Adenocarcinomas
+NSLC-0192	Male	82	III	3	No	0:LIVING	29	Adenocarcinomas
+NSLC-0193	Male	73	II	1	No	1:DECEASED	25	Adenocarcinomas
+NSLC-0194	Female	50	III	1	No	0:LIVING	38	Adenocarcinomas
+NSLC-0195	Male	64	IB	1	Yes	1:DECEASED	39	Adenocarcinomas
+NSLC-0196	Female	77	II	3	No	1:DECEASED	45	Adenocarcinomas
+NSLC-0197	Female	68	IB	2	No	0:LIVING	70	Adenocarcinomas
+NSLC-0198	Female	69	II		Yes	0:LIVING	82	Adenocarcinomas
+NSLC-0199	Female	74	II	1	No	0:LIVING	70	Adenocarcinomas
+NSLC-0200	Female	79	IB	1	Yes	1:DECEASED	40	Adenocarcinomas
+NSLC-0201	Female	56	III	1	No	1:DECEASED	20	Adenocarcinomas
+NSLC-0203	Female	70	IA		Yes	0:LIVING	73	Adenocarcinomas
+NSLC-0204	Female	76	II	1	No	0:LIVING	72	Adenocarcinomas
+NSLC-0207	Male	68	II	1	Yes	0:LIVING	43	Adenocarcinomas
+NSLC-0209	Female	52	IA	1	No	0:LIVING	58	Adenocarcinomas
+NSLC-0210	Female	69	IA	1	No	0:LIVING	35	Adenocarcinomas
+NSLC-0212	Female	65	IA	1	No	0:LIVING	63	Adenocarcinomas
+NSLC-0213	Male	71	IB	1	No	0:LIVING	61	Adenocarcinomas
+NSLC-0214	Female	78	IB	2	No	0:LIVING	50	Adenocarcinomas
+NSLC-0215	Female	67	IB	2	No	1:DECEASED	23	Adenocarcinomas
+NSLC-0216	Male	68	II	1	No	0:LIVING	47	Adenocarcinomas
+NSLC-0217	Female	73	II	3	No	0:LIVING	14	Adenocarcinomas
+NSLC-0218	Female	67	IB	1	Yes	0:LIVING	46	Adenocarcinomas
+NSLC-0219	Female	39	IA	1	No	0:LIVING	45	Adenocarcinomas
+NSLC-0220	Male					1:DECEASED	1	Adenocarcinomas
+NSLC-0221	Female	75	II	2	No	1:DECEASED	5	Adenocarcinomas
+NSLC-0222	Female	73	II	1	No	0:LIVING	5	Adenocarcinomas
+NSLC-0223	Female	83	IA	1	No	0:LIVING	1	Adenocarcinomas
+NSLC-0225	Female	63	IB	1	No	0:LIVING	38	Adenocarcinomas
+NSLC-0226	Female	86	II	2	No	0:LIVING	2	Adenocarcinomas
+NSLC-0227	Female	70	IB	1	No	0:LIVING	8	Adenocarcinomas
+NSLC-0228	Female	82	IA	1	No	0:LIVING	21	Adenocarcinomas
+NSLC-0229	Female		IB	2	Yes	0:LIVING		Adenocarcinomas
+NSLC-0230	Female		IA	2		0:LIVING		Adenocarcinomas
+NSLC-0231	Female	74		3	No	1:DECEASED	18.6	Adenocarcinomas
+NSLC-0232	Male		II	2	Yes	1:DECEASED	8.5	Adenocarcinomas
+NSLC-0233	Female		IB		No	1:DECEASED		Adenocarcinomas
+NSLC-0236	Female		III	2		0:LIVING		Adenocarcinomas
+NSLC-0237	Female		IA	2	Yes	0:LIVING		Adenocarcinomas
+NSLC-0240	Male	28	IB	2	No	0:LIVING		Adenocarcinomas
+NSLC-0242	Female		IA		Yes	0:LIVING		Adenocarcinomas
+NSLC-0243	Female	39	II		No	0:LIVING		Adenocarcinomas
+NSLC-0244	Male		IB		Yes	0:LIVING		Adenocarcinomas
+NSLC-0245	Male		IA	2	No	0:LIVING		Adenocarcinomas
+NSLC-0246	Male		IA	2	Yes	0:LIVING		Adenocarcinomas
+NSLC-0247	Female	25	IA	2	Yes	0:LIVING		Adenocarcinomas
+NSLC-0248	Female	28	IB	2	No	1:DECEASED	7.8	Adenocarcinomas
+NSLC-0249	Male		II	3	Yes	0:LIVING		Adenocarcinomas
+NSLC-0250	Female	71	IB	2	No	0:LIVING		Adenocarcinomas
+NSLC-0251	Male	59	III	2	Yes	0:LIVING		Adenocarcinomas
+NSLC-0252	Female		IA	2	Yes	0:LIVING		Adenocarcinomas
+NSLC-0253	Female		IB	2	Yes	0:LIVING		Adenocarcinomas
+NSLC-0254	Male		IA	1	Yes	0:LIVING		Adenocarcinomas
+NSLC-0255	Male		IB	2	Yes	0:LIVING		Adenocarcinomas
