@@ -1,0 +1,4 @@
+Model,Split,Accuracy,Balanced_Accuracy,Macro_F1,Weighted_F1,Top2_Accuracy,Derived_Early_Advanced_Accuracy
+LSTM,Test,41.39,40.38,36.57,40.72,69.66,70.22
+BLSTM,Test,38.39,37.32,33.95,38.2,71.16,69.1
+CNN,Test,24.34,28.06,15.6,19.76,57.49,58.61
