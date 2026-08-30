@@ -3,3 +3,5 @@ data/raw/cbioportal/mskcc_2023_data_mutations.txt filter=lfs diff=lfs merge=lfs 
 data/raw/** -text
 data/processed/101bp/final_luad_multigene_sequence_training_dataset.csv filter=lfs diff=lfs merge=lfs -text
 data/processed/** -text
+data/processed/301bp/luad_301bp_mutation_level_dataset.csv filter=lfs diff=lfs merge=lfs -text
+data/processed/301bp/luad_301bp_patient_level_dataset.csv filter=lfs diff=lfs merge=lfs -text
