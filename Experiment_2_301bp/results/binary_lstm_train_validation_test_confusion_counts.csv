@@ -1,0 +1,4 @@
+Split,TN,FP,FN,TP
+Training,988,476,128,898
+Validation,209,105,35,185
+Test,195,119,45,175

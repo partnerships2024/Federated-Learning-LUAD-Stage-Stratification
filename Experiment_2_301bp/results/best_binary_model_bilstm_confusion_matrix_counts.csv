@@ -1,0 +1,5 @@
+Outcome,Confusion_Matrix_Term,Count
+True Early predicted as Early,TN,195
+Early misclassified as Advanced,FP,119
+Advanced misclassified as Early,FN,47
+True Advanced predicted as Advanced,TP,173

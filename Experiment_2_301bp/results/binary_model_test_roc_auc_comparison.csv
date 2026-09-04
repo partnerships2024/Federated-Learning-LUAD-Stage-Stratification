@@ -1,0 +1,4 @@
+Model,Test_Samples,ROC_AUC,Prediction_Source
+CNN,534,0.7651852924145919,C:\Users\LAPTOP\Downloads\luad_reserch_code\final_luad_results\results\binary_cnn_train_validation_test_predictions.csv
+LSTM,534,0.7747539085118703,C:\Users\LAPTOP\Downloads\luad_reserch_code\final_luad_results\results\binary_lstm_train_validation_test_predictions.csv
+BiLSTM,534,0.7768529241459179,C:\Users\LAPTOP\Downloads\luad_reserch_code\final_luad_results\results\binary_blstm_train_test_predictions.csv
