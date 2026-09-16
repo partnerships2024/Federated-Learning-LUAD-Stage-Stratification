@@ -1,4 +1,4 @@
-# CHI Lab Project II — LUAD Genomic Deep Learning
+# CHI Lab Project — LUAD Genomic Deep Learning
 
 <p align="center">
 
@@ -17,7 +17,7 @@
 
 ---
 
-## 🔬 Project Overview
+## Project Overview
 
 This repository contains the **code, genomic datasets, processed data, experimental configurations, and research outputs** for a Lung Adenocarcinoma (LUAD) stage-stratification project based on **mutation-centred genomic DNA sequences**.
 
@@ -29,7 +29,7 @@ The research pipeline integrates publicly accessible cancer genomics resources w
 
 ---
 
-## 🎯 Research Objectives
+## Research Objectives
 
 The project is designed around the following objectives:
 
@@ -44,7 +44,7 @@ The project is designed around the following objectives:
 
 ---
 
-# 🧬 Data & Research Resources
+# Data & Research Resources
 
 The project uses three principal external resources: **cBioPortal for Cancer Genomics**, **IntOGen**, and **Ensembl BioMart**. The source verification document identifies cBioPortal as the source of genomic mutation and clinical data, IntOGen as the driver-gene resource, and Ensembl BioMart as the source for reference coding DNA/gene sequences.
 
@@ -58,7 +58,7 @@ The project uses three principal external resources: **cBioPortal for Cancer Gen
 
 ---
 
-# 🧪 LUAD Cohorts
+# LUAD Cohorts
 
 Seven LUAD-related cohorts from **cBioPortal** are incorporated into the research workflow. For reproducibility, the **cBioPortal Study ID** should be retained alongside the project-level cohort name. The source document explicitly identifies the study IDs as the most reliable cohort identifiers.
 
@@ -76,7 +76,7 @@ The cohort names and study IDs above follow the verification sheet. In particula
 
 ---
 
-# 🧬 Sequence-Based Experiments
+# Sequence-Based Experiments
 
 ## Experiment 1 — 101-bp Mutation-Centred Windows
 
@@ -118,7 +118,7 @@ Code and experimental results for the 301-bp configuration are organised within 
 
 ---
 
-# 🧠 Research Pipeline
+# Research Pipeline
 
 ```text
 ┌───────────────────────────┐
@@ -164,7 +164,7 @@ Code and experimental results for the 301-bp configuration are organised within 
 
 ---
 
-# 📊 Research Tasks
+# Research Tasks
 
 The project evaluates two LUAD stage-stratification formulations:
 
@@ -193,7 +193,7 @@ These two task definitions are part of the project's experimental research scope
 
 ---
 
-# 📁 Repository Structure
+# Repository Structure
 
 ```text
 .
@@ -218,7 +218,7 @@ The repository separates raw external resources, processed sequence datasets, an
 
 ---
 
-# 💾 Git Large File Storage
+# Git Large File Storage
 
 Large genomic datasets and processed research files are maintained using **Git Large File Storage (Git LFS)**.
 
@@ -233,7 +233,7 @@ This follows the Git LFS workflow specified in the previous repository documenta
 
 ---
 
-# 🔗 Quick Access — Research Resources
+# Quick Access — Research Resources
 
 | Resource | Link |
 |:---|:---|
@@ -250,7 +250,7 @@ This follows the Git LFS workflow specified in the previous repository documenta
 
 ---
 
-# 🔬 Research Scope
+# Research Scope
 
 This repository represents an **experimental computational research pipeline** for LUAD genomic sequence modelling and stage stratification.
 
@@ -270,7 +270,7 @@ The current scope includes:
 
 ---
 
-# 📌 Reproducibility
+# Reproducibility
 
 For reproducible research, users should retain:
 
@@ -287,7 +287,7 @@ The cBioPortal study ID is particularly important because the verification docum
 
 ---
 
-# 🏛️ CHI Lab Research
+# CHI Lab Research
 
 **Computational Healthcare Intelligence Lab (CHI Lab)**  
 **ICRI-STE — International Council for Research & Innovation in STE**
