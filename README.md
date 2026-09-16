@@ -289,9 +289,7 @@ The cBioPortal study ID is particularly important because the verification docum
 
 # CHI Lab Research
 
-**Computational Healthcare Intelligence Lab (CHI Lab)** 
 [![ICRI-STE Website](https://img.shields.io/badge/Website-ICRI--STE-00A6A6?style=for-the-badge&logo=googlechrome&logoColor=white)](https://icriste.com)
-**ICRI-STE — International Council for Research & Innovation in STE**
 [![CHI Lab](https://img.shields.io/badge/CHI%20Lab-Research-0A7EA4?style=for-the-badge)](https://icriste.com/computational-healthcare-intelligence-lab-chi-lab/)
 
 
