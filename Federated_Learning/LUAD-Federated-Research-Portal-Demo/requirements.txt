@@ -1,0 +1,14 @@
+# Verified Python 3.10 runtime for the existing LUAD federated BiLSTM artifacts.
+# TensorFlow 2.13 requires NumPy 1.x and protobuf < 5 on this Windows build.
+Flask==3.0.3
+Werkzeug==3.1.8
+numpy==1.24.3
+tensorflow==2.13.0
+tensorflow-intel==2.13.0
+keras==2.13.1
+protobuf==4.25.3
+h5py==3.16.0
+pandas==2.0.3
+scikit-learn==1.3.2
+scipy==1.15.3
+typing-extensions==4.5.0

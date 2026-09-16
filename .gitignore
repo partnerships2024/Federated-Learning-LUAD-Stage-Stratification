@@ -1,0 +1,17 @@
+.venv/
+venv/
+env/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.log
+debug.log
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+*.zip
+*.mp4
+.env
+.env.*
+artifacts/
+**/lab_*_reports.db

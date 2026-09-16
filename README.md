@@ -1,4 +1,8 @@
-# LUAD Genomic Deep Learning
+# CHI-Lab LUAD-FedStage
+
+## Federated Genomic Stage Stratification Research Portal
+
+The final CHI Lab portal is a privacy-aware, data-local federated research prototype for LUAD stage-group prediction. It provides local genomic inference for three simulated research hospitals, a local report archive, and a central federated server dashboard.
 
 <p align="center">
 
@@ -24,6 +28,22 @@ This repository contains the **code, genomic datasets, processed data, experimen
 The project investigates deep learning approaches for learning sequence-level representations around genomic mutations and evaluating their utility for **LUAD disease-stage stratification**.
 
 The research pipeline integrates publicly accessible cancer genomics resources with mutation-centred sequence construction and deep learning experiments.
+
+## Final Research Portal
+
+The tested portal is located at [`Federated_Learning/LUAD-Federated-Research-Portal-Demo/`](Federated_Learning/LUAD-Federated-Research-Portal-Demo/).
+
+It implements:
+
+- Early (Stages I-II) versus Advanced (Stages III-IV) binary LUAD stage-group classification.
+- Mutation-centred 301-bp genomic windows with the validated Federated Binary BiLSTM.
+- Three simulated research clients/hospitals and sample-weighted Federated Averaging (FedAvg).
+- Data-local inference, a local research report archive, and a central federated server dashboard.
+- CHI Lab branding with the ICRI-STE research affiliation.
+
+This is a privacy-aware, data-local federated research prototype. It does not claim differential privacy, secure aggregation, or a formal privacy guarantee.
+
+> **Research prototype - not for clinical diagnosis or treatment decisions.**
 
 > **Research focus:** Mutation-centred genomic DNA sequences → Deep Learning → LUAD Stage Stratification
 

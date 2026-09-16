@@ -1,0 +1,1227 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+
+/* CHI Lab visual system: one accent, quiet surfaces, instrument-panel hierarchy. */
+:root {
+  --lab-navy: #102a43;
+  --lab-navy-deep: #0b2137;
+  --lab-ink: #1b3347;
+  --lab-accent: #168b8d;
+  --lab-accent-strong: #0e7073;
+  --lab-signal: #21835f;
+  --lab-warning: #9b711e;
+  --lab-muted: #667988;
+  --lab-bg: #f3f7f9;
+  --lab-surface: #ffffff;
+  --lab-surface-soft: #edf4f6;
+  --lab-line: #d2dfe6;
+  --lab-line-strong: #b7c9d3;
+  --lab-shadow: 0 8px 22px rgba(16, 42, 67, .06);
+  --lab-shadow-strong: 0 14px 28px rgba(16, 42, 67, .12);
+  --lab-radius: 8px;
+  --lab-radius-lg: 11px;
+
+  /* Map the existing component variables into the restrained system. */
+  --navy: var(--lab-navy);
+  --navy-2: #1c4962;
+  --blue: var(--lab-accent);
+  --teal: var(--lab-accent);
+  --purple: #647988;
+  --gold: var(--lab-accent);
+  --ink: var(--lab-ink);
+  --muted: var(--lab-muted);
+  --line: var(--lab-line);
+  --bg: var(--lab-bg);
+  --white: #fff;
+  --shadow: var(--lab-shadow);
+  --shadow-lg: var(--lab-shadow-strong);
+}
+
+/* Base and type scale */
+body {
+  background: var(--lab-bg);
+  color: var(--lab-ink);
+  font-family: 'IBM Plex Sans', 'Segoe UI', sans-serif;
+  font-size: 14px;
+  letter-spacing: -.006em;
+}
+
+.chi-brand-copy {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-shell {
+  background: var(--lab-bg);
+}
+
+.content {
+  width: min(1320px, 100%);
+  padding: clamp(28px, 4vw, 48px) clamp(18px, 5vw, 64px);
+}
+
+.eyebrow {
+  margin-bottom: 6px;
+  color: var(--lab-accent-strong);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  line-height: 1.3;
+  text-transform: lowercase;
+}
+
+.page-header {
+  align-items: flex-end;
+  margin-bottom: 23px;
+  padding-bottom: 19px;
+  border-bottom: 1px solid var(--lab-line);
+}
+
+.page-header h1,
+.login-card h1 {
+  color: var(--lab-navy);
+  font-size: clamp(29px, 3vw, 39px);
+  font-weight: 600;
+  letter-spacing: -.045em;
+}
+
+.page-header .muted {
+  max-width: 720px;
+  margin-top: 8px;
+}
+
+.panel h2,
+.visual-card h2 {
+  color: var(--lab-navy);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -.025em;
+}
+
+.panel h3 {
+  font-weight: 600;
+}
+
+.muted {
+  color: var(--lab-muted);
+}
+
+/* Persistent instrument-panel sidebar */
+.sidebar {
+  width: 250px;
+  flex: 0 0 250px;
+  min-width: 0;
+  padding: 0 18px 20px;
+  border-right: 1px solid #173a54;
+  background: var(--lab-navy-deep);
+  box-shadow: none;
+}
+
+.sidebar-identity {
+  width: 100%;
+}
+
+.sidebar-brand {
+  display: block;
+  width: 100%;
+  color: #fff;
+  text-decoration: none;
+}
+
+.sidebar-brand-section {
+  width: 100%;
+  margin-left: 0;
+  padding: 14px 10px 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, .12);
+  text-align: center;
+}
+
+.sidebar-chi-logo {
+  display: block;
+  width: 215px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 16px;
+  object-fit: contain;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .12);
+}
+
+.sidebar-brand-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-brand-title {
+  display: block;
+  margin-top: 17px;
+  color: #fff;
+  font-size: 19px;
+  font-weight: 750;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.sidebar-brand-project {
+  display: block;
+  margin-top: 14px;
+  color: #fff;
+  font-size: 19px;
+  font-weight: 750;
+  line-height: 1.15;
+  white-space: nowrap;
+}
+
+.sidebar-brand-subtitle {
+  display: block;
+  margin-top: 10px;
+  color: #70d8d4;
+  font-size: 10.5px;
+  font-weight: 600;
+  line-height: 1.35;
+  white-space: normal;
+}
+
+.sidebar .role-chip {
+  margin: 0 0 18px;
+  padding: 10px 11px;
+  border-color: rgba(255, 255, 255, .09);
+  border-radius: 9px;
+  background: rgba(255, 255, 255, .05);
+  color: #b9cbd9;
+}
+
+.sidebar nav {
+  gap: 2px;
+}
+
+.nav-link {
+  min-height: 42px;
+  padding: 11px 11px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: #adc1d0;
+  font-size: 13px;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  transform: none;
+  border-color: transparent;
+  background: rgba(132, 210, 202, .1);
+  color: #fff;
+}
+
+.nav-link.active::before {
+  width: 2px;
+  height: 20px;
+  margin-left: -7px;
+  border-radius: 0;
+  background: var(--lab-accent);
+  content: '';
+}
+
+.sidebar-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.sidebar-affiliation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, .12);
+}
+
+.sidebar-affiliation-label {
+  color: rgba(179, 205, 215, .82);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  line-height: 1.2;
+}
+
+.sidebar-affiliation-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-top: 8px;
+  padding: 4px 6px;
+  border-radius: 7px;
+  background: #fff;
+}
+
+.sidebar-icri-logo {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.sidebar .button.outline {
+  border-radius: 8px;
+  color: #d3e0e9;
+}
+
+.sidebar .button.outline:hover {
+  background: rgba(255, 255, 255, .08);
+}
+
+/* Shared modules: modules are outlined by default, with hierarchy carried by surface and weight. */
+.metric-card,
+.panel,
+.comparison-card,
+.visual-card {
+  border: 1px solid var(--lab-line);
+  border-radius: var(--lab-radius);
+  background: var(--lab-surface);
+  box-shadow: none;
+}
+
+.panel,
+.visual-card {
+  padding: 23px;
+}
+
+.panel-heading {
+  margin-bottom: 16px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid var(--lab-line);
+}
+
+.section-icon {
+  color: var(--lab-accent);
+}
+
+.notice {
+  margin-bottom: 20px;
+  border: 1px solid #c5dcdf;
+  border-left: 3px solid var(--lab-accent);
+  border-radius: 6px;
+  background: var(--lab-surface-soft);
+  color: #385966;
+  box-shadow: none;
+}
+
+.notice > i {
+  color: var(--lab-accent);
+}
+
+.notice strong {
+  color: var(--lab-accent-strong);
+}
+
+.scientific-notice {
+  border-color: var(--lab-line);
+  border-left-color: #788b9a;
+  background: #eef2f4;
+  color: var(--lab-ink);
+}
+
+.scientific-notice > i,
+.scientific-notice strong {
+  color: #586d7d;
+}
+
+.status-pill {
+  border: 1px solid #b9ded4;
+  border-radius: 999px;
+  background: #edf8f4;
+  color: var(--lab-signal);
+  font-size: 11px;
+}
+
+.status-pill.teal {
+  border-color: #bddfe0;
+  background: #eef8f8;
+  color: var(--lab-accent-strong);
+}
+
+/* Metric hierarchy: one dominant anchor, quiet supporting readings. */
+.metric-grid {
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.metric-card {
+  position: relative;
+  min-height: 137px;
+  padding: 20px;
+  border-top: 2px solid var(--lab-line-strong);
+  overflow: hidden;
+}
+
+.metric-card::after {
+  display: none;
+}
+
+.metric-card .metric-icon {
+  color: var(--lab-muted);
+  font-size: 19px;
+}
+
+.metric-label,
+.metric-caption {
+  color: var(--lab-muted);
+  font-size: 11px;
+}
+
+.metric-card strong {
+  margin: 8px 0 5px;
+  color: var(--lab-navy);
+  font-family: 'IBM Plex Mono', Consolas, monospace;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: -.04em;
+}
+
+.metric-card .text-value {
+  font-family: 'IBM Plex Sans', 'Segoe UI', sans-serif;
+  font-size: 18px;
+  letter-spacing: -.025em;
+}
+
+.metric-grid:not(.compact) .metric-card:first-child {
+  border-color: var(--lab-navy);
+  border-top-color: var(--lab-accent);
+  background: var(--lab-navy);
+  box-shadow: var(--lab-shadow-strong);
+}
+
+.metric-grid:not(.compact) .metric-card:first-child .metric-label,
+.metric-grid:not(.compact) .metric-card:first-child .metric-caption {
+  color: #b7cbd8;
+}
+
+.metric-grid:not(.compact) .metric-card:first-child .metric-icon,
+.metric-grid:not(.compact) .metric-card:first-child strong {
+  color: #fff;
+}
+
+.metric-grid:not(.compact) .metric-card:nth-child(2) {
+  border-top-color: #a7c9c7;
+}
+
+.metric-grid:not(.compact) .metric-card:nth-child(3),
+.metric-grid:not(.compact) .metric-card:nth-child(4) {
+  background: #f8fafb;
+}
+
+.metric-grid.compact .metric-card {
+  min-height: 125px;
+  border-top: 0;
+  border-left: 3px solid var(--lab-line-strong);
+}
+
+.metric-grid.compact .metric-card:first-child {
+  border-color: var(--lab-accent);
+  background: var(--lab-surface);
+  box-shadow: none;
+}
+
+.metric-grid.compact .metric-card:first-child .metric-label,
+.metric-grid.compact .metric-card:first-child .metric-caption,
+.metric-grid.compact .metric-card:first-child .metric-icon,
+.metric-grid.compact .metric-card:first-child strong {
+  color: inherit;
+}
+
+/* Actions and controls */
+.button {
+  min-height: 40px;
+  border-radius: 5px;
+  font-size: 13px;
+  transition: background-color .18s ease, border-color .18s ease, transform .18s ease;
+}
+
+.button:hover {
+  filter: none;
+}
+
+.button.primary {
+  background: var(--lab-accent);
+  color: #fff;
+  box-shadow: none;
+}
+
+.button.primary:hover {
+  background: var(--lab-accent-strong);
+}
+
+.button.add-mutation {
+  border-color: var(--lab-accent);
+  background: transparent;
+  color: var(--lab-accent-strong);
+  box-shadow: none;
+}
+
+.button.add-mutation:hover {
+  background: #edf8f7;
+  box-shadow: none;
+}
+
+.button.add-mutation:disabled {
+  background: #e8eef1;
+  border-color: #d4e0e5;
+  color: #90a0aa;
+}
+
+.quick-action {
+  border-color: var(--lab-navy);
+  border-left: 4px solid var(--lab-accent);
+  background: var(--lab-navy);
+  box-shadow: var(--lab-shadow-strong);
+}
+
+.quick-action h2,
+.quick-action .eyebrow {
+  color: #fff;
+}
+
+.quick-action .muted {
+  color: #b9cbd8;
+}
+
+.quick-action > i {
+  color: #86d2ca;
+}
+
+/* Local analysis form hierarchy */
+.prediction-form {
+  gap: 12px;
+}
+
+.prediction-form select,
+.prediction-form input,
+.prediction-form textarea,
+.archive-filters input,
+.archive-filters select {
+  border: 1px solid var(--lab-line-strong);
+  border-radius: 5px;
+  background: #fff;
+  color: var(--lab-ink);
+  box-shadow: inset 0 1px 2px rgba(16, 42, 67, .025);
+}
+
+.prediction-form select:focus,
+.prediction-form input:focus,
+.prediction-form textarea:focus,
+.archive-filters input:focus,
+.archive-filters select:focus {
+  border-color: var(--lab-accent);
+  outline: 3px solid rgba(22, 139, 141, .14);
+}
+
+.form-section {
+  padding: 22px 0;
+}
+
+.form-section:first-of-type {
+  padding-top: 2px;
+}
+
+.form-section + .form-section {
+  border-top-color: var(--lab-line);
+}
+
+.section-title {
+  margin-bottom: 14px;
+}
+
+.section-title .eyebrow {
+  margin-bottom: 2px;
+}
+
+.step-badge {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--lab-navy);
+  border-radius: 5px;
+  background: var(--lab-navy);
+  color: #fff;
+  font-family: 'IBM Plex Mono', Consolas, monospace;
+  font-size: 12px;
+}
+
+.mutation-count {
+  border: 1px solid #c8d9df;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--lab-accent-strong);
+}
+
+.mutation-card {
+  border: 1px solid var(--lab-line);
+  border-radius: 6px;
+  background: #f7fafb;
+  box-shadow: none;
+}
+
+.mutation-card-header strong,
+.mutation-card label {
+  color: var(--lab-navy);
+}
+
+.remove-mutation {
+  border-radius: 5px;
+}
+
+.analysis-button {
+  min-height: 46px;
+}
+
+/* Archive: the search module is primary; readings and table stay quiet. */
+.archive-metrics .metric-card {
+  min-height: 130px;
+}
+
+.filter-card {
+  border-top: 3px solid var(--lab-accent);
+}
+
+.primary-search {
+  border-color: #c7dcdf;
+  border-radius: 6px;
+  background: var(--lab-surface-soft);
+}
+
+.archive-table th {
+  color: var(--lab-muted);
+  font-family: 'IBM Plex Sans', 'Segoe UI', sans-serif;
+  font-size: 11px;
+  letter-spacing: .03em;
+  text-transform: none;
+}
+
+.archive-table tbody tr:hover,
+table tbody tr:hover {
+  background: #f5fafb;
+}
+
+.prediction-badge,
+.source-badge,
+.count-badge {
+  border-radius: 999px;
+}
+
+.prediction-badge.early {
+  background: #e9f6f0;
+  color: var(--lab-signal);
+}
+
+.prediction-badge.advanced {
+  background: #e8f2f5;
+  color: var(--lab-navy-2, #1c4962);
+}
+
+.empty-state {
+  border-radius: 6px;
+  background: #f8fafb;
+}
+
+.empty-state > i {
+  color: var(--lab-accent);
+}
+
+/* Existing report surfaces remain compatible with the shared system. */
+.report-button {
+  background: var(--lab-accent-strong);
+}
+
+.prediction-class {
+  border-radius: 7px;
+  background: #edf4f7;
+  border-left-color: var(--lab-accent);
+}
+
+.progress span {
+  background: var(--lab-accent);
+}
+
+.progress.early span {
+  background: var(--lab-signal);
+}
+
+/* Login portal: shared CHI Lab identity with a focused sign-in workspace. */
+.login-page {
+  padding: 20px;
+  background: var(--lab-bg);
+}
+
+.login-card {
+  display: grid;
+  grid-template-columns: 44% 56%;
+  width: min(960px, calc(100vw - 40px));
+  max-width: calc(100vw - 40px);
+  padding: 0;
+  background: var(--lab-surface);
+  border: 1px solid var(--lab-line);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 26px rgba(16, 42, 67, .08);
+}
+
+.login-brand-panel {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+  padding: 42px 34px 36px;
+  color: #fff;
+  text-align: center;
+  background: var(--lab-navy-deep);
+}
+
+.login-brand-panel::before {
+  position: absolute;
+  inset: auto 0 0 auto;
+  width: 48%;
+  height: 72%;
+  content: "";
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='330' viewBox='0 0 240 330'%3E%3Cpath d='M40 0 C190 55 50 110 190 165 S50 275 190 330' fill='none' stroke='%2375d8d0' stroke-width='1.4'/%3E%3Cpath d='M190 0 C40 55 180 110 40 165 S180 275 40 330' fill='none' stroke='%2375d8d0' stroke-width='1.4'/%3E%3Cpath d='M61 28 L169 28 M66 83 L164 83 M66 138 L164 138 M66 193 L164 193 M61 248 L169 248 M72 303 L158 303' fill='none' stroke='%2375d8d0' stroke-width='1'/%3E%3C/svg%3E");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 220px 303px;
+  opacity: .055;
+  z-index: 0;
+}
+
+.login-brand-panel > * {
+  position: relative;
+  z-index: 1;
+}
+
+.login-panel-chi-logo {
+  display: block;
+  width: 175px;
+  max-width: 90%;
+  height: auto;
+  border-radius: 16px;
+  object-fit: contain;
+}
+
+.login-panel-project {
+  margin-top: 12px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 750;
+  line-height: 1.2;
+  letter-spacing: -.015em;
+}
+
+.login-panel-subtitle {
+  margin-top: 7px;
+  max-width: 100%;
+  color: rgba(225, 240, 242, .84);
+  font-size: 11px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4;
+}
+
+.login-panel-icri-logo {
+  display: block;
+  width: 188px;
+  max-width: 72%;
+  height: auto;
+  margin-top: 26px;
+  border-radius: 7px;
+  object-fit: contain;
+}
+
+.login-form-panel {
+  min-width: 0;
+  padding: 48px 46px;
+  background: var(--lab-surface);
+}
+
+.login-form-panel .eyebrow {
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.login-form-panel h1 {
+  margin: 8px 0 0;
+  color: var(--lab-navy);
+  font-size: clamp(29px, 3vw, 36px);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -.045em;
+}
+
+.login-form-title-sub {
+  margin: 8px 0 0;
+  color: var(--lab-navy);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.login-form-intro {
+  max-width: 400px;
+  margin: 14px 0 0;
+  line-height: 1.5;
+}
+
+.login-form-panel .institution-branding {
+  text-align: center;
+}
+
+.login-form-panel .login-form {
+  gap: 8px;
+  margin-top: 29px;
+}
+
+.login-form-panel .login-form input {
+  height: 50px;
+  margin-bottom: 5px;
+  padding: 12px 13px;
+  border: 1px solid #cddde5;
+  border-radius: 9px;
+  background: #fff;
+}
+
+.login-form-panel .login-form input:focus {
+  border-color: var(--lab-accent);
+  box-shadow: 0 0 0 3px rgba(21, 154, 156, .10);
+  outline: none;
+}
+
+.login-form-panel .login-form .button.primary {
+  min-height: 50px;
+  margin-top: 7px;
+  border-radius: 9px;
+  background: var(--lab-accent);
+  color: #fff;
+  font-weight: 700;
+}
+
+.login-form-panel .login-form .button.primary:hover {
+  background: var(--lab-accent-strong);
+}
+
+.login-form-panel .demo-note {
+  margin: 14px 0 0;
+  color: var(--lab-muted);
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.login-form-panel .alert {
+  margin-top: 18px;
+}
+
+.login-form-panel .button {
+  min-height: 47px;
+}
+
+@media (max-width: 760px) {
+  .login-card {
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .login-brand-panel {
+    padding: 34px 28px 30px;
+  }
+
+  .login-panel-chi-logo {
+    width: 135px;
+  }
+
+  .login-panel-project {
+    margin-top: 8px;
+    font-size: 20px;
+  }
+
+  .login-panel-icri-logo {
+    width: 188px;
+    max-width: 72%;
+  }
+
+  .login-form-panel {
+    padding: 40px 36px 42px;
+  }
+}
+
+/* Shared institutional affiliation bar */
+.institution-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  min-height: 76px;
+  margin-bottom: 20px;
+  padding: 3px 0 5px;
+  border-bottom: 1px solid var(--lab-line);
+}
+
+.institution-copy {
+  min-width: 0;
+}
+
+.institution-copy strong {
+  display: block;
+  color: var(--lab-navy);
+  font-size: 13px;
+  font-weight: 750;
+  letter-spacing: .07em;
+  line-height: 1.3;
+}
+
+.institution-copy span {
+  display: block;
+  margin-top: 5px;
+  color: var(--lab-muted);
+  font-size: 11.5px;
+}
+
+.institution-logo {
+  display: block;
+  width: 270px;
+  max-width: 30vw;
+  height: auto;
+  flex: 0 1 auto;
+  object-fit: contain;
+}
+
+.archive-saved-state {
+  width: min(980px, calc(100% - 32px));
+  margin: 14px auto 0;
+  padding: 9px 14px;
+  border: 1px solid #bfe5df;
+  border-radius: 6px;
+  background: #edf8f4;
+  color: var(--lab-signal);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.report-shell {
+  min-height: 100vh;
+  background: var(--lab-bg);
+}
+
+.report-shell .content {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+}
+
+.report-header {
+  display: block;
+  padding: 24px 29px 18px;
+  color: var(--lab-ink);
+  background: var(--lab-surface);
+  border-bottom: 1px solid var(--lab-line);
+}
+
+.report-branding {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+}
+
+.report-branding-primary,
+.report-branding-secondary {
+  display: flex;
+  align-items: center;
+}
+
+.report-branding-primary {
+  min-width: 0;
+  gap: 13px;
+}
+
+.report-chi-logo {
+  display: block;
+  flex: 0 0 auto;
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}
+
+.report-branding .eyebrow {
+  color: var(--lab-accent-strong);
+}
+
+.report-branding .chi-brand-copy {
+  gap: 1px;
+}
+
+.report-branding h1 {
+  margin: 2px 0 0;
+  color: var(--lab-navy);
+  font-size: clamp(21px, 3vw, 28px);
+  font-weight: 600;
+  line-height: 1.12;
+}
+
+.report-branding .report-subtitle {
+  margin: 8px 0 0;
+  color: var(--lab-muted);
+}
+
+.report-branding-secondary {
+  flex: 0 0 150px;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 7px;
+  color: var(--lab-muted);
+  font-size: 10px;
+  line-height: 1.35;
+  text-align: right;
+}
+
+.report-icri-logo {
+  display: block;
+  width: 140px;
+  height: auto;
+  object-fit: contain;
+}
+
+.report-header .report-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 5px 18px;
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--lab-line);
+  color: var(--lab-muted);
+}
+
+.report-section,
+.research-report {
+  border-radius: var(--lab-radius-lg);
+}
+
+/* Responsive guarantees */
+@media (max-width: 1050px) {
+  .metric-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    width: 250px;
+    flex-basis: 250px;
+    padding: 0 16px 20px;
+  }
+
+  .sidebar-brand-section {
+    width: 100%;
+    margin-left: 0;
+    padding: 12px 10px 16px;
+  }
+
+  .sidebar-chi-logo {
+    width: 185px;
+    max-width: calc(100% - 20px);
+    height: auto;
+  }
+
+  .sidebar-brand-title {
+    font-size: 19px;
+  }
+
+  .institution-logo {
+    width: 220px;
+    max-width: 40vw;
+  }
+
+  .report-branding {
+    align-items: flex-start;
+  }
+
+  .report-branding-secondary {
+    flex-basis: 150px;
+  }
+}
+
+@media (max-width: 650px) {
+  .app-shell {
+    display: block;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+    padding: 0 18px 18px;
+  }
+
+  .sidebar-brand-section {
+    width: 100%;
+    margin-left: 0;
+    padding: 10px 10px 14px;
+  }
+
+  .sidebar-chi-logo {
+    width: 60px;
+    max-width: calc(100% - 20px);
+    height: auto;
+  }
+
+  .sidebar-brand-title {
+    font-size: 18px;
+  }
+
+  .sidebar-brand-project {
+    margin-top: 12px;
+    font-size: 18px;
+  }
+
+  .sidebar-brand-subtitle {
+    margin-top: 8px;
+    font-size: 10px;
+  }
+
+  .sidebar-footer {
+    margin-top: 18px;
+  }
+
+  .sidebar-affiliation {
+    margin-top: 18px;
+  }
+
+  .content {
+    padding: 27px 16px;
+  }
+
+  .page-header {
+    display: block;
+  }
+
+  .page-header .status-pill {
+    margin-top: 14px;
+  }
+
+  .metric-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .metric-card,
+  .metric-grid.compact .metric-card {
+    min-height: 112px;
+  }
+
+  .institution-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    min-height: 0;
+    margin-bottom: 20px;
+    padding: 3px 0 5px;
+  }
+
+  .institution-copy strong {
+    font-size: 10.5px;
+    letter-spacing: .05em;
+  }
+
+  .institution-logo {
+    width: 190px;
+    max-width: 100%;
+  }
+
+  .login-page {
+    padding: 16px;
+  }
+
+  .login-brand-panel {
+    padding: 28px 20px 26px;
+  }
+
+  .login-panel-chi-logo {
+    width: 120px;
+  }
+
+  .login-panel-icri-logo {
+    width: 174px;
+    max-width: 76%;
+  }
+
+  .login-form-panel {
+    padding: 34px 24px 36px;
+  }
+
+  .report-header {
+    padding: 22px 20px 17px;
+  }
+
+  .report-branding {
+    display: block;
+  }
+
+  .report-branding-secondary {
+    align-items: flex-start;
+    margin: 14px 0 0 69px;
+    text-align: left;
+  }
+
+  .login-icri-logo {
+    width: min(190px, 100%);
+  }
+
+  .report-chi-logo {
+    width: 52px;
+    height: 52px;
+  }
+
+  .report-icri-logo {
+    width: 130px;
+  }
+
+  .report-header .report-meta {
+    text-align: left;
+    justify-content: flex-start;
+  }
+}
+
+@media print {
+  .archive-saved-state {
+    display: none;
+  }
+
+  .report-header {
+    background: #fff !important;
+    color: var(--lab-ink) !important;
+    border-bottom: 2px solid var(--lab-navy);
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .report-branding .eyebrow,
+  .report-branding-secondary,
+  .report-header .report-subtitle,
+  .report-header .report-meta {
+    color: var(--lab-ink) !important;
+  }
+
+  .report-header .report-meta {
+    border-top-color: var(--lab-line);
+  }
+
+  .report-branding .chi-brand-name,
+  .report-branding .chi-project-name,
+  .report-branding h1,
+  .report-header .report-meta strong {
+    color: var(--lab-navy) !important;
+  }
+}

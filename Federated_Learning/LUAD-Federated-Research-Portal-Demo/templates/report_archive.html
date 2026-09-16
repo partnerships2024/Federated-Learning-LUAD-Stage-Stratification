@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research Report Archive | {{ hospital_name }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/branding.css') }}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      {% include "_sidebar_branding.html" %}
+      <div class="role-chip"><i class="bi bi-building"></i> {{ role_label }}</div>
+      <nav aria-label="Research lab navigation">
+        <a class="nav-link" href="{{ url_for('hospital_dashboard', hospital_id=hospital_id) }}"><i class="bi bi-grid-1x2-fill"></i> Overview</a>
+        <a class="nav-link" href="{{ url_for('local_prediction', hospital_id=hospital_id) }}"><i class="bi bi-activity"></i> Local Genomic Analysis</a>
+        <a class="nav-link active" href="{{ url_for('report_archive', hospital_id=hospital_id) }}" aria-current="page"><i class="bi bi-archive"></i> Report Archive</a>
+      </nav>
+      {% include "_sidebar_affiliation.html" %}
+      <div class="sidebar-footer"><a class="button outline" href="{{ url_for('logout') }}"><i class="bi bi-box-arrow-right"></i> Logout</a></div>
+    </aside>
+
+    <main class="content">
+      {% include "_institution_bar.html" %}
+      <header class="page-header">
+        <div><p class="eyebrow">CHI LAB &middot; LOCAL RESEARCH RECORDS</p><h1>Research Report Archive</h1><p class="muted">Search and review locally stored genomic research reports.</p></div>
+        <span class="status-pill"><i class="bi bi-shield-check"></i> Client-local</span>
+      </header>
+
+      <section class="notice"><i class="bi bi-shield-lock-fill"></i><div><strong>Patient identity and research reports remain within this local research client.</strong><span>No patient name, raw genomic sequence, or report content is sent to the central federated server.</span></div></section>
+
+      <section class="metric-grid archive-metrics">
+        <article class="metric-card accent-blue"><i class="metric-icon bi bi-files"></i><span class="metric-label">Total saved reports</span><strong>{{ metrics.total }}</strong><span class="metric-caption">Stored in this lab archive</span></article>
+        <article class="metric-card accent-teal"><i class="metric-icon bi bi-bar-chart-line"></i><span class="metric-label">Early predictions</span><strong>{{ metrics.early }}</strong><span class="metric-caption">Research summaries</span></article>
+        <article class="metric-card accent-purple"><i class="metric-icon bi bi-graph-up"></i><span class="metric-label">Advanced predictions</span><strong>{{ metrics.advanced }}</strong><span class="metric-caption">Research summaries</span></article>
+        <article class="metric-card accent-gold"><i class="metric-icon bi bi-calendar3"></i><span class="metric-label">Reports created this month</span><strong>{{ metrics.month }}</strong><span class="metric-caption">UTC calendar month</span></article>
+      </section>
+
+      <section class="panel filter-card">
+        <div class="panel-heading"><div><p class="eyebrow">PRIMARY SEARCH</p><h2>Search by Patient Name</h2></div><i class="section-icon bi bi-person-search"></i></div>
+        <form class="archive-filters simple-archive-filters" method="get">
+          <div class="search-field primary-search"><label for="search">Search by Patient Name</label><div class="input-icon"><i class="bi bi-person-search"></i><input id="search" name="search" value="{{ filters.search }}" placeholder="Enter patient name..." autofocus></div><small>Partial, case-insensitive matching. For example, &ldquo;ali&rdquo; finds &ldquo;Ali Khan&rdquo;.</small></div>
+          <div><label for="date_from">Date From <span class="muted">(optional)</span></label><input id="date_from" type="date" name="date_from" value="{{ filters.date_from }}"></div>
+          <div><label for="date_to">Date To <span class="muted">(optional)</span></label><input id="date_to" type="date" name="date_to" value="{{ filters.date_to }}"></div>
+          <button class="button primary" type="submit"><i class="bi bi-search"></i> Search Reports</button><a class="button reset-button" href="{{ url_for('report_archive', hospital_id=hospital_id) }}">Reset</a>
+        </form>
+      </section>
+
+      <section class="panel archive-list">
+        <div class="panel-heading"><div><p class="eyebrow">SEARCH RESULTS</p><h2>{% if filters.search %}{{ reports|length }} report{{ '' if reports|length == 1 else 's' }} found for &ldquo;{{ filters.search }}&rdquo;{% else %}Saved research reports <span class="count-badge">{{ reports|length }}</span>{% endif %}</h2></div></div>
+        {% if reports %}
+        <div class="table-wrap"><table class="archive-table"><thead><tr><th>Patient Name</th><th>Patient ID</th><th>Research Sample ID</th><th>Report ID</th><th>Report Date</th><th>Gene Symbols</th><th>Mutation Count</th><th>Predicted Group</th><th>Early Probability</th><th>Advanced Probability</th><th>Source Type</th><th>Action</th></tr></thead><tbody>{% for item in reports %}<tr><td><strong>{{ item.patient_name }}</strong></td><td>{{ item.patient_id or 'Patient ID: Not provided' }}</td><td>{{ item.sample_id or 'Not provided' }}</td><td><strong>#{{ item.id }}</strong></td><td>{{ item.created_at }}</td><td>{{ item.normalized_gene_symbols|replace('[','')|replace(']','')|replace('"','') }}</td><td>{{ item.mutation_count }}</td><td><span class="prediction-badge {{ item.predicted_group|lower }}">{{ item.predicted_group }}</span></td><td>{{ '%.2f'|format(item.early_probability * 100) }}%</td><td>{{ '%.2f'|format(item.advanced_probability * 100) }}%</td><td><span class="source-badge">{{ 'Existing Research Record' if item.source_type == 'existing_record' else 'New Research Sample' }}</span></td><td><a class="button small-button" href="{{ url_for('report_detail', hospital_id=hospital_id, report_id=item.id) }}">View Report</a></td></tr>{% endfor %}</tbody></table></div>
+        {% else %}
+        <div class="empty-state"><i class="bi bi-archive"></i><h3>No research reports have been saved yet.</h3><p class="muted">Run a local analysis and click Save Report to Archive before using report search.</p><a class="button primary" href="{{ url_for('local_prediction', hospital_id=hospital_id) }}">Run Local Analysis</a></div>
+        {% endif %}
+      </section>
+    </main>
+  </div>
+</body>
+</html>

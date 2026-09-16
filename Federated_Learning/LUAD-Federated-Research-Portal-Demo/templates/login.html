@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LUAD Federated Research Portal</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/branding.css') }}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="login-page">
+  <main class="login-card">
+    <section class="login-brand-panel" aria-label="CHI Lab research identity">
+      <img class="login-panel-chi-logo" src="{{ url_for('static', filename='images/chi_lab_logo.png') }}" alt="Computational Healthcare Intelligence Lab logo">
+      <div class="login-panel-project">CHI Lab</div>
+      <div class="login-panel-subtitle">Federated genomic research across ICRI-STE hospital sites</div>
+      <img class="login-panel-icri-logo" src="{{ url_for('static', filename='images/icri_ste_logo.png') }}" alt="ICRI-STE and SciTechEngg logo">
+    </section>
+
+    <section class="login-form-panel" aria-label="Research portal sign in">
+      <p class="eyebrow login-eyebrow">RESEARCH PROTOTYPE ACCESS</p>
+      <h1>Genomic Stage Stratification</h1>
+      <p class="login-form-title-sub">Federated Research Portal</p>
+      <p class="muted login-form-intro">Privacy-aware, data-local access for federated research lab clients.</p>
+      {% if error %}<div class="alert">{{ error }}</div>{% endif %}
+      <form method="post" class="login-form">
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text" autocomplete="username" required>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" required>
+        <button class="button primary" type="submit"><i class="bi bi-arrow-right-circle"></i> Sign in securely</button>
+      </form>
+      <p class="demo-note">Demo accounts: hospital1, hospital2, hospital3, admin</p>
+    </section>
+  </main>
+</body>
+</html>
