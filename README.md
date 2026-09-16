@@ -1,4 +1,4 @@
-# CHI Lab Project — LUAD Genomic Deep Learning
+# LUAD Genomic Deep Learning
 
 <p align="center">
 
