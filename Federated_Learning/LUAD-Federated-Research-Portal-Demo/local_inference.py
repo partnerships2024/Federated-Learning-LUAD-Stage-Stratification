@@ -11,8 +11,8 @@ import numpy as np
 
 PROJECT_ROOT = Path(__file__).resolve().parent
 RESULTS_DIRECTORY = PROJECT_ROOT / "federated_results"
-PREPROCESSING_PATH = RESULTS_DIRECTORY / "federated_preprocessing.json"
-WEIGHTS_PATH = RESULTS_DIRECTORY / "final_global_bilstm.weights.h5"
+PREPROCESSING_PATH = RESULTS_DIRECTORY / "preprocessing" / "federated_preprocessing.json"
+WEIGHTS_PATH = RESULTS_DIRECTORY / "model" / "final_global_bilstm.weights.h5"
 STEP_09_PATH = PROJECT_ROOT / "09_validate_local_bilstm_training.py"
 EXPECTED_PARAMETER_COUNT = 31777
 

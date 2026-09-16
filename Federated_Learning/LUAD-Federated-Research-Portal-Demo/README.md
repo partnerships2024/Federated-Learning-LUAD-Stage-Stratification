@@ -19,12 +19,13 @@ The demonstration is privacy-aware and data-local; it does not claim differentia
 
 Use Python 3.10 with the pinned dependencies in `requirements.txt`, preferably inside a project-local `.venv`. Install dependencies and run `python app.py` from this directory. Demo-only usernames are `hospital1`, `hospital2`, `hospital3`, and `admin`; these accounts and their credentials are for local demonstration only, not production deployment.
 
-### Included runtime artifacts
+### Result artifact organization
 
-The portal includes the validated global BiLSTM weights, persisted preprocessing configuration, dashboard metrics/figures, required sanitized simulated client/server databases, templates, static assets, and official CHI Lab and ICRI-STE logos. Generated `lab_*_reports.db` files are recreated locally and ignored by Git.
+The portal includes the validated global BiLSTM weights, persisted preprocessing configuration, dashboard metrics/figures, required sanitized simulated client/server databases, templates, static assets, and official CHI Lab and ICRI-STE logos. Federated result artifacts are organized as follows:
 
-### Federated Genomic Stage Stratification Research Portal Demo Video
+- `model/` = final trained federated model weights.
+- `preprocessing/` = persisted inference configuration, vocabulary, and scaling statistics.
+- `metrics/` = federated and centralized evaluation metrics, including test, round, comparison, and confusion-matrix data.
+- `figures/` = evaluation visualizations, including ROC and confusion-matrix figures.
 
-## CHI Lab Research Project Demo
-
-https://github.com/partnerships2024/CHI-Lab-Project-II/blob/main/Federated_Learning/LUAD-Federated-Research-Portal-Demo/2026-09-15%2017-52-38.mp4 
+Generated `lab_*_reports.db` files are recreated locally and ignored by Git.

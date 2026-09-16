@@ -17,6 +17,8 @@ import local_reports
 PROJECT_ROOT = Path(__file__).resolve().parent
 DATABASE_DIRECTORY = PROJECT_ROOT / "databases"
 RESULTS_DIRECTORY = PROJECT_ROOT / "federated_results"
+METRICS_DIRECTORY = RESULTS_DIRECTORY / "metrics"
+FIGURES_DIRECTORY = RESULTS_DIRECTORY / "figures"
 SECRET_KEY = os.environ.get("FLASK_SECRET_KEY", "dev-only-local-demo-secret-key")
 
 DEMO_USERS = {
@@ -49,7 +51,7 @@ def login_required(view):
 
 def read_metric_csv(filename: str) -> list[dict[str, str]]:
     """Read a result CSV without changing it."""
-    path = RESULTS_DIRECTORY / filename
+    path = METRICS_DIRECTORY / filename
     if not path.exists():
         return []
     with open(path, "r", encoding="utf-8", newline="") as csv_file:
@@ -591,7 +593,7 @@ def server_result_image(filename: str):
     server_access_required()
     if filename not in APPROVED_RESULT_IMAGES:
         abort(404)
-    return send_from_directory(RESULTS_DIRECTORY, filename)
+    return send_from_directory(FIGURES_DIRECTORY, filename)
 
 
 if __name__ == "__main__":
