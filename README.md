@@ -298,12 +298,6 @@ This project forms part of the CHI Lab's computational healthcare and cancer res
 
 ---
 
-<p align="center">
-
-**CHI Lab | Computational Healthcare Intelligence**
-
-*From Cancer Genomics to Computational Intelligence*
-
 </p>
 <div align="center">
 
@@ -312,4 +306,5 @@ This project forms part of the CHI Lab's computational healthcare and cancer res
 <img src="ICRI-STE.png" alt="International Council for Research & Innovation in STE (ICRI-STE)" width="120"/>
 
 **CHI Lab-Dry Lab | Computational Healthcare Intelligence**
+
 *From Cancer Genomics to Computational Intelligence*
