@@ -1,5 +1,13 @@
 # Federated Learning Experiment
 
+## Final CHI-Lab LUAD-FedStage Portal
+
+The final tested application is in [`LUAD-Federated-Research-Portal-Demo/`](LUAD-Federated-Research-Portal-Demo/). It is the **Federated Genomic Stage Stratification Research Portal**, a privacy-aware, data-local research prototype for Early (Stages I-II) versus Advanced (Stages III-IV) LUAD stage-group classification.
+
+The portal uses mutation-centred 301-bp genomic windows and a Federated Binary BiLSTM trained through sample-weighted FedAvg across three simulated research clients/hospitals. It supports local genomic inference, a local report archive, and the central federated server dashboard, with CHI Lab branding and ICRI-STE affiliation.
+
+> **Research prototype - not for clinical diagnosis or treatment decisions.**
+
 Privacy-preserving federated learning experiment for binary LUAD stage prediction using 301-bp mutation-centred genomic DNA windows.
 
 This experiment simulates three independent hospitals and trains a global BiLSTM model using sample-weighted Federated Averaging (FedAvg), without transferring raw patient records to the central server.

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ hospital_name }} | LUAD Federated Research</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/branding.css') }}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      {% include "_sidebar_branding.html" %}
+      <div class="role-chip"><i class="bi bi-building"></i> {{ role_label }}</div>
+      <nav aria-label="Research lab navigation">
+        <a class="nav-link active" href="{{ url_for('hospital_dashboard', hospital_id=hospital_id) }}" aria-current="page"><i class="bi bi-grid-1x2-fill"></i> Overview</a>
+        <a class="nav-link" href="{{ url_for('local_prediction', hospital_id=hospital_id) }}"><i class="bi bi-activity"></i> Local Genomic Analysis</a>
+        <a class="nav-link" href="{{ url_for('report_archive', hospital_id=hospital_id) }}"><i class="bi bi-archive"></i> Report Archive</a>
+      </nav>
+      {% include "_sidebar_affiliation.html" %}
+      <div class="sidebar-footer"><a class="button outline" href="{{ url_for('logout') }}"><i class="bi bi-box-arrow-right"></i> Logout</a></div>
+    </aside>
+
+    <main class="content">
+      <header class="page-header">
+        <div>
+          <p class="eyebrow">CHI LAB &middot; FEDERATED GENOMIC AI RESEARCH</p>
+          <h1>Research Client Dashboard</h1>
+          <p class="muted">{{ hospital_name }} &middot; Private research environment</p>
+        </div>
+        <span class="status-pill"><i class="bi bi-diagram-3-fill"></i> Federated participant</span>
+      </header>
+
+      <section class="notice">
+        <i class="bi bi-shield-lock-fill"></i>
+        <div><strong>Privacy boundary</strong><span>Only this research lab's local summary is shown. Raw patient records remain local.</span></div>
+      </section>
+
+      <section class="metric-grid">
+        <article class="metric-card accent-blue"><i class="metric-icon bi bi-database"></i><span class="metric-label">Local research records</span><strong>{{ summary.patient_count }}</strong><span class="metric-caption">Private to this client</span></article>
+        <article class="metric-card accent-teal"><i class="metric-icon bi bi-bar-chart-line"></i><span class="metric-label">Early group</span><strong>{{ summary.early_count }}</strong><span class="metric-caption">Binary target class 0</span></article>
+        <article class="metric-card accent-purple"><i class="metric-icon bi bi-graph-up"></i><span class="metric-label">Advanced group</span><strong>{{ summary.advanced_count }}</strong><span class="metric-caption">Binary target class 1</span></article>
+        <article class="metric-card accent-gold"><i class="metric-icon bi bi-dna"></i><span class="metric-label">Valid 301-bp mutations</span><strong>{{ summary.total_mutations if summary.total_mutations is not none else 'N/A' }}</strong><span class="metric-caption">Available source summary</span></article>
+      </section>
+
+      <section class="dashboard-grid">
+        <article class="panel">
+          <div class="panel-heading"><div><p class="eyebrow">LOCAL DATA BOUNDARY</p><h2>Research lab status</h2></div><span class="status-pill teal"><i class="bi bi-check-circle"></i> Connected</span></div>
+          <p class="panel-copy">This dashboard queries only <code>{{ summary.database_name }}</code>. Raw genomic sequences and mutation-level records are not displayed.</p>
+        </article>
+        <article class="panel quick-action">
+          <i class="bi bi-activity"></i>
+          <div><p class="eyebrow">NEXT STEP</p><h2>Run local analysis</h2><p class="muted">Analyze an existing record or enter a request-only research sample.</p><a class="button primary" href="{{ url_for('local_prediction', hospital_id=hospital_id) }}">Open local analysis</a></div>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

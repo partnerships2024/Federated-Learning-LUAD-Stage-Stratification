@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Local Genomic Analysis | {{ hospital_name }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/branding.css') }}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const token = '{{ session.get("prediction_token", "") }}';
+      const supportedGenes = {{ supported_genes|tojson }};
+      function enhanceGeneSelectors(root) {
+        root.querySelectorAll('input[name="mutation_gene"]').forEach(function (input) {
+          const select = document.createElement('select');
+          select.name = 'mutation_gene';
+          select.required = input.required;
+          select.className = 'gene-symbol-select';
+          select.setAttribute('aria-label', 'Gene Symbol');
+          const current = (input.value || '').trim().toUpperCase();
+          const placeholder = document.createElement('option');
+          placeholder.value = '';
+          placeholder.textContent = 'Choose a gene symbol';
+          placeholder.disabled = true;
+          placeholder.selected = !current;
+          select.appendChild(placeholder);
+          supportedGenes.forEach(function (gene) {
+            const option = document.createElement('option');
+            option.value = gene;
+            option.textContent = gene;
+            option.selected = gene === current;
+            select.appendChild(option);
+          });
+          input.replaceWith(select);
+        });
+      }
+      enhanceGeneSelectors(document);
+      const mutationList = document.getElementById('mutation-list');
+      if (mutationList) new MutationObserver(function () { enhanceGeneSelectors(mutationList); }).observe(mutationList, { childList: true, subtree: true });
+      document.querySelectorAll('.prediction-form').forEach(function (form) {
+        if (!form.querySelector('[name="prediction_token"]')) {
+          const input = document.createElement('input');
+          input.type = 'hidden';
+          input.name = 'prediction_token';
+          input.value = token;
+          form.appendChild(input);
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      {% include "_sidebar_branding.html" %}
+      <div class="role-chip"><i class="bi bi-building"></i> {{ role_label }}</div>
+      <nav aria-label="Research lab navigation">
+        <a class="nav-link" href="{{ url_for('hospital_dashboard', hospital_id=hospital_id) }}"><i class="bi bi-grid-1x2-fill"></i> Overview</a>
+        <a class="nav-link active" href="{{ url_for('local_prediction', hospital_id=hospital_id) }}" aria-current="page"><i class="bi bi-activity"></i> Local Genomic Analysis</a>
+        <a class="nav-link" href="{{ url_for('report_archive', hospital_id=hospital_id) }}"><i class="bi bi-archive"></i> Report Archive</a>
+      </nav>
+      {% include "_sidebar_affiliation.html" %}
+      <div class="sidebar-footer"><a class="button outline" href="{{ url_for('logout') }}"><i class="bi bi-box-arrow-right"></i> Logout</a></div>
+    </aside>
+
+    <main class="content">
+      {% include "_institution_bar.html" %}
+      <header class="page-header">
+        <div><p class="eyebrow">CHI LAB &middot; LOCAL FEDERATED INFERENCE</p><h1>Local Genomic Analysis</h1><p class="muted">Run a request-local analysis inside {{ hospital_name }}.</p></div>
+        <span class="status-pill"><i class="bi bi-shield-check"></i> Local only</span>
+      </header>
+
+      <section class="notice scientific-notice"><i class="bi bi-info-circle-fill"></i><div><strong>Research prototype &mdash; not for clinical diagnosis or treatment decisions.</strong><span>Successful analyses are archived as safe local report metadata.</span></div></section>
+
+      <section class="panel">
+        <div class="panel-heading"><div><p class="eyebrow">EXISTING RESEARCH RECORD</p><h2>Analyze a local record</h2></div><i class="section-icon bi bi-database-check"></i></div>
+        <p class="panel-copy">Select a record from this lab's private database. Mutation sequences are not displayed.</p>
+        <form method="post" class="prediction-form">
+          <input type="hidden" name="mode" value="existing">
+          <div class="form-grid"><div><label for="patient-name-existing">Patient Name <span class="muted">(optional report metadata)</span></label><input id="patient-name-existing" name="patient_name" placeholder="Enter patient name"></div><div><label for="sample-id-existing">Research Sample ID <span class="muted">(optional)</span></label><input id="sample-id-existing" name="sample_id"></div></div>
+          <label for="patient-select">Local research record</label>
+          <select id="patient-select" name="patient_key" required onchange="document.getElementById('existing-cohort').value=this.value.split('|')[0];document.getElementById('existing-patient-id').value=this.value.split('|')[1];"><option value="">Choose a research record</option>{% for patient in choices %}<option value="{{ patient.COHORT }}|{{ patient.PATIENT_ID }}" {% if selected and selected.COHORT == patient.COHORT and selected.PATIENT_ID == patient.PATIENT_ID %}selected{% endif %}>{{ patient.COHORT }} &mdash; {{ patient.PATIENT_ID }}</option>{% endfor %}</select>
+          <input type="hidden" id="existing-cohort" name="cohort" value="{% if selected %}{{ selected.COHORT }}{% endif %}"><input type="hidden" id="existing-patient-id" name="patient_id" value="{% if selected %}{{ selected.PATIENT_ID }}{% endif %}">
+          <button class="button primary" type="submit"><i class="bi bi-play-circle"></i> Analyze existing record</button>
+        </form>
+      </section>
+
+      <section class="panel">
+        <div class="panel-heading"><div><p class="eyebrow">NEW RESEARCH SAMPLE</p><h2>Analyze a new sample</h2></div><span class="status-pill teal"><i class="bi bi-lock-fill"></i> Local archive</span></div>
+        <p class="panel-copy">Enter model-ready mutation-centred inputs. Successful predictions are archived automatically as safe summary metadata.</p>
+        {% if error and not new_form.mutations %}<div class="alert">{{ error }}</div>{% endif %}
+        <form method="post" class="prediction-form new-sample-form">
+          <input type="hidden" name="mode" value="new">
+          <div class="form-section"><div class="section-title"><span class="step-badge">1</span><div><p class="eyebrow">REPORT METADATA</p><h3>Patient and sample</h3></div></div><div class="form-grid"><div><label for="patient-name-new">Patient Name</label><input id="patient-name-new" name="patient_name" value="{{ new_form.patient_name }}" required placeholder="Required for the local report"></div><div><label for="patient-id-new">Patient ID <span class="muted">(optional)</span></label><input id="patient-id-new" name="patient_id" value="{{ new_form.patient_id }}"></div><div><label for="sample-id-new">Research Sample ID <span class="muted">(optional)</span></label><input id="sample-id-new" name="sample_id" value="{{ new_form.sample_id }}"></div></div></div>
+          <div class="form-section"><div class="section-title"><span class="step-badge">2</span><div><p class="eyebrow">CLINICAL INFORMATION</p><h3>Clinical context</h3></div></div><div class="form-grid"><div><label for="sex">Sex</label><select id="sex" name="sex" required><option value="">Choose</option><option {% if new_form.sex == 'Female' %}selected{% endif %}>Female</option><option {% if new_form.sex == 'Male' %}selected{% endif %}>Male</option></select></div><div><label for="age">Age in years</label><input id="age" name="age" type="number" step="any" min="0" value="{{ new_form.age }}" required></div><div><label for="active-smoking">Active smoking</label><select id="active-smoking" name="active_smoking" required><option value="">Choose</option><option {% if new_form.active_smoking == 'Yes' %}selected{% endif %}>Yes</option><option {% if new_form.active_smoking == 'No' %}selected{% endif %}>No</option><option {% if new_form.active_smoking == 'Unknown' %}selected{% endif %}>Unknown</option></select></div><div><label for="pack-years">Pack-years</label><input id="pack-years" name="pack_years" placeholder="Numeric or Unknown" value="{{ new_form.pack_years }}"></div></div></div>
+          <div class="form-section"><div class="section-title"><span class="step-badge">3</span><div><p class="eyebrow">MUTATION INPUTS</p><h3>Mutation-centred windows</h3></div><span class="mutation-count" id="mutation-count">Mutations: 1 / 37</span></div><p class="form-help">Each sequence must be exactly 301 bases. Affected position uses zero-based indexing; default is 150.</p><div id="mutation-list"><div class="mutation-card"><div class="mutation-card-header"><strong>Mutation 1</strong><button class="remove-mutation" type="button"><i class="bi bi-trash3"></i> Remove</button></div><div class="mutation-fields"><div><label>Gene Symbol</label><input name="mutation_gene" placeholder="TP53" required></div><div class="sequence-field"><label>301-bp Mutated DNA <span class="sequence-counter">0 / 301</span></label><textarea name="mutation_sequence" rows="3" required></textarea><small class="field-error"></small></div><div><label>Affected Position</label><input name="mutation_position" type="number" min="0" max="300" value="150" required></div></div></div></div><button class="button add-mutation" id="add-mutation" type="button"><i class="bi bi-plus-lg"></i> Add Mutation</button>{% if error and new_form.mutations %}<div class="alert">{{ error }}</div>{% endif %}</div>
+          <div class="form-section action-section"><div class="section-title"><span class="step-badge">4</span><div><p class="eyebrow">ANALYSIS ACTION</p><h3>Run local inference</h3></div></div><button class="button primary analysis-button" type="submit"><i class="bi bi-lightning-charge-fill"></i> Analyze new sample locally</button></div>
+        </form>
+      </section>
+
+      {% if result %}<section class="panel result-panel"><div class="panel-heading"><div><p class="eyebrow">LOCAL RESULT</p><h2>Federated Binary BiLSTM prediction</h2></div><span class="status-pill"><i class="bi bi-check-circle-fill"></i> Archived locally</span></div><div class="prediction-result"><div class="prediction-class"><span class="metric-label">Predicted group</span><strong>{{ result.predicted_class }}</strong><span class="metric-caption">Research estimate at fixed threshold 0.50</span></div><div class="probability-grid"><div><span>Advanced probability</span><strong>{{ '%.2f'|format(result.advanced_probability * 100) }}%</strong><div class="progress"><span style="width:{{ result.advanced_probability * 100 }}%"></span></div></div><div><span>Early probability</span><strong>{{ '%.2f'|format(result.early_probability * 100) }}%</strong><div class="progress early"><span style="width:{{ result.early_probability * 100 }}%"></span></div></div><div><span>Threshold</span><strong>0.50</strong><span class="metric-caption">Fixed classification threshold</span></div></div></div><div class="result-meta"><span>Mutations analysed: <strong>{{ result.mutation_count }}</strong></span><span>Model: <strong>Federated Binary BiLSTM</strong></span><span>Report ID: <strong>#{{ result.archive_id }}</strong></span></div>{% if result.normalized_genes %}<p class="muted research-label"><i class="bi bi-dna"></i> Normalized gene symbols: <strong>{{ result.normalized_genes|join(', ') }}</strong></p>{% endif %}{% if result.unknown_genes %}<div class="alert warning">Gene is not present in the training vocabulary and will be represented as UNK_GENE.</div>{% endif %}<a class="button report-button" href="{{ url_for('report_detail', hospital_id=hospital_id, report_id=result.archive_id) }}"><i class="bi bi-file-earmark-medical"></i> View Saved Report</a><a class="button archive-link-button" href="{{ url_for('report_archive', hospital_id=hospital_id) }}"><i class="bi bi-archive"></i> Go to Report Archive</a></section>{% endif %}{% if result and result.stored_class %}<p class="muted research-label existing-match">Stored research label: <strong>{{ result.stored_class }}</strong> &middot; Prediction match: <strong>{{ 'YES' if result.technical_match else 'NO' }}</strong>. Existing labelled research record comparison only.</p>{% endif %}
+    </main>
+  </div>
+
+  <script>
+    (function(){const list=document.getElementById('mutation-list'),add=document.getElementById('add-mutation'),count=document.getElementById('mutation-count');function refresh(){const cards=list.querySelectorAll('.mutation-card');count.textContent='Mutations: '+cards.length+' / 37';cards.forEach((card,i)=>{card.querySelector('.mutation-card-header strong').textContent='Mutation '+(i+1);const area=card.querySelector('textarea'),counter=card.querySelector('.sequence-counter');counter.textContent=(area.value.replace(/\s/g,'').length)+' / 301';});add.disabled=cards.length>=37;add.setAttribute('aria-disabled',add.disabled);list.querySelectorAll('.remove-mutation').forEach(button=>button.onclick=function(){if(list.querySelectorAll('.mutation-card').length>1){button.closest('.mutation-card').remove();refresh();}});list.querySelectorAll('textarea').forEach(area=>area.oninput=refresh);}add.onclick=function(){if(list.querySelectorAll('.mutation-card').length>=37)return;const card=document.createElement('div');card.className='mutation-card';card.innerHTML='<div class="mutation-card-header"><strong></strong><button class="remove-mutation" type="button"><i class="bi bi-trash3"></i> Remove</button></div><div class="mutation-fields"><div><label>Gene Symbol</label><input name="mutation_gene" placeholder="TP53" required></div><div class="sequence-field"><label>301-bp Mutated DNA <span class="sequence-counter">0 / 301</span></label><textarea name="mutation_sequence" rows="3" required></textarea><small class="field-error"></small></div><div><label>Affected Position</label><input name="mutation_position" type="number" min="0" max="300" value="150" required></div></div></div>';list.appendChild(card);refresh();};refresh();})();
+  </script>
+</body>
+</html>

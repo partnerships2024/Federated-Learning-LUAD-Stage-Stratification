@@ -1,0 +1,19 @@
+<div class="sidebar-identity">
+  {% if hospital_id is defined %}
+  <a class="sidebar-brand" href="{{ url_for('hospital_dashboard', hospital_id=hospital_id) }}">
+  {% else %}
+  <a class="sidebar-brand" href="{{ url_for('server_dashboard') }}">
+  {% endif %}
+    <div class="sidebar-brand-section">
+      <img class="sidebar-chi-logo" src="{{ url_for('static', filename='images/chi_lab_logo.png') }}" alt="CHI Lab logo">
+      <div class="sidebar-brand-copy">
+        <span class="sidebar-brand-project">CHI Lab</span>
+        {% if hospital_id is defined %}
+        <small class="sidebar-brand-subtitle">Federated genomic research across ICRI-STE hospital sites</small>
+        {% else %}
+        <small class="sidebar-brand-subtitle">Central Federated Server</small>
+        {% endif %}
+      </div>
+    </div>
+  </a>
+</div>
