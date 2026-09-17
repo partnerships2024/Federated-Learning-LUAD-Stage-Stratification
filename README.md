@@ -16,28 +16,6 @@ The project investigates deep learning approaches for learning sequence-level re
 
 The research pipeline integrates publicly accessible cancer genomics resources with mutation-centred sequence construction and deep learning experiments.
 
-## Final Research Portal
-
-The tested portal is located at [![Tested portal](https://img.shields.io/badge/Open%20Study-cBioPortal-6C5CE7?style=for-the-badge&logo=googlechrome&logoColor=white)](Federated_Learning/LUAD-Federated-Research-Portal-Demo/)
-
-[`Federated_Learning/LUAD-Federated-Research-Portal-Demo/`](Federated_Learning/LUAD-Federated-Research-Portal-Demo/).
-
-It implements:
-
-- Early (Stages I-II) versus Advanced (Stages III-IV) binary LUAD stage-group classification.
-- Mutation-centred 301-bp genomic windows with the validated Federated Binary BiLSTM.
-- Three simulated research clients/hospitals and sample-weighted Federated Averaging (FedAvg).
-- Data-local inference, a local research report archive, and a central federated server dashboard.
-- CHI Lab branding with the ICRI-STE research affiliation.
-
-This is a privacy-aware, data-local federated research prototype. It does not claim differential privacy, secure aggregation, or a formal privacy guarantee.
-
-> **Research prototype - not for clinical diagnosis or treatment decisions.**
-
-> **Research focus:** Mutation-centred genomic DNA sequences → Deep Learning → LUAD Stage Stratification
-
----
-
 ## Research Objectives
 
 The project is designed around the following objectives:
@@ -241,6 +219,37 @@ git lfs pull
 This follows the Git LFS workflow specified in the previous repository documentation.
 
 ---
+## Research Portal
+
+### Research Portal
+
+The **LUAD-FedStage Research Portal** is available for demonstration and exploration:
+
+[![Open Research Portal](https://img.shields.io/badge/Open%20Research%20Portal-LUAD--FedStage-6C5CE7?style=for-the-badge&logo=googlechrome&logoColor=white)](Federated_Learning/LUAD-Federated-Research-Portal-Demo/)
+
+
+
+
+The tested portal is located at [![Tested portal](https://img.shields.io/badge/Open%20Study-cBioPortal-6C5CE7?style=for-the-badge&logo=googlechrome&logoColor=white)](Federated_Learning/LUAD-Federated-Research-Portal-Demo/)
+
+[`Federated_Learning/LUAD-Federated-Research-Portal-Demo/`](Federated_Learning/LUAD-Federated-Research-Portal-Demo/).
+
+It implements:
+
+- Early (Stages I-II) versus Advanced (Stages III-IV) binary LUAD stage-group classification.
+- Mutation-centred 301-bp genomic windows with the validated Federated Binary BiLSTM.
+- Three simulated research clients/hospitals and sample-weighted Federated Averaging (FedAvg).
+- Data-local inference, a local research report archive, and a central federated server dashboard.
+- CHI Lab branding with the ICRI-STE research affiliation.
+
+This is a privacy-aware, data-local federated research prototype. It does not claim differential privacy, secure aggregation, or a formal privacy guarantee.
+
+> **Research prototype - not for clinical diagnosis or treatment decisions.**
+
+> **Research focus:** Mutation-centred genomic DNA sequences → Deep Learning → LUAD Stage Stratification
+
+---
+
 
 # Quick Access — Research Resources
 
