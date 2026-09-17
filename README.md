@@ -1,6 +1,6 @@
 <p align="center">
   <img
-    src="./logo/LUAD-FedStage-Logo.png"
+    src="logo/LUAD-FedStage-Logo.png"
     alt="LUAD-FedStage: Federated Genomic Stage Stratification Research"
     width="700"
   />
