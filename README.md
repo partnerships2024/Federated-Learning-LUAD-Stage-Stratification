@@ -256,6 +256,7 @@ This is a privacy-aware, data-local federated research prototype. It does not cl
 | **MSKCC 2023 Metastatic Organotropism** | [![Study](https://img.shields.io/badge/Study-MSKCC%202023-6C5CE7?style=for-the-badge)](https://www.cbioportal.org/study/summary?id=luad_mskcc_2023_met_organotropism) |
 | **NCI 2022** | [![Study](https://img.shields.io/badge/Study-NCI%202022-6C5CE7?style=for-the-badge)](https://www.cbioportal.org/study/summary?id=lung_nci_2022) |
 | **ONCOSG 2020** | [![Study](https://img.shields.io/badge/Study-ONCOSG%202020-6C5CE7?style=for-the-badge)](https://www.cbioportal.org/study/summary?id=luad_oncosg_2020) |
+| **LUAD-FedStage Research Portal** | [![Open Research Portal](https://img.shields.io/badge/Open%20Research%20Portal-LUAD--FedStage-6C5CE7?style=for-the-badge&logo=googlechrome&logoColor=white)](Federated_Learning/LUAD-Federated-Research-Portal-Demo/)|
 
 ---
 
