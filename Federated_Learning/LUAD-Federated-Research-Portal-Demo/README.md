@@ -1,4 +1,4 @@
-## CHI-Lab LUAD-FedStage
+## LUAD-FedStage
 
 ### Federated Genomic Stage Stratification Research Portal
 
