@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="./logo/paper2agent_logo.png" alt="Paper2Agent Logo" width="600px" />
+</p>
+
+
 # CHI-Lab LUAD-FedStage
 
 ## Federated Genomic Stage Stratification Research Portal
