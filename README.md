@@ -1,5 +1,13 @@
 <p align="center">
-  <img src="./logo/LUAD-FedStage-Logo.png" alt="LUAD-FedStage Logo" width="600px" />
+  <img
+    src="./logo/LUAD-FedStage-Logo.png"
+    alt="LUAD-FedStage: Federated Genomic Stage Stratification Research"
+    width="700"
+  />
+</p>
+
+<p align="center">
+  <strong>Privacy-Preserving Federated Learning for Genomic Stage Stratification in Lung Adenocarcinoma</strong>
 </p>
 
 
