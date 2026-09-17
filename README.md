@@ -18,7 +18,9 @@ The research pipeline integrates publicly accessible cancer genomics resources w
 
 ## Final Research Portal
 
-The tested portal is located at [`Federated_Learning/LUAD-Federated-Research-Portal-Demo/`](Federated_Learning/LUAD-Federated-Research-Portal-Demo/).
+The tested portal is located at [![Tested portal](https://img.shields.io/badge/Open%20Study-cBioPortal-6C5CE7?style=for-the-badge&logo=googlechrome&logoColor=white)](Federated_Learning/LUAD-Federated-Research-Portal-Demo/)
+
+[`Federated_Learning/LUAD-Federated-Research-Portal-Demo/`](Federated_Learning/LUAD-Federated-Research-Portal-Demo/).
 
 It implements:
 
