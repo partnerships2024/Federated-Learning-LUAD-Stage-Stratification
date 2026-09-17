@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./logo/paper2agent_logo.png" alt="Paper2Agent Logo" width="600px" />
+  <img src="./logo/LUAD-FedStage-Logo.png" alt="LUAD-FedStage Logo" width="600px" />
 </p>
 
 
