@@ -6,10 +6,8 @@
   />
 </p>
 
-<p align="center">
-  <strong> # Privacy-Preserving Federated Learning for Genomic Stage Stratification in Lung Adenocarcinoma</strong>
-</p>
-#Privacy-Preserving Federated Learning for Genomic Stage Stratification in Lung Adenocarcinoma
+# Privacy-Preserving Federated Learning for Genomic Stage Stratification in Lung Adenocarcinoma
+
 ## Project Overview
 
 This repository contains the **code, genomic datasets, processed data, experimental configurations, and research outputs** for a Lung Adenocarcinoma (LUAD) stage-stratification project based on **mutation-centred genomic DNA sequences**.
