@@ -10,30 +10,6 @@
   <strong>Privacy-Preserving Federated Learning for Genomic Stage Stratification in Lung Adenocarcinoma</strong>
 </p>
 
-
-# CHI-Lab LUAD-FedStage
-
-## Federated Genomic Stage Stratification Research Portal
-
-The final CHI Lab portal is a privacy-aware, data-local federated research prototype for LUAD stage-group prediction. It provides local genomic inference for three simulated research hospitals, a local report archive, and a central federated server dashboard.
-
-<p align="center">
-
-**Lung Adenocarcinoma Genomic Sequence Modelling & Stage Stratification**
-
-</p>
-
-<p align="center">
-
-![Research](https://img.shields.io/badge/Research-Lung%20Adenocarcinoma-6C5CE7?style=for-the-badge)
-![Genomics](https://img.shields.io/badge/Genomics-Mutation%20Centred%20Sequences-00B894?style=for-the-badge)
-![Deep Learning](https://img.shields.io/badge/Deep%20Learning-Sequence%20Modelling-0984E3?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Experimental%20Research-FDCB6E?style=for-the-badge)
-
-</p>
-
----
-
 ## Project Overview
 
 This repository contains the **code, genomic datasets, processed data, experimental configurations, and research outputs** for a Lung Adenocarcinoma (LUAD) stage-stratification project based on **mutation-centred genomic DNA sequences**.
