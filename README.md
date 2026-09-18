@@ -5,6 +5,7 @@
     width="700"
   />
 </p>
+
 # Privacy-Preserving Federated Learning for Genomic Stage Stratification in Lung Adenocarcinoma
 
 ## Project Overview
