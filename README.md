@@ -305,7 +305,7 @@ The cBioPortal study ID is particularly important because the verification docum
 
 
 ---
-# Computational Healthcare Intelligence Lab (CHI Lab) Research
+# Computational Healthcare Intelligence Lab (CHI Lab) 
 ## Research Leadership
 
 **Dr. Didar Murad**
