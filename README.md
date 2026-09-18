@@ -10,11 +10,9 @@
   <img
     src="./Federated_Learning/LUAD-Federated-Research-Portal-Demo/Portal-Demo.gif"
     alt="LUAD-FedStage: Research Portal"
-  
+    width="700"
   />
 </p>
-
-./Federated_Learning/LUAD-Federated-Research-Portal-Demo/Portal-Demo.gif
 
 # Privacy-Preserving Federated Learning for Genomic Stage Stratification in Lung Adenocarcinoma
 
