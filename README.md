@@ -5,15 +5,6 @@
     width="700"
   />
 </p>
-
-<p align="center">
-  <img
-    src="./Federated_Learning/LUAD-Federated-Research-Portal-Demo/Portal-Demo.gif"
-    alt="LUAD-FedStage: Research Portal"
-    width="700"
-  />
-</p>
-
 # Privacy-Preserving Federated Learning for Genomic Stage Stratification in Lung Adenocarcinoma
 
 ## Project Overview
@@ -230,6 +221,13 @@ This follows the Git LFS workflow specified in the previous repository documenta
 # Research Portal
 
 The **LUAD-FedStage Research Portal** is available for demonstration and exploration:
+<p align="center">
+  <img
+    src="./Federated_Learning/LUAD-Federated-Research-Portal-Demo/Portal-Demo.gif"
+    alt="LUAD-FedStage: Research Portal"
+    width="700"
+  />
+</p>
 
 [![Open Research Portal](https://img.shields.io/badge/Open%20Research%20Portal-LUAD--FedStage-6C5CE7?style=for-the-badge&logo=googlechrome&logoColor=white)](Federated_Learning/LUAD-Federated-Research-Portal-Demo/)
 
