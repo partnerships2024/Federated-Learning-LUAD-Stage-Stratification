@@ -8,7 +8,7 @@
 
 <p align="center">
   <img
-    src="./Federated_Learning/LUAD-FedStage-Research-Portal-Demo/LUAD-FedStage-Logo.png"
+    src="./Federated_Learning/Portal-Demo.mp4"
     alt="LUAD-FedStage: Federated Genomic Stage Stratification Research"
     width="700"
   />
