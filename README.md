@@ -225,7 +225,7 @@ The **LUAD-FedStage Research Portal** is available for demonstration and explora
 
 <p align="center">
   <img
-    src="./Federated_Learning/LUAD-Federated-Research-Portal-Demo/Demo-LUAD-FedStage-Research-Portal.gif"
+    src="./Federated_Learning/LUAD-Federated-Research-Portal-Demo/Demo-LUAD-FedStage-Research-Portal .gif"
     alt="LUAD-FedStage: Research Portal"
     width="700"
   />
