@@ -21,49 +21,96 @@
       <div class="sidebar-footer"><a class="button outline" href="{{ url_for('logout') }}"><i class="bi bi-box-arrow-right"></i> Logout</a></div>
     </aside>
 
-    <main class="content">
+    <main class="content server-dashboard">
       {% include "_institution_bar.html" %}
+      {% macro metric4(value) -%}
+        {%- if value is none or value == '' or value == 'N/A' -%}
+          {{ value if value else 'N/A' }}
+        {%- else -%}
+          {{ '%.4f'|format(value|float) }}
+        {%- endif -%}
+      {%- endmacro %}
+      {% set client_ids = rounds|map(attribute='client_id')|unique|list %}
+      {% set round_ids = rounds|map(attribute='round_number')|unique|list %}
 
-      <header class="page-header">
-        <div><p class="eyebrow">CENTRAL FEDERATED SERVER</p><h1>Central Federated Learning Server</h1><p class="muted">LUAD Stage-Group Prediction Research Prototype</p></div>
-        <span class="status-pill">&bull; Admin access</span>
+      <header class="page-header server-page-header">
+        <div>
+          <p class="eyebrow">CENTRAL FEDERATED SERVER</p>
+          <h1>Central Federated Learning Server</h1>
+          <p class="muted">Completed three-client federated LUAD stage-stratification experiment.</p>
+        </div>
+        <div class="server-header-badges" aria-label="Server context">
+          <span class="status-pill teal"><i class="bi bi-diagram-3-fill" aria-hidden="true"></i> Simulated Research Federation</span>
+          <span class="status-pill"><i class="bi bi-shield-lock" aria-hidden="true"></i> Admin access</span>
+        </div>
       </header>
 
-      <section class="metric-grid compact">
-        <article class="metric-card"><span class="metric-label">Model</span><strong class="text-value">Binary BiLSTM</strong><span class="metric-caption">Approved architecture</span></article>
-        <article class="metric-card"><span class="metric-label">Clients</span><strong>3</strong><span class="metric-caption">Simulated clients</span></article>
-        <article class="metric-card"><span class="metric-label">Rounds</span><strong>3</strong><span class="metric-caption">Completed FedAvg rounds</span></article>
-        <article class="metric-card"><span class="metric-label">Aggregation</span><strong class="text-value">FedAvg</strong><span class="metric-caption">Weighted model updates</span></article>
-      </section>
-
-      <section class="notice"><strong>Privacy boundary</strong><span>Raw patient records remain local to each simulated client.</span></section>
-
-      <section class="panel">
-        <div class="panel-heading"><div><p class="eyebrow">FINAL TEST</p><h2>3-client FedAvg federated model</h2></div></div>
-        <div class="mini-metrics">{% for key, label in [('accuracy','Accuracy'),('f1','F1'),('roc_auc','ROC-AUC'),('pr_auc','PR-AUC')] %}<div><span>{{ label }}</span><strong>{{ federated_metrics.get(key, 'N/A') }}</strong></div>{% endfor %}</div>
-      </section>
-
-      <section class="panel">
-        <div class="panel-heading"><div><p class="eyebrow">BENCHMARK</p><h2>Centralized vs federated comparison</h2></div></div>
-        <div class="comparison-grid">
-          <div class="comparison-card"><h3>Matched centralized baseline</h3><p class="muted">Same split, preprocessing, architecture, and held-out test protocol.</p>{% for key, label in [('accuracy','Accuracy'),('f1','F1'),('roc_auc','ROC-AUC'),('pr_auc','PR-AUC')] %}<div class="comparison-row"><span>{{ label }}</span><strong>{{ centralized_metrics.get(key, 'N/A') }}</strong></div>{% endfor %}</div>
-          <div class="comparison-card federated"><h3>3-client FedAvg federated model</h3><p class="muted">Final global model after three simulated federated rounds.</p>{% for key, label in [('accuracy','Accuracy'),('f1','F1'),('roc_auc','ROC-AUC'),('pr_auc','PR-AUC')] %}<div class="comparison-row"><span>{{ label }}</span><strong>{{ federated_metrics.get(key, 'N/A') }}</strong></div>{% endfor %}</div>
+      <section class="experiment-config-section" aria-labelledby="experiment-config-title">
+        <div class="dashboard-section-heading"><div><p class="eyebrow">EXPERIMENT CONFIGURATION</p><h2 id="experiment-config-title">Experiment Configuration</h2><p class="section-subtitle">Completed federated-learning setup for the research prototype.</p></div><span class="status-pill teal"><i class="bi bi-check-circle" aria-hidden="true"></i> Completed experiment</span></div>
+        <div class="metric-grid compact experiment-config-grid">
+          <article class="metric-card"><div class="config-card-top"><span class="metric-label">Model</span><i class="metric-icon bi bi-cpu" aria-hidden="true"></i></div><strong class="text-value">Binary BiLSTM</strong><span class="metric-caption">Approved architecture</span></article>
+          <article class="metric-card"><div class="config-card-top"><span class="metric-label">Simulated clients</span><i class="metric-icon bi bi-buildings" aria-hidden="true"></i></div><strong>{{ client_ids|length }}</strong><span class="metric-caption">Participating research clients</span></article>
+          <article class="metric-card"><div class="config-card-top"><span class="metric-label">Communication rounds</span><i class="metric-icon bi bi-arrow-repeat" aria-hidden="true"></i></div><strong>{{ round_ids|length }}</strong><span class="metric-caption">Completed FedAvg rounds</span></article>
+          <article class="metric-card"><div class="config-card-top"><span class="metric-label">Aggregation</span><i class="metric-icon bi bi-diagram-3" aria-hidden="true"></i></div><strong class="text-value">FedAvg</strong><span class="metric-caption">Weighted model updates</span></article>
         </div>
       </section>
 
-      <section class="visual-grid">
-        <article class="visual-card"><p class="eyebrow">WEIGHTED CLIENT VALIDATION METRICS</p><h2>Federated Performance Across Communication Rounds</h2><p class="muted">Weighted client validation metrics; no held-out test data is used here.</p><div class="chart-wrap"><canvas id="roundPerformanceChart"></canvas></div></article>
-        <article class="visual-card"><p class="eyebrow">MATCHED BENCHMARK</p><h2>Matched Centralized vs Federated Performance</h2><p class="muted"><span>Matched centralized baseline</span> compared with the <span>3-client FedAvg federated model</span>.</p><div class="chart-wrap"><canvas id="comparisonChart"></canvas></div></article>
+      <section class="panel federation-overview-panel" aria-labelledby="federation-overview-title">
+        <div class="panel-heading dashboard-section-heading"><div><p class="eyebrow">FEDERATION OVERVIEW</p><h2 id="federation-overview-title">Simulated Client Participation</h2><p class="section-subtitle">Three simulated research clients contributed model updates to the completed weighted FedAvg experiment.</p></div></div>
+        <div class="federation-overview-flow">
+          <div class="federation-client-grid">
+            {% for client_id in client_ids %}
+            {% set client_rounds = rounds|selectattr('client_id', 'equalto', client_id)|list %}
+            {% set received_rounds = client_rounds|selectattr('update_received')|list %}
+            <article class="federation-client-card">
+              <div class="client-card-heading"><span class="client-number" aria-hidden="true">{{ '%02d'|format(loop.index) }}</span><div><p class="eyebrow">SIMULATED CLIENT</p><h3>{{ client_id|replace('Hospital ', 'Client ') }}</h3></div></div>
+              <dl class="client-card-details"><div><dt>Participation</dt><dd>Research client</dd></div><div><dt>Updates received</dt><dd>{{ received_rounds|length }} / {{ round_ids|length }}</dd></div></dl>
+              <span class="status-pill teal"><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Completed</span>
+            </article>
+            {% else %}
+            <p class="muted">No client round metadata available.</p>
+            {% endfor %}
+          </div>
+          <div class="federation-flow-connector" aria-hidden="true"><span>Model updates</span><i class="bi bi-arrow-down"></i></div>
+          <div class="federation-server-node"><i class="bi bi-hdd-rack" aria-hidden="true"></i><div><p class="eyebrow">CENTRAL AGGREGATION</p><h3>Central FedAvg Server</h3><span>Weighted aggregation for the completed experiment</span></div></div>
+        </div>
       </section>
 
-      <section class="visual-grid">
-        <article class="visual-card"><p class="eyebrow">FINAL GLOBAL HELD-OUT TEST</p><h2>Final Federated BiLSTM ROC Curve</h2><div class="result-image-wrap"><img src="{{ url_for('server_result_image', filename='federated_roc_curve.png') }}" alt="Final Federated BiLSTM ROC Curve"></div><p class="image-caption">Verified ROC-AUC: <strong>{{ federated_metrics.get('roc_auc', 'N/A') }}</strong></p></article>
-        <article class="visual-card"><p class="eyebrow">FINAL GLOBAL HELD-OUT TEST</p><h2>Final Global Held-Out Test Confusion Matrix</h2><div class="result-image-wrap"><img src="{{ url_for('server_result_image', filename='federated_confusion_matrix.png') }}" alt="Final Global Held-Out Test Confusion Matrix"></div><table class="matrix-table"><thead><tr><th>Actual / Predicted</th><th>Early</th><th>Advanced</th></tr></thead><tbody><tr><th>Early</th><td>{{ confusion_matrix.early_early }}</td><td>{{ confusion_matrix.early_advanced }}</td></tr><tr><th>Advanced</th><td>{{ confusion_matrix.advanced_early }}</td><td>{{ confusion_matrix.advanced_advanced }}</td></tr></tbody></table></article>
+      <section class="notice server-privacy-notice"><i class="bi bi-shield-lock-fill" aria-hidden="true"></i><div><strong>Privacy boundary</strong><span>Raw patient training records remain within each simulated client. The central server receives model updates for weighted FedAvg aggregation; federated learning does not by itself establish formal privacy guarantees.</span></div></section>
+
+      <section class="panel final-results-section" aria-labelledby="final-results-title">
+        <div class="dashboard-section-heading"><div><p class="eyebrow">FINAL GLOBAL HELD-OUT TEST</p><h2 id="final-results-title">Final Federated Held-Out Performance</h2><p class="section-subtitle">Evaluation on the fixed 712-patient global held-out test set.</p></div><span class="status-pill teal"><i class="bi bi-clipboard2-check" aria-hidden="true"></i> Final evaluation</span></div>
+        <div class="federated-result-grid">{% for key, label, icon in [('accuracy','Accuracy','bi-bullseye'),('f1','F1-score','bi-bar-chart-line'),('roc_auc','ROC-AUC','bi-bezier2'),('pr_auc','PR-AUC','bi-graph-up-arrow')] %}<article class="federated-result-card"><div class="result-card-top"><span>{{ label }}</span><i class="bi {{ icon }}" aria-hidden="true"></i></div><strong>{{ metric4(federated_metrics.get(key, 'N/A')) }}</strong><small>Final federated BiLSTM</small></article>{% endfor %}</div>
       </section>
 
-      <section class="panel">
-        <div class="panel-heading"><div><p class="eyebrow">ROUND LOG</p><h2>Federated client updates</h2></div></div>
-        <div class="table-wrap"><table><thead><tr><th>Round</th><th>Client</th><th>Samples</th><th>Train loss</th><th>Train accuracy</th><th>Update</th><th>Model version</th></tr></thead><tbody>{% for item in rounds %}<tr><td>{{ item.round_number }}</td><td>{{ item.client_id }}</td><td>{{ item.local_sample_count }}</td><td>{{ '%.4f'|format(item.local_loss) }}</td><td>{{ '%.4f'|format(item.local_accuracy) }}</td><td><span class="status-pill">Received</span></td><td>{{ item.model_version }}</td></tr>{% else %}<tr><td colspan="7">No round metadata available.</td></tr>{% endfor %}</tbody></table></div>
+      <section class="panel comparison-section" aria-labelledby="comparison-title">
+        <div class="dashboard-section-heading"><div><p class="eyebrow">MATCHED BENCHMARK</p><h2 id="comparison-title">Matched Centralized vs Federated Performance</h2><p class="section-subtitle">Matched comparison using the same model family and global held-out test set.</p></div></div>
+        <div class="comparison-layout">
+          <div class="comparison-grid">
+            <div class="comparison-card centralized"><div class="comparison-card-heading"><h3>Matched centralized baseline</h3><span class="comparison-tag">Reference</span></div><p class="muted">Same split, preprocessing, architecture, and held-out test protocol.</p>{% for key, label in [('accuracy','Accuracy'),('f1','F1-score'),('roc_auc','ROC-AUC'),('pr_auc','PR-AUC')] %}<div class="comparison-row"><span>{{ label }}</span><strong>{{ metric4(centralized_metrics.get(key, 'N/A')) }}</strong></div>{% endfor %}</div>
+            <div class="comparison-card federated"><div class="comparison-card-heading"><h3>3-client FedAvg federated model</h3><span class="comparison-tag">Final model</span></div><p class="muted">Final global model after three simulated federated rounds.</p>{% for key, label in [('accuracy','Accuracy'),('f1','F1-score'),('roc_auc','ROC-AUC'),('pr_auc','PR-AUC')] %}<div class="comparison-row"><span>{{ label }}</span><strong>{{ metric4(federated_metrics.get(key, 'N/A')) }}</strong></div>{% endfor %}</div>
+          </div>
+          <div class="comparison-chart-card"><div class="chart-wrap comparison-chart-wrap"><canvas id="comparisonChart" aria-label="Bar chart comparing matched centralized and federated performance metrics"></canvas></div><p class="chart-caption">The matched centralized baseline is shown for context; the comparison does not imply federated superiority.</p></div>
+        </div>
+      </section>
+
+      <section class="panel round-dynamics-section" aria-labelledby="round-dynamics-title">
+        <div class="dashboard-section-heading"><div><p class="eyebrow">WEIGHTED CLIENT VALIDATION METRICS</p><h2 id="round-dynamics-title">Federated Performance Across Communication Rounds</h2><p class="section-subtitle">Weighted client validation metrics; no held-out test data is used here.</p></div></div>
+        <div class="chart-wrap round-chart-wrap"><canvas id="roundPerformanceChart" aria-label="Line chart showing federated validation performance across communication rounds"></canvas></div>
+        <p class="scientific-note"><i class="bi bi-info-circle" aria-hidden="true"></i> Validation performance continued to improve through Round 3; convergence was not established.</p>
+      </section>
+
+      <section class="final-model-evaluation-section" aria-labelledby="final-model-evaluation-title">
+        <div class="dashboard-section-heading"><div><p class="eyebrow">FINAL MODEL EVALUATION</p><h2 id="final-model-evaluation-title">Final Model Evaluation</h2><p class="section-subtitle">Visual diagnostics from the final federated model on the fixed global held-out test set.</p></div></div>
+        <div class="visual-grid final-evaluation-grid">
+          <article class="visual-card final-figure-card"><p class="eyebrow">FINAL GLOBAL HELD-OUT TEST</p><h3>Final Federated ROC Curve</h3><div class="result-image-wrap server-result-image-wrap"><img src="{{ url_for('server_result_image', filename='federated_roc_curve.png') }}" alt="Final Federated BiLSTM ROC Curve" loading="eager" fetchpriority="high" decoding="async"></div><p class="image-caption">Verified ROC-AUC: <strong>{{ metric4(federated_metrics.get('roc_auc', 'N/A')) }}</strong></p></article>
+          <article class="visual-card final-figure-card"><p class="eyebrow">FINAL GLOBAL HELD-OUT TEST</p><h3>Final Global Held-Out Confusion Matrix</h3><div class="result-image-wrap server-result-image-wrap"><img src="{{ url_for('server_result_image', filename='federated_confusion_matrix.png') }}" alt="Final Global Held-Out Confusion Matrix"></div><table class="matrix-table"><thead><tr><th scope="col">Actual / Predicted</th><th scope="col">Early</th><th scope="col">Advanced</th></tr></thead><tbody><tr><th scope="row">Early</th><td>{{ confusion_matrix.early_early }}</td><td>{{ confusion_matrix.early_advanced }}</td></tr><tr><th scope="row">Advanced</th><td>{{ confusion_matrix.advanced_early }}</td><td>{{ confusion_matrix.advanced_advanced }}</td></tr></tbody></table></article>
+        </div>
+      </section>
+
+      <section class="panel updates-section" aria-labelledby="updates-title">
+        <div class="dashboard-section-heading"><div><p class="eyebrow">ROUND LOG</p><h2 id="updates-title">Federated Client Updates</h2><p class="section-subtitle">Round-level metadata from the completed simulated federation.</p></div></div>
+        <div class="table-wrap server-round-table-wrap"><table class="server-round-table"><caption class="visually-hidden">Federated client updates by communication round</caption><thead><tr><th scope="col">Round</th><th scope="col">Client</th><th scope="col" class="numeric-heading">Samples</th><th scope="col" class="numeric-heading">Train loss</th><th scope="col" class="numeric-heading">Train accuracy</th><th scope="col">Update</th><th scope="col">Model version</th></tr></thead><tbody>{% for item in rounds %}{% set previous_round = rounds[loop.index0 - 1].round_number if loop.index0 > 0 else none %}<tr class="{{ 'round-start' if previous_round is none or previous_round != item.round_number else '' }}"><td class="round-cell">{{ item.round_number }}</td><td>{{ item.client_id }}</td><td class="numeric-cell">{{ item.local_sample_count }}</td><td class="numeric-cell">{{ '%.4f'|format(item.local_loss) }}</td><td class="numeric-cell">{{ '%.4f'|format(item.local_accuracy) }}</td><td><span class="status-pill table-status teal"><i class="bi bi-check-circle-fill" aria-hidden="true"></i> {{ 'Received' if item.update_received else 'Not received' }}</span></td><td class="model-version-cell">{{ item.model_version }}</td></tr>{% else %}<tr><td colspan="7">No round metadata available.</td></tr>{% endfor %}</tbody></table></div>
       </section>
     </main>
   </div>

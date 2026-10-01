@@ -22,38 +22,73 @@
       <div class="sidebar-footer"><a class="button outline" href="{{ url_for('logout') }}"><i class="bi bi-box-arrow-right"></i> Logout</a></div>
     </aside>
 
-    <main class="content">
+    <main class="content archive-page">
       {% include "_institution_bar.html" %}
       <header class="page-header">
-        <div><p class="eyebrow">CHI LAB &middot; LOCAL RESEARCH RECORDS</p><h1>Research Report Archive</h1><p class="muted">Search and review locally stored genomic research reports.</p></div>
-        <span class="status-pill"><i class="bi bi-shield-check"></i> Client-local</span>
+        <div>
+          <p class="eyebrow">CHI LAB &middot; LOCAL RESEARCH RECORDS</p>
+          <h1>Research Report Archive</h1>
+          <p class="muted">Client-local genomic prediction reports for this simulated research client.</p>
+        </div>
+        <span class="status-pill"><i class="bi bi-shield-check" aria-hidden="true"></i> Client-local</span>
       </header>
 
-      <section class="notice"><i class="bi bi-shield-lock-fill"></i><div><strong>Patient identity and research reports remain within this local research client.</strong><span>No patient name, raw genomic sequence, or report content is sent to the central federated server.</span></div></section>
+      <section class="notice archive-privacy-notice"><i class="bi bi-shield-lock-fill" aria-hidden="true"></i><div><strong>Patient identity and research reports remain within this local research client.</strong><span>No patient name, raw genomic sequence, or report content is sent to the central federated server.</span></div></section>
 
-      <section class="metric-grid archive-metrics">
-        <article class="metric-card accent-blue"><i class="metric-icon bi bi-files"></i><span class="metric-label">Total saved reports</span><strong>{{ metrics.total }}</strong><span class="metric-caption">Stored in this lab archive</span></article>
-        <article class="metric-card accent-teal"><i class="metric-icon bi bi-bar-chart-line"></i><span class="metric-label">Early predictions</span><strong>{{ metrics.early }}</strong><span class="metric-caption">Research summaries</span></article>
-        <article class="metric-card accent-purple"><i class="metric-icon bi bi-graph-up"></i><span class="metric-label">Advanced predictions</span><strong>{{ metrics.advanced }}</strong><span class="metric-caption">Research summaries</span></article>
-        <article class="metric-card accent-gold"><i class="metric-icon bi bi-calendar3"></i><span class="metric-label">Reports created this month</span><strong>{{ metrics.month }}</strong><span class="metric-caption">UTC calendar month</span></article>
+      <section class="metric-grid archive-metrics" aria-label="Research report archive summary">
+        <article class="metric-card accent-blue"><div class="archive-card-top"><span class="metric-label">Total saved reports</span><i class="metric-icon bi bi-files" aria-hidden="true"></i></div><strong>{{ metrics.total }}</strong><span class="metric-caption">Stored in this lab archive</span></article>
+        <article class="metric-card accent-teal"><div class="archive-card-top"><span class="metric-label">Early predictions</span><i class="metric-icon bi bi-bar-chart-line" aria-hidden="true"></i></div><strong>{{ metrics.early }}</strong><span class="metric-caption">Research summaries</span></article>
+        <article class="metric-card accent-purple"><div class="archive-card-top"><span class="metric-label">Advanced predictions</span><i class="metric-icon bi bi-graph-up" aria-hidden="true"></i></div><strong>{{ metrics.advanced }}</strong><span class="metric-caption">Research summaries</span></article>
+        <article class="metric-card accent-gold"><div class="archive-card-top"><span class="metric-label">Reports created this month</span><i class="metric-icon bi bi-calendar3" aria-hidden="true"></i></div><strong>{{ metrics.month }}</strong><span class="metric-caption">UTC calendar month</span></article>
       </section>
 
-      <section class="panel filter-card">
-        <div class="panel-heading"><div><p class="eyebrow">PRIMARY SEARCH</p><h2>Search by Patient Name</h2></div><i class="section-icon bi bi-person-search"></i></div>
-        <form class="archive-filters simple-archive-filters" method="get">
-          <div class="search-field primary-search"><label for="search">Search by Patient Name</label><div class="input-icon"><i class="bi bi-person-search"></i><input id="search" name="search" value="{{ filters.search }}" placeholder="Enter patient name..." autofocus></div><small>Partial, case-insensitive matching. For example, &ldquo;ali&rdquo; finds &ldquo;Ali Khan&rdquo;.</small></div>
-          <div><label for="date_from">Date From <span class="muted">(optional)</span></label><input id="date_from" type="date" name="date_from" value="{{ filters.date_from }}"></div>
-          <div><label for="date_to">Date To <span class="muted">(optional)</span></label><input id="date_to" type="date" name="date_to" value="{{ filters.date_to }}"></div>
-          <button class="button primary" type="submit"><i class="bi bi-search"></i> Search Reports</button><a class="button reset-button" href="{{ url_for('report_archive', hospital_id=hospital_id) }}">Reset</a>
+      <section class="panel research-results-panel" aria-labelledby="research-results-title">
+        <div class="panel-heading research-results-heading"><div><p class="eyebrow">COMPLETED EXPERIMENT FIGURES</p><h2 id="research-results-title">Research Results</h2><p class="panel-subtitle">Summary figures from the completed federated LUAD stage-stratification experiment.</p></div><span class="status-pill teal"><i class="bi bi-bar-chart-line" aria-hidden="true"></i> Research context</span></div>
+        <p class="research-results-note">Experiment-level figures are shown for research context; patient reports below remain local to this simulated client.</p>
+        <div class="research-results-grid">
+          <figure class="research-figure-card">
+            <div class="research-figure-label">GLOBAL HELD-OUT TEST</div>
+            <h3>Federated ROC Curve</h3>
+            <div class="research-figure-frame"><img src="{{ url_for('static', filename='images/federated_roc_curve.png') }}" alt="Federated Binary BiLSTM ROC curve for the final global held-out test" loading="lazy" decoding="async"></div>
+            <figcaption>Held-out global test performance of the final federated BiLSTM.</figcaption>
+          </figure>
+          <figure class="research-figure-card">
+            <div class="research-figure-label">FINAL GLOBAL HELD-OUT TEST</div>
+            <h3>Federated Confusion Matrix</h3>
+            <div class="research-figure-frame"><img src="{{ url_for('static', filename='images/federated_confusion_matrix.png') }}" alt="Final global confusion matrix for Early and Advanced stage predictions" loading="lazy" decoding="async"></div>
+            <figcaption>Class-level predictions on the fixed global held-out test set.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="panel filter-card archive-filter-card">
+        <div class="panel-heading"><div><p class="eyebrow">REPORT METADATA FILTERS</p><h2>Search Reports</h2><p class="panel-subtitle">Filter locally stored report metadata by patient name or report date.</p></div><i class="section-icon bi bi-person-search" aria-hidden="true"></i></div>
+        <form class="archive-filters simple-archive-filters archive-search-form" method="get">
+          <div class="archive-name-field">
+            <label for="search">Patient name</label>
+            <div class="input-icon"><i class="bi bi-person-search" aria-hidden="true"></i><input id="search" name="search" value="{{ filters.search }}" placeholder="Enter patient name..." aria-describedby="search-help" autofocus></div>
+            <small id="search-help">Partial, case-insensitive matching. For example, &ldquo;ali&rdquo; finds &ldquo;Ali Khan&rdquo;.</small>
+          </div>
+          <div class="archive-date-group" role="group" aria-labelledby="archive-date-label">
+            <span class="archive-group-label" id="archive-date-label">Report date range <span class="muted">(optional)</span></span>
+            <div class="archive-date-fields">
+              <div><label for="date_from">From date</label><input id="date_from" type="date" name="date_from" value="{{ filters.date_from }}"></div>
+              <div><label for="date_to">To date</label><input id="date_to" type="date" name="date_to" value="{{ filters.date_to }}"></div>
+            </div>
+          </div>
+          <div class="archive-filter-actions">
+            <button class="button primary" type="submit"><i class="bi bi-search" aria-hidden="true"></i> Search Reports</button>
+            <a class="button reset-button" href="{{ url_for('report_archive', hospital_id=hospital_id) }}"><i class="bi bi-arrow-counterclockwise" aria-hidden="true"></i> Reset</a>
+          </div>
         </form>
       </section>
 
       <section class="panel archive-list">
-        <div class="panel-heading"><div><p class="eyebrow">SEARCH RESULTS</p><h2>{% if filters.search %}{{ reports|length }} report{{ '' if reports|length == 1 else 's' }} found for &ldquo;{{ filters.search }}&rdquo;{% else %}Saved research reports <span class="count-badge">{{ reports|length }}</span>{% endif %}</h2></div></div>
+        <div class="panel-heading archive-list-heading"><div><p class="eyebrow">SEARCH RESULTS</p><h2>{% if filters.search %}{{ reports|length }} report{{ '' if reports|length == 1 else 's' }} found for &ldquo;{{ filters.search }}&rdquo;{% else %}Saved research reports <span class="count-badge" aria-label="{{ reports|length }} reports">{{ reports|length }}</span>{% endif %}</h2><p class="archive-local-context">Reports shown here belong only to this simulated research client.</p></div></div>
         {% if reports %}
-        <div class="table-wrap"><table class="archive-table"><thead><tr><th>Patient Name</th><th>Patient ID</th><th>Research Sample ID</th><th>Report ID</th><th>Report Date</th><th>Gene Symbols</th><th>Mutation Count</th><th>Predicted Group</th><th>Early Probability</th><th>Advanced Probability</th><th>Source Type</th><th>Action</th></tr></thead><tbody>{% for item in reports %}<tr><td><strong>{{ item.patient_name }}</strong></td><td>{{ item.patient_id or 'Patient ID: Not provided' }}</td><td>{{ item.sample_id or 'Not provided' }}</td><td><strong>#{{ item.id }}</strong></td><td>{{ item.created_at }}</td><td>{{ item.normalized_gene_symbols|replace('[','')|replace(']','')|replace('"','') }}</td><td>{{ item.mutation_count }}</td><td><span class="prediction-badge {{ item.predicted_group|lower }}">{{ item.predicted_group }}</span></td><td>{{ '%.2f'|format(item.early_probability * 100) }}%</td><td>{{ '%.2f'|format(item.advanced_probability * 100) }}%</td><td><span class="source-badge">{{ 'Existing Research Record' if item.source_type == 'existing_record' else 'New Research Sample' }}</span></td><td><a class="button small-button" href="{{ url_for('report_detail', hospital_id=hospital_id, report_id=item.id) }}">View Report</a></td></tr>{% endfor %}</tbody></table></div>
+        <div class="table-wrap archive-table-wrap"><table class="archive-table"><caption class="visually-hidden">Saved research reports for {{ hospital_name }}</caption><thead><tr><th scope="col">Patient Name</th><th scope="col">Patient ID</th><th scope="col">Research Sample ID</th><th scope="col">Report ID</th><th scope="col">Report Date</th><th scope="col">Gene Symbols</th><th scope="col" class="numeric-heading">Mutation Count</th><th scope="col">Predicted Group</th><th scope="col" class="numeric-heading">Early Probability</th><th scope="col" class="numeric-heading">Advanced Probability</th><th scope="col">Source Type</th><th scope="col">Action</th></tr></thead><tbody>{% for item in reports %}<tr><td class="archive-name"><strong>{{ item.patient_name }}</strong></td><td class="archive-id">{{ item.patient_id or 'Patient ID: Not provided' }}</td><td class="archive-id">{{ item.sample_id or 'Not provided' }}</td><td class="archive-report-id"><a class="report-id-link" href="{{ url_for('report_detail', hospital_id=hospital_id, report_id=item.id) }}" aria-label="View report {{ item.id }}">#{{ item.id }}</a></td><td>{{ item.created_at }}</td><td class="archive-genes"><span class="gene-list">{{ item.normalized_gene_symbols|replace('[','')|replace(']','')|replace('"','') }}</span></td><td class="numeric-cell">{{ item.mutation_count }}</td><td><span class="prediction-badge {{ item.predicted_group|lower }}"><i class="bi {{ 'bi-arrow-down-right-circle' if item.predicted_group == 'Early' else 'bi-arrow-up-right-circle' }}" aria-hidden="true"></i>{{ item.predicted_group }}</span></td><td class="numeric-cell probability-cell"><span class="probability-value">{{ '%.2f'|format(item.early_probability * 100) }}%</span></td><td class="numeric-cell probability-cell"><span class="probability-value">{{ '%.2f'|format(item.advanced_probability * 100) }}%</span></td><td><span class="source-badge">{{ 'Existing Research Record' if item.source_type == 'existing_record' else 'New Research Sample' }}</span></td><td class="archive-action-cell"><a class="button small-button" href="{{ url_for('report_detail', hospital_id=hospital_id, report_id=item.id) }}"><i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> View Report</a></td></tr>{% endfor %}</tbody></table></div>
         {% else %}
-        <div class="empty-state"><i class="bi bi-archive"></i><h3>No research reports have been saved yet.</h3><p class="muted">Run a local analysis and click Save Report to Archive before using report search.</p><a class="button primary" href="{{ url_for('local_prediction', hospital_id=hospital_id) }}">Run Local Analysis</a></div>
+        <div class="empty-state"><i class="bi bi-archive" aria-hidden="true"></i><h3>No research reports have been saved yet.</h3><p class="muted">Run a local analysis and click Save Report to Archive before using report search.</p><a class="button primary" href="{{ url_for('local_prediction', hospital_id=hospital_id) }}">Run Local Analysis</a></div>
         {% endif %}
       </section>
     </main>
