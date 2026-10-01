@@ -42,3 +42,23 @@ Binary LUAD stage classification:
 The folder contains the federated-learning pipeline, trained global model, evaluation metrics, figures, and experiment summaries.
 
 Raw patient-level genomic data and patient identifier files are intentionally excluded from the repository.
+
+## Demo Login Accounts
+
+The research portal includes four demo accounts for the simulated federated learning environment.
+
+### Simulated Hospital Clients
+
+| Client | Username | Password |
+|---|---|---|
+| Hospital 1 | `hospital1` | `hospital1-demo` |
+| Hospital 2 | `hospital2` | `hospital2-demo` |
+| Hospital 3 | `hospital3` | `hospital3-demo` |
+
+### Central Federated Server
+
+| Role | Username | Password |
+|---|---|---|
+| Administrator | `admin` | `admin-demo` |
+
+These credentials are intended only for the local research demo and should not be reused for production or clinical deployment.
