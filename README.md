@@ -233,7 +233,7 @@ The **LUAD-FedStage Research Portal** is available for demonstration and explora
 
 [![Open Research Portal](https://img.shields.io/badge/Open%20Research%20Portal-LUAD--FedStage-6C5CE7?style=for-the-badge&logo=googlechrome&logoColor=white)](Federated_Learning/LUAD-Federated-Research-Portal-Demo/)
 
-[![YouTube](https://img.shields.io/badge/YouTube-ICRI--STE%20Insights-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/sJv5555ozVw?si=5KToG2PG92F8JzAY)
+[![YouTube](https://img.shields.io/badge/YouTube-ICRI--STE%20Insights-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/pqSVqDCj2Rs?si=8Qvn2LZdE34g3RLY)
 
 
 It implements:
