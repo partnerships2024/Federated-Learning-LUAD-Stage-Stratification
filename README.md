@@ -231,7 +231,6 @@ The **LUAD-FedStage Research Portal** is available for demonstration and explora
   />
 </p>
 
-[![Open Research Portal](https://img.shields.io/badge/Open%20Research%20Portal-LUAD--FedStage-6C5CE7?style=for-the-badge\&logo=googlechrome\&logoColor=white)]
 
 ![LUAD-FedStage Research Portal Demo](Federated_Learning/LUAD-Federated-Research-Portal-Demo/LUAD-FedStage%20Portal_Demo.gif)
 
