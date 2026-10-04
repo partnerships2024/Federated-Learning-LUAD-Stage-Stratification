@@ -224,14 +224,6 @@ This follows the Git LFS workflow specified in the previous repository documenta
 The **LUAD-FedStage Research Portal** is available for demonstration and exploration:
 
 <p align="center">
-  <img
-    src="./Federated_Learning/LUAD-Federated-Research-Portal-Demo/LUAD-FedStage Portal_Demo.gif"
-    alt="LUAD-FedStage: Research Portal"
-    width="700"
-  />
-</p>
-
-<p align="center">
   <img src="Federated_Learning/LUAD-Federated-Research-Portal-Demo/LUAD-FedStage%20Portal_Demo.gif" 
        alt="LUAD-FedStage Research Portal Demo" 
        width="900">
