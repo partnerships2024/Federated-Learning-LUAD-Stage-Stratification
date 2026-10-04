@@ -229,6 +229,7 @@ The **LUAD-FedStage Research Portal** is available for demonstration and explora
        width="900">
 </p>
 
+[![Federated Genomic Stage Stratification Research Portal](https://img.shields.io/badge/Federated%20Genomic%20Stage%20Stratification-Research%20Portal-2E7D32?style=for-the-badge)](https://github.com/partnerships2024/Federated-Learning-LUAD-Stage-Stratification/tree/main/Federated_Learning/LUAD-Federated-Research-Portal-Demo)
 
 For a comprehensive demonstration of the LUAD-FedStage Research Portal, please visit:
 
