@@ -219,7 +219,7 @@ git lfs pull
 This follows the Git LFS workflow specified in the previous repository documentation.
 
 ---
-# LUAD-FedStage Research Portal
+# Federated Genomic Stage Stratification Research Portal
 [![Federated Genomic Stage Stratification Research Portal](https://img.shields.io/badge/Federated%20Genomic%20Stage%20Stratification-Research%20Portal-2E7D32?style=for-the-badge)](https://github.com/partnerships2024/Federated-Learning-LUAD-Stage-Stratification/tree/main/Federated_Learning/LUAD-Federated-Research-Portal-Demo)
 
 <p align="center">
