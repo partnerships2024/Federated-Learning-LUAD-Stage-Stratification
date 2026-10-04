@@ -232,7 +232,7 @@ The **LUAD-FedStage Research Portal** is available for demonstration and explora
 </p>
 
 
-![LUAD-FedStage Research Portal Demo](Federated_Learning/LUAD-Federated-Research-Portal-Demo/LUAD-FedStage%20Portal_Demo.gif)
+[![LUAD-FedStage Research Portal Demo]](Federated_Learning/LUAD-Federated-Research-Portal-Demo/LUAD-FedStage%20Portal_Demo.gif)
 
 
 For a comprehensive demonstration of the LUAD-FedStage Research Portal, please visit:
