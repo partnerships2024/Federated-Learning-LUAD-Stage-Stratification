@@ -231,8 +231,6 @@ The **LUAD-FedStage Research Portal** is available for demonstration and explora
   />
 </p>
 
-## LUAD-FedStage Research Portal Demo
-
 <p align="center">
   <img src="Federated_Learning/LUAD-Federated-Research-Portal-Demo/LUAD-FedStage%20Portal_Demo.gif" 
        alt="LUAD-FedStage Research Portal Demo" 
