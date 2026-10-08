@@ -1,0 +1,2 @@
+centralized_auc,federated_auc,auc_difference,standard_error_difference,z,p_value_two_sided,difference_ci_low_normal_approx,difference_ci_high_normal_approx
+0.7807717057515455,0.6756050078604184,0.10516669789112709,0.016206942950726468,6.488990441372106,8.641344824449493e-11,0.07340108970770322,0.13693230607455098
